@@ -16,6 +16,12 @@ Make the homepage Hero feel engaging and polished without distracting from the h
 - The image is decorative/supporting content and is not clickable.
 - No autoplay carousel, continuous floating animation, scroll-jacking, or forced parallax.
 
+## CTA interaction
+
+- Explore Programs uses a subtle hover lift and small arrow movement without a glow.
+- Book a Consultation uses the same lift, shadow, and press feedback without competing with the primary CTA.
+- Both CTAs preserve 48px minimum height, visible keyboard focus, and a reduced-motion static state.
+
 ## Hero callouts
 
 - Use up to two static, non-clickable HTML callouts:

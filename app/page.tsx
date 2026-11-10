@@ -19,13 +19,25 @@ export default function Home() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/programs"
-              className="inline-flex min-h-12 items-center justify-center rounded-xl bg-brand-mint px-6 font-extrabold text-brand-deep-purple focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-coral"
+              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-brand-mint px-6 font-extrabold text-brand-deep-purple transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-coral motion-reduce:transition-none"
             >
               Explore Programs
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 20 20"
+                className="size-4 transition-transform duration-200 group-hover:translate-x-0.5 motion-reduce:transition-none"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M5 15 15 5M7 5h8v8" />
+              </svg>
             </Link>
             <Link
               href="/contact?interest=consultation"
-              className="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-6 font-extrabold text-brand-deep-purple transition-colors hover:bg-brand-off-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-coral"
+              className="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-6 font-extrabold text-brand-deep-purple shadow-[0_10px_24px_rgba(19,6,39,0.12)] transition-[transform,box-shadow,background-color] duration-200 hover:-translate-y-0.5 hover:bg-brand-off-white hover:shadow-[0_14px_30px_rgba(19,6,39,0.2)] active:translate-y-0 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-coral motion-reduce:transition-none"
             >
               Book a Consultation
             </Link>
