@@ -50,6 +50,18 @@ _Avoid_: Teaching method, LMS feature
 The opening homepage section that communicates The Learning Lab's value and directs visitors toward the primary action.
 _Avoid_: Banner, splash screen
 
+**Hero Image**:
+A photorealistic visual used in the homepage Hero to represent collaborative development through a circular group-workshop composition; the current asset is derived from an existing concept reference and remains proposed until rights and public-use approval are confirmed.
+_Avoid_: Course Visual, stock-photo claim, operational product image
+
+**Hero Microinteraction**:
+A small user-triggered visual response on the Hero Image, such as a restrained lift, scale, or shadow change, that adds polish without competing with the Hero copy or CTAs.
+_Avoid_: Hero animation, carousel, scroll-jacking
+
+**Hero Callout**:
+A static, non-clickable visual label positioned around the Hero Image to reinforce its message; current wording is Proposed Copy until stakeholder approval.
+_Avoid_: Navigation shortcut, verified claim, testimonial
+
 ## Content and Inquiry
 
 **Verified Content**:
