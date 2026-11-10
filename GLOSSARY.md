@@ -88,6 +88,14 @@ _Avoid_: Submission receipt, booking confirmation
 The main action a visitor is encouraged to take: requesting information about a specific course.
 _Avoid_: Conversion button, enrollment CTA
 
+**Primary Navigation**:
+The persistent website menu connecting visitors to Home, About, Programs, Solutions, and Contact, with Request Information as its primary action.
+_Avoid_: Sitemap, course directory
+
+**Programs Menu**:
+A navigation shortcut to the Programs directory and the five established program categories.
+_Avoid_: Course filter, Resources menu
+
 **Course Directory**:
 An optional browseable view of courses across all five program categories, supporting quick discovery alongside category-first navigation.
 _Avoid_: LMS catalogue, enrollment catalogue
