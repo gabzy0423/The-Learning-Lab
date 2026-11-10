@@ -90,12 +90,12 @@ export function Header() {
           aria-label="The Learning Lab home"
         >
           <Image
-            src="/assets/logo/learning-lab-logo-transparent.png"
+            src="/assets/logo/learning_lab_logo.png"
             alt="The Learning Lab"
-            width={1200}
-            height={430}
+            width={1700}
+            height={624}
             priority
-            className="hidden h-14 w-auto drop-shadow-[0_1px_1px_rgba(40,16,82,0.45)] lg:block"
+            className="hidden h-16 w-auto md:block"
           />
           <Image
             src="/assets/logo/learning-lab-icon.png"
@@ -103,7 +103,7 @@ export function Header() {
             width={64}
             height={64}
             priority
-            className="h-12 w-12 rounded-xl lg:hidden"
+            className="h-12 w-12 rounded-xl md:hidden"
           />
         </Link>
 
