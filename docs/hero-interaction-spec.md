@@ -2,7 +2,7 @@
 
 ## Status
 
-Context-engineered direction. Ready for implementation after explicit confirmation.
+Implemented in the Home Hero after explicit confirmation.
 
 ## Objective
 
@@ -37,6 +37,13 @@ Make the homepage Hero feel engaging and polished without distracting from the h
 - Preserve visible keyboard focus for the Hero CTAs.
 - Do not use motion or color as the only way to communicate meaning.
 - Keep the Hero Image non-interactive to avoid ambiguous navigation.
+
+## Implementation evidence
+
+- CSS-only interaction is implemented in `app/page.tsx`.
+- Lint: PASSED (`npm run lint`).
+- Production build: PASSED (`npm run build`).
+- Browser/workflow verification: BLOCKED because the browser-access host was unavailable.
 
 ## Boundaries
 

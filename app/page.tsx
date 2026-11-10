@@ -32,14 +32,28 @@ export default function Home() {
           </div>
         </div>
         <div className="order-2 flex w-full justify-center lg:order-none">
-          <Image
-            src="/assets/hero/learning-lab-hero-reference.jpg"
-            alt="A diverse group of professionals collaborating during a workshop"
-            width={836}
-            height={720}
-            priority
-            className="aspect-square h-auto w-full max-w-[34rem] rounded-[46%_54%_50%_50%] border-[12px] border-white/10 object-cover object-center shadow-[0_28px_80px_rgba(21,4,46,0.47)]"
-          />
+          <div
+            className="group relative w-full max-w-[34rem] rounded-[46%_54%_50%_50%] focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-brand-coral"
+            role="img"
+            aria-label="A diverse group of professionals collaborating during a workshop"
+            tabIndex={0}
+          >
+            <Image
+              src="/assets/hero/learning-lab-hero-reference.jpg"
+              alt=""
+              aria-hidden="true"
+              width={836}
+              height={720}
+              priority
+              className="hero-image-interaction block aspect-square h-auto w-full rounded-[46%_54%_50%_50%] border-[12px] border-white/10 object-cover object-center shadow-[0_28px_80px_rgba(21,4,46,0.47)] transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-[1.015] group-focus-within:-translate-y-1 group-focus-within:scale-[1.015] motion-reduce:transform-none motion-reduce:transition-none"
+            />
+            <span className="mt-4 inline-flex items-center rounded-2xl bg-white px-4 py-3 text-sm font-extrabold text-brand-deep-purple shadow-[0_15px_40px_rgba(19,6,39,0.27)] lg:absolute lg:right-[-1rem] lg:top-8 lg:mt-0">
+              Learn with purpose
+            </span>
+            <span className="mt-2 inline-flex items-center rounded-2xl bg-white px-4 py-3 text-sm font-extrabold text-brand-deep-purple shadow-[0_15px_40px_rgba(19,6,39,0.27)] lg:absolute lg:bottom-8 lg:left-[-1.5rem] lg:mt-0">
+              Develop with confidence
+            </span>
+          </div>
         </div>
       </div>
     </main>
