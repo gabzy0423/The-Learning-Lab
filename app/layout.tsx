@@ -17,7 +17,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "The Learning Lab",
-  description: "The Learning Lab corporate website",
+  description:
+    "Practical learning and professional development programs for teams, leaders, and organizations.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

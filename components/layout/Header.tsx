@@ -123,7 +123,7 @@ export function Header() {
             <Link
               href="/programs"
               className={navClass(pathname.startsWith("/programs"))}
-              aria-current={pathname === "/programs" ? "page" : undefined}
+              aria-current={isActive(pathname, "/programs") ? "page" : undefined}
             >
               Programs
             </Link>
