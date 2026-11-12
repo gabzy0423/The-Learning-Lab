@@ -35,7 +35,7 @@ export default function Home() {
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/programs"
-              className="group inline-flex min-h-11 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-brand-mint-green px-5 text-sm font-extrabold text-brand-charcoal transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transition-none"
+              className="group inline-flex min-h-11 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-brand-charcoal px-5 text-sm font-extrabold text-brand-white transition-transform duration-200 hover:-translate-y-0.5 hover:bg-brand-charcoal/90 active:translate-y-0 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transition-none"
             >
               Explore Programs
               <svg
