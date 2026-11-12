@@ -70,23 +70,23 @@ export function Header() {
   };
 
   const navClass = (active: boolean) =>
-    `relative flex min-h-11 items-center px-1 text-sm font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-coral ${
+    `relative flex min-h-11 items-center px-1 text-sm font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-cyan-blue ${
       active
-        ? "text-brand-deep-purple after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:rounded-full after:bg-brand-mint"
-        : "text-brand-deep-purple/75 hover:text-brand-deep-purple"
+        ? "text-brand-charcoal after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:rounded-full after:bg-brand-turquoise"
+        : "text-brand-charcoal/75 hover:text-brand-charcoal"
     }`;
 
   return (
     <header
       ref={headerRef}
-      className={`sticky top-0 z-50 border-b border-brand-deep-purple/10 bg-brand-off-white/95 backdrop-blur-md transition-shadow ${
-        scrolled ? "shadow-[0_8px_28px_rgba(40,16,82,0.09)]" : ""
+      className={`sticky top-0 z-50 border-b border-brand-charcoal/10 bg-brand-white/95 backdrop-blur-md transition-shadow ${
+        scrolled ? "shadow-[0_8px_28px_rgba(41,41,41,0.09)]" : ""
       }`}
     >
       <div className="mx-auto flex min-h-20 w-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="flex min-h-11 items-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-coral"
+          className="flex min-h-11 items-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-cyan-blue"
           aria-label="The Learning Lab home"
         >
           <Image
@@ -130,7 +130,7 @@ export function Header() {
             <button
               ref={programsButtonRef}
               type="button"
-              className="ml-1 grid size-11 place-items-center rounded-full text-brand-deep-purple transition-colors hover:bg-brand-mint/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-coral"
+              className="ml-1 grid size-11 place-items-center rounded-full text-brand-charcoal transition-colors hover:bg-brand-turquoise/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
               aria-label="Toggle program categories"
               aria-expanded={programsOpen}
               aria-controls="programs-menu"
@@ -142,7 +142,7 @@ export function Header() {
             </button>
 
             {programsOpen && (
-              <div id="programs-menu" className="absolute left-0 top-[calc(100%+0.75rem)] w-72 rounded-2xl border border-brand-deep-purple/10 bg-white p-2 shadow-[0_18px_50px_rgba(40,16,82,0.16)]">
+              <div id="programs-menu" className="absolute left-0 top-[calc(100%+0.75rem)] w-72 rounded-2xl border border-brand-charcoal/10 bg-white p-2 shadow-[0_18px_50px_rgba(41,41,41,0.16)]">
                 {programs.map((program) => {
                   const href = `/programs/${program.slug}`;
                   const active = pathname === href || pathname.startsWith(`${href}/`);
@@ -150,7 +150,7 @@ export function Header() {
                     <Link
                       key={program.slug}
                       href={href}
-                      className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-coral ${active ? "bg-brand-mint/25 text-brand-deep-purple" : "text-brand-deep-purple/75 hover:bg-brand-off-white hover:text-brand-deep-purple"}`}
+                      className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "bg-brand-turquoise/25 text-brand-charcoal" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
                       aria-current={active ? "page" : undefined}
                       onClick={() => setProgramsOpen(false)}
                     >
@@ -168,12 +168,12 @@ export function Header() {
             </Link>
           ))}
 
-          <Link href="/contact?interest=program-information" className="inline-flex min-h-11 items-center justify-center rounded-xl bg-brand-deep-purple px-5 text-sm font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-coral">
+          <Link href="/contact?interest=program-information" className="inline-flex min-h-11 items-center justify-center rounded-xl bg-brand-charcoal px-5 text-sm font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue">
             Request Information
           </Link>
         </nav>
 
-        <button ref={menuButtonRef} type="button" className="grid size-11 place-items-center rounded-xl text-brand-deep-purple transition-colors hover:bg-brand-mint/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-coral lg:hidden" aria-label="Open navigation menu" onClick={openMobileMenu}>
+        <button ref={menuButtonRef} type="button" className="grid size-11 place-items-center rounded-xl text-brand-charcoal transition-colors hover:bg-brand-turquoise/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue lg:hidden" aria-label="Open navigation menu" onClick={openMobileMenu}>
           <svg aria-hidden="true" viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
             <path d="M4 7h16M4 12h16M4 17h16" />
           </svg>
@@ -182,7 +182,7 @@ export function Header() {
 
       <dialog
         ref={dialogRef}
-        className="fixed inset-y-0 right-0 left-auto m-0 h-dvh max-h-none w-[min(88vw,24rem)] max-w-none bg-brand-off-white p-0 text-brand-deep-purple shadow-[-18px_0_60px_rgba(40,16,82,0.2)] backdrop:bg-[#16072d]/55"
+        className="fixed inset-y-0 right-0 left-auto m-0 h-dvh max-h-none w-[min(88vw,24rem)] max-w-none bg-brand-white p-0 text-brand-charcoal shadow-[-18px_0_60px_rgba(41,41,41,0.2)] backdrop:bg-[#1f1f1f]/55"
         aria-label="Mobile navigation"
         onClose={finishMobileClose}
         onClick={(event) => {
@@ -190,9 +190,9 @@ export function Header() {
         }}
       >
         <div className="flex h-full flex-col overflow-y-auto px-5 pb-6 pt-4">
-          <div className="flex items-center justify-between border-b border-brand-deep-purple/10 pb-4">
+          <div className="flex items-center justify-between border-b border-brand-charcoal/10 pb-4">
             <span className="font-heading text-lg font-bold">Menu</span>
-            <button type="button" className="grid size-11 place-items-center rounded-xl hover:bg-brand-mint/20 focus-visible:outline-2 focus-visible:outline-brand-coral" aria-label="Close navigation menu" onClick={closeMobileMenu}>
+            <button type="button" className="grid size-11 place-items-center rounded-xl hover:bg-brand-turquoise/20 focus-visible:outline-2 focus-visible:outline-brand-cyan-blue" aria-label="Close navigation menu" onClick={closeMobileMenu}>
               <svg aria-hidden="true" viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <path d="m6 6 12 12M18 6 6 18" />
               </svg>
@@ -201,29 +201,29 @@ export function Header() {
 
           <nav className="mt-5 flex flex-col gap-1" aria-label="Mobile navigation">
             {links.slice(0, 2).map((link) => (
-              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "bg-brand-mint/25" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
+              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
                 {link.label}
               </Link>
             ))}
 
             <div>
               <div className="flex items-center">
-                <Link href="/programs" className={`flex min-h-11 flex-1 items-center rounded-l-xl px-4 font-bold ${pathname.startsWith("/programs") ? "bg-brand-mint/25" : "hover:bg-white"}`} aria-current={pathname === "/programs" ? "page" : undefined} onClick={closeMobileMenu}>
+                <Link href="/programs" className={`flex min-h-11 flex-1 items-center rounded-l-xl px-4 font-bold ${pathname.startsWith("/programs") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-current={pathname === "/programs" ? "page" : undefined} onClick={closeMobileMenu}>
                   Programs
                 </Link>
-                <button type="button" className="grid size-11 place-items-center rounded-r-xl hover:bg-brand-mint/20 focus-visible:outline-2 focus-visible:outline-brand-coral" aria-label="Toggle program categories" aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => setMobileProgramsOpen((open) => !open)}>
+                <button type="button" className="grid size-11 place-items-center rounded-r-xl hover:bg-brand-turquoise/20 focus-visible:outline-2 focus-visible:outline-brand-cyan-blue" aria-label="Toggle program categories" aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => setMobileProgramsOpen((open) => !open)}>
                   <svg aria-hidden="true" viewBox="0 0 20 20" className={`size-4 transition-transform ${mobileProgramsOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="m5 7.5 5 5 5-5" />
                   </svg>
                 </button>
               </div>
               {mobileProgramsOpen && (
-                <div id="mobile-programs-menu" className="ml-4 border-l-2 border-brand-mint pl-3">
+                <div id="mobile-programs-menu" className="ml-4 border-l-2 border-brand-turquoise pl-3">
                   {programs.map((program) => {
                     const href = `/programs/${program.slug}`;
                     const active = pathname === href || pathname.startsWith(`${href}/`);
                     return (
-                      <Link key={program.slug} href={href} className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold ${active ? "bg-brand-mint/20" : "hover:bg-white"}`} aria-current={active ? "page" : undefined} onClick={closeMobileMenu}>
+                      <Link key={program.slug} href={href} className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold ${active ? "bg-brand-turquoise/20" : "hover:bg-white"}`} aria-current={active ? "page" : undefined} onClick={closeMobileMenu}>
                         {program.name}
                       </Link>
                     );
@@ -233,13 +233,13 @@ export function Header() {
             </div>
 
             {links.slice(2).map((link) => (
-              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "bg-brand-mint/25" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
+              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          <Link href="/contact?interest=program-information" className="mt-auto inline-flex min-h-12 items-center justify-center rounded-xl bg-brand-deep-purple px-5 text-center font-extrabold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-coral" onClick={closeMobileMenu}>
+          <Link href="/contact?interest=program-information" className="mt-auto inline-flex min-h-12 items-center justify-center rounded-xl bg-brand-charcoal px-5 text-center font-extrabold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue" onClick={closeMobileMenu}>
             Request Information
           </Link>
         </div>

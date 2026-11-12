@@ -9,13 +9,13 @@ Implement the agreed responsive navbar as a shared site component, integrate it 
 - The root layout currently renders page content without shared navigation.
 - Only the default create-next-app homepage is implemented; planned route folders contain `.gitkeep` files only.
 - Approved brand colors, global fonts, favicon, and logo source assets exist.
-- The approved full logo is a raster on a flat dark-gray background, so the Off-White navbar requires a cropped transparent derivative.
+- The approved full logo is a raster on a Charcoal rectangle; the White navbar intentionally keeps that original official artwork on desktop.
 - The project uses Next.js 16 App Router, React 19, Tailwind CSS 4, and no component or icon library.
 - No existing tests cover shared navigation.
 
 ## Expected
 
-- A sticky Off-White navbar appears on every page.
+- A sticky White navbar appears on every page.
 - Desktop and mobile behavior follows `docs/navbar-spec.md`.
 - Navbar destinations resolve instead of producing missing-page errors.
 

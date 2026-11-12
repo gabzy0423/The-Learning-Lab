@@ -80,6 +80,10 @@ _Avoid_: Final copy, factual claim
 An organization-provided visual or media file used to express the approved identity, offer, or learning content of The Learning Lab.
 _Avoid_: Random asset, decorative asset
 
+**Brand Palette**:
+The approved visual color family for The Learning Lab website: Charcoal, Cyan Blue, Turquoise, Mint Green, and White.
+_Avoid_: Legacy purple palette, arbitrary accent colors
+
 **Course Visual**:
 An approved image or media asset associated with a specific validated course or program category.
 _Avoid_: Generic stock image

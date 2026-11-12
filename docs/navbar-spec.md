@@ -17,14 +17,14 @@ Agreed product and interaction rules for the public website navigation. This doc
 
 ## Brand treatment
 
-- Desktop uses a transparent-background version of the full horizontal Learning Lab identity, preserving the approved artwork.
+- Desktop uses the approved full horizontal Learning Lab logo with its original Charcoal rectangular background.
 - Mobile uses the compact head mark when space is constrained.
 
 ## Behavior
 
 - The navbar stays visible at the top while scrolling.
-- Use an Off-White surface, subtle border, and light blur without dramatic resizing.
-- The current page is communicated with Deep Purple text and a Mint underline/accent, not color alone.
+- Use a White surface, subtle border, and light blur without dramatic resizing.
+- The current page is communicated with Charcoal text and a Turquoise underline/accent, not color alone.
 - Programs uses a direct link plus a separate chevron control for its desktop dropdown.
 - Clicking Programs opens the Programs directory; the chevron opens or closes the category menu.
 - The dropdown contains category names only; descriptions, images, course links, and other discovery content remain on Programs pages.
@@ -33,7 +33,7 @@ Agreed product and interaction rules for the public website navigation. This doc
 - On category and course routes, Programs remains active and the current category is identified inside the menu.
 - The generic Request Information CTA routes to Contact with Program information as the default interest.
 - Course-page inquiry actions may preselect the specific course instead.
-- The Off-White navbar surface is consistent across all pages, including dark hero sections.
+- The White navbar surface is consistent across all pages, including dark hero sections.
 - At the top of the page the navbar uses a subtle border; after scrolling it adds a very light shadow.
 
 ## Mobile accessibility

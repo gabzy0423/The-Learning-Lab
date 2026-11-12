@@ -22,7 +22,7 @@ Support the homepage Hero message, “Learning that moves people forward,” wit
 - Square 1:1 source composition for reliable circular cropping.
 - Faces and key gestures remain safely inside the crop; no awkward head or hand cropping.
 - Image is placed in a circular frame on the right side of the desktop Hero.
-- Circular treatment uses a Deep Purple ring with a subtle Mint accent.
+- Circular treatment uses a Charcoal frame with subtle Turquoise and Mint Green accents.
 - The screenshot reference informs composition and mood only; faces, labels, exact photo, and layout are not copied.
 
 ## Responsive behavior
@@ -33,7 +33,7 @@ Support the homepage Hero message, “Learning that moves people forward,” wit
 
 ## Brand and content boundaries
 
-- Use the existing Deep Purple, Mint, Orange, and Coral palette in the surrounding frame and accents.
+- Use the existing Charcoal, Cyan Blue, Turquoise, and Mint Green palette in the surrounding frame and accents.
 - Do not bake slogans, claims, labels, or logos into the image.
 - Any decorative labels must be authored as approved HTML copy, not generated into the image.
 - The image is a proposed Brand Asset until stakeholder approval and rights/use confirmation.
