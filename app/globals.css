@@ -38,3 +38,8 @@ h3,
 h4 {
   font-family: var(--font-outfit), sans-serif;
 }
+
+.hero-dot-grid {
+  background-image: radial-gradient(var(--brand-cyan-blue) 1.5px, transparent 1.5px);
+  background-size: 14px 14px;
+}

@@ -83,7 +83,7 @@ export function Header() {
         scrolled ? "shadow-[0_8px_28px_rgba(41,41,41,0.09)]" : ""
       }`}
     >
-      <div className="mx-auto flex min-h-20 w-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex min-h-20 w-full max-w-[88rem] items-center justify-between gap-6 px-4 sm:px-6 lg:px-4">
         <Link
           href="/"
           className="flex min-h-11 items-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-cyan-blue"
@@ -168,7 +168,7 @@ export function Header() {
             </Link>
           ))}
 
-          <Link href="/contact?interest=program-information" className="inline-flex min-h-11 items-center justify-center rounded-xl bg-brand-charcoal px-5 text-sm font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue">
+          <Link href="/contact?interest=program-information" className="ml-6 inline-flex min-h-11 items-center justify-center rounded-xl bg-brand-charcoal px-5 text-sm font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue">
             Request Information
           </Link>
         </nav>
