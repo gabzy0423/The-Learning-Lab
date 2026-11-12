@@ -1,7 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import { AcademicCapIcon, BriefcaseIcon, ChartBarIcon, UserGroupIcon, UserIcon } from "@heroicons/react/24/outline";
 import { LogoMarquee } from "@/components/home/LogoMarquee";
 import { programs } from "@/content/programs";
+
+const programDescriptions = [
+  "Build confidence, skills, and a growth mindset.",
+  "Work with focus, clarity, and confidence.",
+  "Strengthen connection, communication, and trust.",
+  "Lead people with clarity, empathy, and purpose.",
+  "Turn priorities into meaningful direction and action.",
+];
 
 export default function Home() {
   return (
@@ -85,8 +94,11 @@ export default function Home() {
           Signature learning portfolio
         </p>
         <h2 id="programs-heading" className="mt-4 max-w-4xl font-heading text-4xl font-bold tracking-tight sm:text-5xl">
-          Programs built around what matters at work.
+          Programs built around <span className="text-brand-mint-green">what matters</span> at work.
         </h2>
+        <p className="mt-4 max-w-none whitespace-nowrap text-base leading-relaxed text-brand-charcoal/70">
+          Focused learning experiences that help people grow, collaborate better, and create greater impact.
+        </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
           {programs.map((program, index) => (
             <Link
@@ -97,7 +109,7 @@ export default function Home() {
               {index === 0 && (
                 <>
                   <Image src="/assets/courses/personal.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-[center_25%] transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
-                  <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
+                  <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-brand-charcoal/25 to-brand-charcoal/20" />
                   <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-charcoal/65 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
                     Explore Personal Development
                   </span>
@@ -125,7 +137,7 @@ export default function Home() {
                 <>
                   <Image src="/assets/courses/leadership.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
                   <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
-                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-charcoal/65 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
+                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-mint-green/90 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
                     Explore Leadership &amp; Management
                   </span>
                 </>
@@ -139,10 +151,18 @@ export default function Home() {
                   </span>
                 </>
               )}
-              <span className="absolute left-4 top-4 z-10 inline-flex size-6 items-center justify-center rounded-full bg-brand-charcoal text-[10px] font-bold text-brand-white transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">
-                {String(index + 1).padStart(2, "0")}
+              <span className="absolute left-4 top-4 z-10 inline-flex size-7 items-center justify-center rounded-full bg-brand-charcoal text-brand-white transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">
+                {index === 0 && <AcademicCapIcon className="size-4" aria-hidden="true" />}
+                {index === 1 && <BriefcaseIcon className="size-4" aria-hidden="true" />}
+                {index === 2 && <UserGroupIcon className="size-4" aria-hidden="true" />}
+                {index === 3 && <UserIcon className="size-4" aria-hidden="true" />}
+                {index === 4 && <ChartBarIcon className="size-4" aria-hidden="true" />}
               </span>
-              <h3 className="relative z-10 font-heading text-xl font-bold leading-snug transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">{program.name}</h3>
+              <div className="relative z-10 transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">
+                <h3 className="font-heading text-xl font-bold leading-snug">{program.name}</h3>
+                <p className="mt-2 max-w-xs text-sm leading-snug text-current/85">{programDescriptions[index]}</p>
+              </div>
+              <span aria-hidden="true" className="absolute bottom-5 right-5 z-10 inline-flex size-6 items-center justify-center rounded-full bg-brand-charcoal text-sm font-bold text-brand-white transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">→</span>
             </Link>
           ))}
         </div>
