@@ -4,7 +4,7 @@ const logos = Array.from({ length: 36 }, (_, index) => ({
 
 export function LogoMarquee() {
   return (
-    <section className="-mt-7 py-3" aria-label="Organization logos">
+    <section className="-mt-9 py-3" aria-label="Organization logos">
       <style>{`
         @keyframes logo-marquee { to { transform: translateX(-50%); } }
         .logo-marquee-track { animation: logo-marquee 60s linear infinite; }

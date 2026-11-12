@@ -99,15 +99,15 @@ export default function Home() {
         <h2 id="programs-heading" className="mt-4 max-w-4xl font-heading text-3xl font-bold tracking-tight sm:text-4xl">
           Programs built around <span className="text-brand-mint-green">what matters</span> at work.
         </h2>
-        <p className="mt-4 max-w-none whitespace-nowrap text-base leading-relaxed text-brand-charcoal/70">
+        <p className="mt-4 max-w-none text-base leading-relaxed text-brand-charcoal/70 lg:whitespace-nowrap">
           Focused learning experiences that help people grow, collaborate better, and create greater impact.
         </p>
-        <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
+        <div className="mt-10 grid items-stretch gap-3 sm:grid-cols-2 lg:grid-cols-6">
           {programs.map((program, index) => (
             <Link
               key={program.slug}
               href={`/programs/${program.slug}`}
-              className={`group relative isolate flex min-h-52 flex-col justify-end overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-5 transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 ${index < 5 ? "text-white" : ""} ${index === 3 ? "lg:col-start-2" : index === 4 ? "lg:col-start-4" : ""}`}
+              className={`group relative isolate flex min-h-44 flex-col justify-end overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-4 transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 ${index < 5 ? "text-white" : ""} ${index === 3 ? "lg:col-start-2" : index === 4 ? "lg:col-start-4" : ""}`}
             >
               {index === 0 && (
                 <>
@@ -162,12 +162,21 @@ export default function Home() {
                 {index === 4 && <ChartBarIcon className="size-4" aria-hidden="true" />}
               </span>
               <div className="relative z-10 transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">
-                <h3 className="font-heading text-xl font-bold leading-snug">{program.name}</h3>
-                <p className="mt-2 max-w-xs text-sm leading-snug text-current/85">{programDescriptions[index]}</p>
+                <h3 className="font-heading text-lg font-bold leading-snug">{program.name}</h3>
+                <p className="mt-2 max-w-xs text-xs leading-snug text-current/85">{programDescriptions[index]}</p>
               </div>
               <span aria-hidden="true" className="absolute bottom-5 right-5 z-10 inline-flex size-6 items-center justify-center rounded-full bg-brand-charcoal text-sm font-bold text-brand-white transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">→</span>
             </Link>
           ))}
+        </div>
+        <div className="mt-8 flex justify-center">
+          <Link
+            href="/programs"
+            className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-brand-charcoal px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-charcoal hover:text-brand-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+          >
+            Explore All Programs
+            <span aria-hidden="true">→</span>
+          </Link>
         </div>
         </div>
       </section>
