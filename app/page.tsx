@@ -22,7 +22,7 @@ export default function Home() {
             <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
             The Learning Lab
           </p>
-          <h1 className="mt-4 max-w-2xl text-3xl font-bold leading-[1.08] tracking-tight sm:text-4xl xl:text-[3.25rem] 2xl:text-5xl">
+          <h1 className="mt-4 max-w-2xl text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl xl:text-[3.25rem] 2xl:text-5xl">
             <span className="sm:block">Learning that </span>
             <span className="text-brand-mint-green sm:block">moves people </span>
             <span className="sm:block">forward.</span>
@@ -96,7 +96,7 @@ export default function Home() {
           <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
           Signature learning portfolio
         </p>
-        <h2 id="programs-heading" className="mt-4 max-w-4xl font-heading text-3xl font-bold tracking-tight sm:text-4xl">
+        <h2 id="programs-heading" className="mt-4 max-w-4xl font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
           Programs built around <span className="text-brand-mint-green">what matters</span> at work.
         </h2>
         <p className="mt-4 max-w-none text-base leading-relaxed text-brand-charcoal/70 lg:whitespace-nowrap">
@@ -172,7 +172,7 @@ export default function Home() {
         <div className="mt-8 flex justify-center">
           <Link
             href="/programs"
-            className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-brand-charcoal px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-charcoal hover:text-brand-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+            className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-charcoal px-5 text-sm font-bold text-brand-white transition-colors hover:bg-brand-charcoal/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
           >
             Explore All Programs
             <span aria-hidden="true">→</span>
@@ -186,16 +186,20 @@ export default function Home() {
             <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
             A practical path forward
           </p>
-          <h2 id="methodology-heading" className="mt-4 max-w-3xl font-heading text-3xl font-bold tracking-tight sm:text-4xl">
-            How learning moves forward.
+          <h2 id="methodology-heading" className="mt-4 max-w-3xl font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
+            How learning <span className="text-brand-mint-green">moves forward.</span>
           </h2>
-          <ol className="mt-10 grid gap-4 md:grid-cols-3">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
+            A practical approach to turning learning into everyday progress.
+          </p>
+          <ol className="relative mt-10 grid gap-4 md:grid-cols-3 md:gap-6">
+            <span aria-hidden="true" className="pointer-events-none absolute left-[16.67%] right-[16.67%] top-5 hidden h-px bg-brand-turquoise/50 md:block" />
             {[
               [UserGroupIcon, "Understand the need", "Start with the people, context, and priorities that shape the learning experience."],
               [AcademicCapIcon, "Build practical capability", "Focus on relevant knowledge, skills, and conversations people can use at work."],
               [ChartBarIcon, "Apply learning at work", "Create space to connect new learning with everyday decisions, collaboration, and impact."],
             ].map(([Icon, title, description], index) => (
-              <li key={title as string} className="rounded-lg border border-brand-charcoal/10 bg-white p-6">
+              <li key={title as string} className="relative z-10 flex min-h-full flex-col rounded-lg border border-brand-charcoal/10 bg-white p-6">
                 <div className="flex items-center justify-between">
                   <span className="inline-flex size-10 items-center justify-center rounded-full bg-brand-charcoal text-brand-white">
                     <Icon className="size-5" aria-hidden="true" />
@@ -203,10 +207,58 @@ export default function Home() {
                   <span className="text-sm font-bold text-brand-charcoal/45">0{index + 1}</span>
                 </div>
                 <h3 className="mt-8 font-heading text-xl font-bold">{title as string}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-brand-charcoal/70">{description as string}</p>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-brand-charcoal/70">{description as string}</p>
               </li>
             ))}
           </ol>
+          <div className="mt-8 flex justify-center">
+            <Link
+              href="/contact?interest=program-information"
+              className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-charcoal px-5 text-sm font-bold text-brand-white transition-colors hover:bg-brand-charcoal/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+            >
+              Talk to us about your learning needs
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className="bg-brand-charcoal/[0.03]" aria-labelledby="about-preview-heading">
+        <div className="mx-auto grid max-w-[74rem] items-start gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:px-14">
+          <div className="lg:pt-3">
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              About The Learning Lab
+            </p>
+            <h2 id="about-preview-heading" className="mt-4 max-w-xl font-heading text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">
+              A closer look at<br />
+              <span className="text-brand-mint-green">The Learning Lab.</span>
+            </h2>
+            <p className="mt-4 max-w-lg text-base leading-relaxed text-brand-charcoal/70">
+              Explore the story, perspective, and approach behind The Learning Lab through this short introduction.
+            </p>
+            <Link
+              href="/about"
+              className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-charcoal px-5 text-sm font-bold text-brand-white transition-colors hover:bg-brand-charcoal/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+            >
+              Learn More About Us
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+          <div className="relative isolate">
+            <span aria-hidden="true" className="pointer-events-none absolute -right-5 -top-6 z-0 size-28 rotate-12 rounded-[42%_58%_55%_45%] bg-brand-mint-green/85 blur-[1px] sm:size-36" />
+            <span aria-hidden="true" className="pointer-events-none absolute -bottom-6 -left-6 z-0 size-24 -rotate-12 rounded-[58%_42%_45%_55%] bg-brand-cyan-blue/55 blur-[1px] sm:size-32" />
+            <div className="relative z-10 overflow-hidden rounded-lg border border-brand-charcoal/10 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.12)]">
+              <video
+                className="aspect-video w-full object-cover"
+                controls
+                preload="metadata"
+                aria-label="About The Learning Lab video"
+              >
+                <source src="/assets/mp4/About%20the%20Learning%20Lab.mp4" type="video/mp4" />
+                Your browser does not support the video element.
+              </video>
+            </div>
+          </div>
         </div>
       </section>
     </main>
