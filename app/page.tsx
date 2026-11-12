@@ -261,6 +261,42 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="border-y border-brand-charcoal/10 bg-brand-white text-brand-charcoal" aria-labelledby="contact-cta-heading">
+        <div className="mx-auto grid max-w-[74rem] items-center gap-8 px-7 py-14 sm:px-10 lg:grid-cols-[1fr_auto] lg:px-14 lg:py-16">
+          <div>
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              Start a conversation
+            </p>
+            <h2 id="contact-cta-heading" className="mt-4 max-w-3xl font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
+              Ready to <span className="text-brand-mint-green">explore a learning need?</span>
+            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
+              Tell us what your team, leaders, or organization is working toward.
+            </p>
+          </div>
+          <div className="rounded-lg border border-brand-charcoal/10 bg-brand-charcoal/[0.03] p-5 sm:p-6">
+            <p className="font-heading text-lg font-extrabold">Choose your next step</p>
+            <p className="mt-2 max-w-xs text-sm leading-relaxed text-brand-charcoal/65">
+              Find the right path for your team or learning need.
+            </p>
+            <div className="mt-5 flex flex-col gap-3">
+            <Link
+              href="/contact?interest=program-information"
+              className="inline-flex min-h-11 items-center justify-center rounded-xl bg-brand-mint-green px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-mint-green/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+            >
+              Request Program Information
+            </Link>
+            <Link
+              href="/contact?interest=consultation"
+              className="inline-flex min-h-11 items-center justify-center rounded-xl border border-brand-charcoal px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-charcoal hover:text-brand-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+            >
+              Book a Consultation
+            </Link>
+          </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
