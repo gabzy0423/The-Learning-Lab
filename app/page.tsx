@@ -90,7 +90,8 @@ export default function Home() {
       </div>
       <LogoMarquee />
       </section>
-      <section className="mx-auto max-w-[74rem] px-7 pb-14 pt-16 sm:px-10 lg:px-14" aria-labelledby="programs-heading">
+      <section className="bg-brand-charcoal/[0.03]" aria-labelledby="programs-heading">
+        <div className="mx-auto max-w-[74rem] px-7 pb-14 pt-16 sm:px-10 lg:px-14">
         <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
           <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
           Signature learning portfolio
@@ -168,8 +169,9 @@ export default function Home() {
             </Link>
           ))}
         </div>
+        </div>
       </section>
-      <section className="border-b border-brand-charcoal/10 bg-brand-charcoal/[0.03]" aria-labelledby="methodology-heading">
+      <section className="border-b border-brand-charcoal/10 bg-brand-white" aria-labelledby="methodology-heading">
         <div className="mx-auto max-w-[74rem] px-7 py-16 sm:px-10 lg:px-14">
           <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
             <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
