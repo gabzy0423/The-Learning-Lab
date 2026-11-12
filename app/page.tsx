@@ -58,7 +58,7 @@ export default function Home() {
               Book a Consultation
             </Link>
           </div>
-          <ul className="mt-7 flex flex-wrap gap-x-5 gap-y-3 text-xs font-semibold text-brand-charcoal sm:gap-x-0 lg:flex-nowrap lg:whitespace-nowrap">
+          <ul className="mt-7 flex w-full flex-nowrap items-center justify-between gap-x-2 whitespace-nowrap text-[10px] font-semibold text-brand-charcoal sm:text-xs sm:gap-x-0">
             <li className="flex items-center gap-2 sm:pr-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Practical programs</li>
             <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:px-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Teams &amp; leaders</li>
             <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:pl-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Real-world impact</li>

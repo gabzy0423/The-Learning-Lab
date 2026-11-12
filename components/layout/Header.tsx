@@ -22,9 +22,9 @@ export function Header() {
   const headerRef = useRef<HTMLElement>(null);
   const programsButtonRef = useRef<HTMLButtonElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
-  const dialogRef = useRef<HTMLDialogElement>(null);
   const [programsOpen, setProgramsOpen] = useState(false);
   const [mobileProgramsOpen, setMobileProgramsOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -39,9 +39,15 @@ export function Header() {
       if (!headerRef.current?.contains(event.target as Node)) setProgramsOpen(false);
     };
     const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape" && programsOpen) {
+      if (event.key !== "Escape") return;
+      if (programsOpen) {
         setProgramsOpen(false);
         programsButtonRef.current?.focus();
+      }
+      if (mobileMenuOpen) {
+        setMobileMenuOpen(false);
+        setMobileProgramsOpen(false);
+        menuButtonRef.current?.focus();
       }
     };
     document.addEventListener("mousedown", closePrograms);
@@ -50,21 +56,19 @@ export function Header() {
       document.removeEventListener("mousedown", closePrograms);
       document.removeEventListener("keydown", handleEscape);
     };
-  }, [programsOpen]);
+  }, [mobileMenuOpen, programsOpen]);
 
-  useEffect(() => () => {
-    document.body.style.overflow = "";
-  }, []);
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
 
-  const openMobileMenu = () => {
-    dialogRef.current?.showModal();
-    document.body.style.overflow = "hidden";
-  };
+  const openMobileMenu = () => setMobileMenuOpen(true);
 
-  const closeMobileMenu = () => dialogRef.current?.close();
-
-  const finishMobileClose = () => {
-    document.body.style.overflow = "";
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
     setMobileProgramsOpen(false);
     menuButtonRef.current?.focus();
   };
@@ -180,18 +184,20 @@ export function Header() {
         </button>
       </div>
 
-      <dialog
-        ref={dialogRef}
-        className="fixed inset-y-0 right-0 left-auto m-0 h-dvh max-h-none w-[min(88vw,24rem)] max-w-none bg-brand-white p-0 text-brand-charcoal shadow-[-18px_0_60px_rgba(41,41,41,0.2)] backdrop:bg-[#1f1f1f]/55"
-        aria-label="Mobile navigation"
-        onClose={finishMobileClose}
-        onClick={(event) => {
-          if (event.target === event.currentTarget) closeMobileMenu();
-        }}
-      >
+      {mobileMenuOpen && (
+        <div className="mobile-menu-backdrop fixed inset-0 z-[60] bg-[#1f1f1f]/55" role="presentation" onClick={closeMobileMenu}>
+          <aside
+            className="mobile-drawer ml-auto flex h-dvh w-[min(88vw,24rem)] flex-col bg-brand-white p-0 text-brand-charcoal shadow-[-18px_0_60px_rgba(41,41,41,0.2)]"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile navigation"
+            onClick={(event) => event.stopPropagation()}
+          >
         <div className="flex h-full flex-col overflow-y-auto px-5 pb-6 pt-4">
           <div className="flex items-center justify-between border-b border-brand-charcoal/10 pb-4">
-            <span className="font-heading text-lg font-bold">Menu</span>
+            <Link href="/" aria-label="The Learning Lab home" className="inline-flex rounded-md focus-visible:outline-2 focus-visible:outline-brand-cyan-blue" onClick={closeMobileMenu}>
+              <Image src="/assets/logo/learning_lab_logo.png" alt="The Learning Lab" width={1700} height={624} className="h-10 w-auto" />
+            </Link>
             <button type="button" className="grid size-11 place-items-center rounded-xl hover:bg-brand-turquoise/20 focus-visible:outline-2 focus-visible:outline-brand-cyan-blue" aria-label="Close navigation menu" onClick={closeMobileMenu}>
               <svg aria-hidden="true" viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <path d="m6 6 12 12M18 6 6 18" />
@@ -243,7 +249,9 @@ export function Header() {
             Request Information
           </Link>
         </div>
-      </dialog>
+          </aside>
+        </div>
+      )}
     </header>
   );
 }
