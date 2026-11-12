@@ -79,8 +79,8 @@ export function Header() {
   return (
     <header
       ref={headerRef}
-      className={`sticky top-0 z-50 border-b border-brand-charcoal/10 bg-brand-white/95 backdrop-blur-md transition-shadow ${
-        scrolled ? "shadow-[0_8px_28px_rgba(41,41,41,0.09)]" : ""
+      className={`sticky top-0 z-50 border-b border-white/70 bg-brand-white/75 backdrop-blur-xl transition-[background-color,box-shadow] ${
+        scrolled ? "shadow-[0_8px_28px_rgba(41,41,41,0.12)]" : "shadow-[0_4px_18px_rgba(41,41,41,0.05)]"
       }`}
     >
       <div className="mx-auto flex min-h-16 w-full max-w-[74rem] items-center justify-between gap-6 px-7 sm:px-10 lg:px-14">
