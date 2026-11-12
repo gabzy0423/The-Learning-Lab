@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { LogoMarquee } from "@/components/home/LogoMarquee";
+import { programs } from "@/content/programs";
 
 export default function Home() {
   return (
@@ -76,6 +78,39 @@ export default function Home() {
           <span aria-hidden="true" className="hero-dot-grid pointer-events-none absolute -left-4 bottom-2 z-20 size-16 opacity-35 lg:size-20" />
         </div>
       </div>
+      <LogoMarquee />
+      <section className="mx-auto max-w-[88rem] px-4 pb-16 pt-24 sm:px-6 lg:px-4" aria-labelledby="programs-heading">
+        <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
+          <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+          Signature learning portfolio
+        </p>
+        <h2 id="programs-heading" className="mt-4 max-w-4xl font-heading text-4xl font-bold tracking-tight sm:text-5xl">
+          Programs built around what matters at work.
+        </h2>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
+          {programs.map((program, index) => (
+            <Link
+              key={program.slug}
+              href={`/programs/${program.slug}`}
+              className={`group relative isolate flex min-h-56 flex-col justify-end overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 ${index === 0 ? "text-white" : ""} ${index === 3 ? "lg:col-start-2" : index === 4 ? "lg:col-start-4" : ""}`}
+            >
+              {index === 0 && (
+                <>
+                  <Image src="/assets/courses/personal.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-[center_25%] transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
+                  <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
+                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-charcoal/65 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
+                    Explore Personal Development
+                  </span>
+                </>
+              )}
+              <span className="absolute left-4 top-4 z-10 inline-flex size-6 items-center justify-center rounded-full bg-brand-charcoal text-[10px] font-bold text-brand-white transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <h3 className="relative z-10 font-heading text-xl font-bold leading-snug transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">{program.name}</h3>
+            </Link>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }
