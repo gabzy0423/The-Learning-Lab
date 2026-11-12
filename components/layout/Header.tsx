@@ -70,7 +70,7 @@ export function Header() {
   };
 
   const navClass = (active: boolean) =>
-    `relative flex min-h-11 items-center px-1 text-sm font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-cyan-blue ${
+    `relative flex min-h-11 items-center px-1 text-[13px] font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-cyan-blue ${
       active
         ? "text-brand-charcoal after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:rounded-full after:bg-brand-turquoise"
         : "text-brand-charcoal/75 hover:text-brand-charcoal"
@@ -83,7 +83,7 @@ export function Header() {
         scrolled ? "shadow-[0_8px_28px_rgba(41,41,41,0.09)]" : ""
       }`}
     >
-      <div className="mx-auto flex min-h-20 w-full max-w-[88rem] items-center justify-between gap-6 px-4 sm:px-6 lg:px-4">
+      <div className="mx-auto flex min-h-16 w-full max-w-[74rem] items-center justify-between gap-6 px-7 sm:px-10 lg:px-14">
         <Link
           href="/"
           className="flex min-h-11 items-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-cyan-blue"
@@ -95,7 +95,7 @@ export function Header() {
             width={1700}
             height={624}
             priority
-            className="hidden h-16 w-auto md:block"
+            className="hidden h-11 w-auto md:block"
           />
           <Image
             src="/assets/logo/learning-lab-icon.png"
@@ -107,7 +107,7 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-5 lg:flex" aria-label="Primary navigation">
+        <nav className="hidden items-center gap-4 lg:flex" aria-label="Primary navigation">
           {links.slice(0, 2).map((link) => (
             <Link
               key={link.href}
@@ -168,7 +168,7 @@ export function Header() {
             </Link>
           ))}
 
-          <Link href="/contact?interest=program-information" className="ml-6 inline-flex min-h-11 items-center justify-center rounded-xl bg-brand-charcoal px-5 text-sm font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue">
+          <Link href="/contact?interest=program-information" className="ml-5 inline-flex min-h-10 items-center justify-center rounded-xl bg-brand-charcoal px-4 text-xs font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue">
             Request Information
           </Link>
         </nav>

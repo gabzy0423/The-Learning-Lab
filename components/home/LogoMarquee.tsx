@@ -4,7 +4,7 @@ const logos = Array.from({ length: 36 }, (_, index) => ({
 
 export function LogoMarquee() {
   return (
-    <section className="py-6" aria-label="Organization logos">
+    <section className="-mt-7 py-3" aria-label="Organization logos">
       <style>{`
         @keyframes logo-marquee { to { transform: translateX(-50%); } }
         .logo-marquee-track { animation: logo-marquee 60s linear infinite; }
@@ -15,7 +15,7 @@ export function LogoMarquee() {
           .logo-marquee-viewport { overflow-x: auto; }
         }
       `}</style>
-      <div className="mx-auto max-w-[88rem] px-4 sm:px-6 lg:px-4">
+      <div className="mx-auto max-w-[74rem] px-7 sm:px-10 lg:px-14">
         <div className="logo-marquee-viewport overflow-hidden" aria-hidden="true">
           <div className="logo-marquee-track flex w-max">
             {[0, 1].map((copy) => (
