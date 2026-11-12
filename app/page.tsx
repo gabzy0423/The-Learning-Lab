@@ -92,7 +92,7 @@ export default function Home() {
             <Link
               key={program.slug}
               href={`/programs/${program.slug}`}
-              className={`group relative isolate flex min-h-56 flex-col justify-end overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 ${index === 0 ? "text-white" : ""} ${index === 3 ? "lg:col-start-2" : index === 4 ? "lg:col-start-4" : ""}`}
+              className={`group relative isolate flex min-h-56 flex-col justify-end overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 ${index < 5 ? "text-white" : ""} ${index === 3 ? "lg:col-start-2" : index === 4 ? "lg:col-start-4" : ""}`}
             >
               {index === 0 && (
                 <>
@@ -100,6 +100,42 @@ export default function Home() {
                   <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
                   <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-charcoal/65 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
                     Explore Personal Development
+                  </span>
+                </>
+              )}
+              {index === 1 && (
+                <>
+                  <Image src="/assets/courses/managing_work.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
+                  <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
+                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-mint-green/90 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
+                    Explore Managing Work
+                  </span>
+                </>
+              )}
+              {index === 2 && (
+                <>
+                  <Image src="/assets/courses/managing_relationship.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
+                  <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
+                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-charcoal/65 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
+                    Explore Managing Relationships
+                  </span>
+                </>
+              )}
+              {index === 3 && (
+                <>
+                  <Image src="/assets/courses/leadership.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
+                  <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
+                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-charcoal/65 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
+                    Explore Leadership &amp; Management
+                  </span>
+                </>
+              )}
+              {index === 4 && (
+                <>
+                  <Image src="/assets/courses/strategy.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
+                  <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
+                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-charcoal/65 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
+                    Explore Impacting Strategy
                   </span>
                 </>
               )}
