@@ -127,15 +127,12 @@ export function Header() {
             <button
               ref={programsButtonRef}
               type="button"
-              className={`${navClass(pathname.startsWith("/programs"))} gap-1`}
+              className={navClass(pathname.startsWith("/programs"))}
               aria-expanded={programsOpen}
               aria-controls="programs-menu"
               onClick={() => setProgramsOpen((open) => !open)}
             >
               Programs
-              <svg aria-hidden="true" viewBox="0 0 20 20" className={`size-4 transition-transform ${programsOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="m5 7.5 5 5 5-5" />
-              </svg>
             </button>
 
             {programsOpen && (
@@ -209,9 +206,6 @@ export function Header() {
               <div>
                 <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/programs") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => setMobileProgramsOpen((open) => !open)}>
                   Programs
-                  <svg aria-hidden="true" viewBox="0 0 20 20" className={`size-4 transition-transform ${mobileProgramsOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="m5 7.5 5 5 5-5" />
-                  </svg>
                 </button>
               </div>
               {mobileProgramsOpen && (
