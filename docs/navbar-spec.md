@@ -7,7 +7,7 @@ Agreed product and interaction rules for the public website navigation. This doc
 - Main links: Home, About, Programs, Solutions, Contact.
 - Resources remains excluded until approved content exists.
 - The brand logo links to Home.
-- Programs remains a direct link to the Programs directory and also exposes shortcuts to the five established categories:
+- Programs is a dropdown-only control that exposes the five established categories:
   - Personal Development
   - Managing Work
   - Managing Relationships
@@ -25,9 +25,9 @@ Agreed product and interaction rules for the public website navigation. This doc
 - The navbar stays visible at the top while scrolling.
 - Use a White surface, subtle border, and light blur without dramatic resizing.
 - The current page is communicated with Charcoal text and a Turquoise underline/accent, not color alone.
-- Programs uses a direct link plus a separate chevron control for its desktop dropdown.
-- Clicking Programs opens the Programs directory; the chevron opens or closes the category menu.
-- The dropdown contains category names only; descriptions, images, course links, and other discovery content remain on Programs pages.
+- Clicking Programs or its chevron opens or closes the category menu; the text does not navigate to a Programs overview page.
+- The dropdown contains category names only; descriptions, images, course links, and other discovery content remain on category pages.
+- The legacy `/programs` route redirects to `/programs/personal-development` as a safe fallback for old links, bookmarks, and existing CTA URLs.
 - The dropdown opens through its explicit control and keyboard interaction, not hover alone.
 - It closes on Escape, outside click, or category selection.
 - On category and course routes, Programs remains active and the current category is identified inside the menu.

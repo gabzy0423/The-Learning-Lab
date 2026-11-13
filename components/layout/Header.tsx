@@ -124,22 +124,15 @@ export function Header() {
           ))}
 
           <div className="relative flex items-center">
-            <Link
-              href="/programs"
-              className={navClass(pathname.startsWith("/programs"))}
-              aria-current={isActive(pathname, "/programs") ? "page" : undefined}
-            >
-              Programs
-            </Link>
             <button
               ref={programsButtonRef}
               type="button"
-              className="ml-1 grid size-11 place-items-center rounded-full text-brand-charcoal transition-colors hover:bg-brand-turquoise/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
-              aria-label="Toggle program categories"
+              className={`${navClass(pathname.startsWith("/programs"))} gap-1`}
               aria-expanded={programsOpen}
               aria-controls="programs-menu"
               onClick={() => setProgramsOpen((open) => !open)}
             >
+              Programs
               <svg aria-hidden="true" viewBox="0 0 20 20" className={`size-4 transition-transform ${programsOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="m5 7.5 5 5 5-5" />
               </svg>
@@ -213,11 +206,9 @@ export function Header() {
             ))}
 
             <div>
-              <div className="flex items-center">
-                <Link href="/programs" className={`flex min-h-11 flex-1 items-center rounded-l-xl px-4 font-bold ${pathname.startsWith("/programs") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-current={pathname === "/programs" ? "page" : undefined} onClick={closeMobileMenu}>
+              <div>
+                <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/programs") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => setMobileProgramsOpen((open) => !open)}>
                   Programs
-                </Link>
-                <button type="button" className="grid size-11 place-items-center rounded-r-xl hover:bg-brand-turquoise/20 focus-visible:outline-2 focus-visible:outline-brand-cyan-blue" aria-label="Toggle program categories" aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => setMobileProgramsOpen((open) => !open)}>
                   <svg aria-hidden="true" viewBox="0 0 20 20" className={`size-4 transition-transform ${mobileProgramsOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="m5 7.5 5 5 5-5" />
                   </svg>

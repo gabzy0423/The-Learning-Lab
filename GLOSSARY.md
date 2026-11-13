@@ -109,7 +109,7 @@ The persistent website menu connecting visitors to Home, About, Programs, Soluti
 _Avoid_: Sitemap, course directory
 
 **Programs Menu**:
-A navigation shortcut to the Programs directory and the five established program categories.
+A dropdown-only navigation control that exposes the five established program categories; it does not represent a separate public Programs overview page.
 _Avoid_: Course filter, Resources menu
 
 **Course Directory**:
