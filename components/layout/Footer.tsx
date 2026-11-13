@@ -21,6 +21,18 @@ export function Footer() {
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-brand-white/70">
             Practical learning experiences for teams, leaders, and organizations.
           </p>
+          <div className="mt-5 flex items-center gap-3" aria-label="Social links coming soon">
+            {[
+              ["facebook.svg", "Facebook"],
+              ["gmail.svg", "Email"],
+              ["linkedin.svg", "LinkedIn"],
+            ].map(([icon, label]) => (
+              <span key={icon} title={`${label} link coming soon`} className="grid size-9 place-items-center rounded-full border border-brand-white/15 text-brand-white/75">
+                <Image src={`/assets/icons/${icon}`} alt="" width={17} height={17} className="opacity-75" aria-hidden="true" />
+                <span className="sr-only">{label} link coming soon</span>
+              </span>
+            ))}
+          </div>
         </div>
         <nav className="lg:border-l lg:border-brand-white/15 lg:px-10" aria-label="Footer navigation">
           <p className="text-sm font-bold text-brand-mint-green">Explore</p>
