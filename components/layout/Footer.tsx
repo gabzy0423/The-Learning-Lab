@@ -21,16 +21,14 @@ export function Footer() {
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-brand-white/70">
             Practical learning experiences for teams, leaders, and organizations.
           </p>
-          <div className="mt-5 flex items-center gap-3" aria-label="Social links coming soon">
+          <div className="mt-5 flex items-center gap-3" aria-label="Social links">
             {[
-              ["facebook.svg", "Facebook"],
-              ["gmail.svg", "Email"],
-              ["linkedin.svg", "LinkedIn"],
-            ].map(([icon, label]) => (
-              <span key={icon} title={`${label} link coming soon`} className="grid size-9 place-items-center rounded-full border border-brand-white/15 text-brand-white/75">
+              { icon: "facebook.svg", label: "Facebook", href: "https://www.facebook.com/thelearninglabph", external: true },
+              { icon: "gmail.svg", label: "Email", href: "mailto:hello@thefoundrylab.com", external: false },
+            ].map(({ icon, label, href, external }) => (
+              <a key={icon} href={href} aria-label={label} title={label} target={external ? "_blank" : undefined} rel={external ? "noreferrer" : undefined} className="grid size-9 place-items-center rounded-full border border-brand-white/15 text-brand-white/75 transition-colors hover:border-brand-mint-green hover:text-brand-mint-green focus-visible:outline-2 focus-visible:outline-brand-cyan-blue">
                 <Image src={`/assets/icons/${icon}`} alt="" width={17} height={17} className="opacity-75" aria-hidden="true" />
-                <span className="sr-only">{label} link coming soon</span>
-              </span>
+              </a>
             ))}
           </div>
         </div>
