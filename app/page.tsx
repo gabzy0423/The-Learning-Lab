@@ -229,7 +229,7 @@ export default function Home() {
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               About The Learning Lab
             </p>
-            <h2 id="about-preview-heading" className="mt-4 max-w-xl font-heading text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">
+            <h2 id="about-preview-heading" className="mt-4 max-w-xl font-heading text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-4xl">
               A closer look at<br />
               <span className="text-brand-mint-green">The Learning Lab.</span>
             </h2>
@@ -269,10 +269,10 @@ export default function Home() {
               Start a conversation
             </p>
             <h2 id="contact-cta-heading" className="mt-4 max-w-3xl font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Ready to <span className="text-brand-mint-green">explore a learning need?</span>
+              Ready to <span className="text-brand-mint-green">explore a<br />learning need?</span>
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
-              Tell us what your team, leaders, or organization is working toward.
+              Tell us what you&apos;re working on, and let&apos;s explore how learning<br />can support your goals.
             </p>
           </div>
           <div className="rounded-lg border border-brand-charcoal/10 bg-brand-charcoal/[0.03] p-5 sm:p-6">
@@ -283,14 +283,22 @@ export default function Home() {
             <div className="mt-5 flex flex-col gap-3">
             <Link
               href="/contact?interest=program-information"
-              className="inline-flex min-h-11 items-center justify-center rounded-xl bg-brand-mint-green px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-mint-green/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand-mint-green px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-mint-green/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
             >
+              <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+                <path d="M14 2v6h6M8 13h8M8 17h6" />
+              </svg>
               Request Program Information
             </Link>
             <Link
               href="/contact?interest=consultation"
-              className="inline-flex min-h-11 items-center justify-center rounded-xl border border-brand-charcoal px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-charcoal hover:text-brand-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-brand-charcoal px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-charcoal hover:text-brand-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
             >
+              <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M16 2v4M8 2v4M3 10h18" />
+              </svg>
               Book a Consultation
             </Link>
           </div>
