@@ -99,7 +99,7 @@ export function Header() {
             width={1700}
             height={624}
             priority
-            className="hidden h-11 w-auto md:block"
+            className="hidden h-12 w-auto md:block"
           />
           <Image
             src="/assets/logo/learning-lab-icon.png"
