@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className="relative flex-1 overflow-hidden bg-brand-white text-brand-charcoal">
       <section className="overflow-hidden bg-brand-white" aria-label="Hero and organization overview">
-      <div className="mx-auto grid min-h-0 w-full max-w-[74rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:px-14 xl:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+      <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:px-0 xl:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
         <div className="max-w-2xl lg:-translate-y-2 lg:scale-[1.04] lg:origin-left lg:pt-6">
           <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
             <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
@@ -88,8 +88,8 @@ export default function Home() {
           <span aria-hidden="true" className="hero-dot-grid pointer-events-none absolute -left-4 bottom-2 z-20 size-16 opacity-35 lg:size-20" />
         </div>
       </div>
-      <LogoMarquee />
       </section>
+      <LogoMarquee />
       <section className="bg-brand-charcoal/[0.03]" aria-labelledby="programs-heading">
         <div className="mx-auto max-w-[74rem] px-7 pb-14 pt-16 sm:px-10 lg:px-14">
         <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
