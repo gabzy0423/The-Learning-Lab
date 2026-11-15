@@ -263,26 +263,27 @@ export default function Home() {
         </div>
       </section>
       <section className="border-y border-brand-charcoal/10 bg-brand-white text-brand-charcoal" aria-labelledby="contact-cta-heading">
-        <div className="mx-auto grid max-w-[80rem] items-center gap-8 px-7 py-14 sm:px-10 lg:grid-cols-[1fr_auto] lg:px-0 lg:py-16">
-          <div>
-            <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
+        <div className="mx-auto max-w-[80rem] px-7 py-12 sm:px-10 lg:px-0 lg:py-14">
+          <div className="grid items-center gap-8 rounded-2xl bg-brand-charcoal p-6 text-brand-white sm:p-8 lg:grid-cols-[1fr_auto] lg:p-10">
+            <div>
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               Start a conversation
             </p>
             <h2 id="contact-cta-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
               Ready to <span className="text-brand-mint-green">explore a learning need?</span>
             </h2>
-            <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-white/70">
               Tell us what you&apos;re working on, and let&apos;s explore how learning can support your goals.
             </p>
-          </div>
-          <div className="rounded-lg border border-brand-charcoal/10 bg-brand-charcoal/[0.03] p-5 sm:p-6">
-            <p className="font-heading text-lg font-extrabold">Choose your next step</p>
-            <p className="mt-2 max-w-xs text-sm leading-relaxed text-brand-charcoal/65">
+            </div>
+            <div className="rounded-xl border border-brand-white/15 bg-brand-white/5 p-5 sm:p-6">
+              <p className="font-heading text-lg font-extrabold text-brand-white">Choose your next step</p>
+              <p className="mt-2 max-w-xs text-sm leading-relaxed text-brand-white/65">
               Find the right path for your team or learning need.
-            </p>
-            <div className="mt-5 flex flex-col gap-3">
-            <Link
+              </p>
+              <div className="mt-5 flex flex-col gap-3">
+                <Link
               href="/contact?interest=program-information"
               className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand-mint-green px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-mint-green/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
             >
@@ -291,18 +292,19 @@ export default function Home() {
                 <path d="M14 2v6h6M8 13h8M8 17h6" />
               </svg>
               Request Program Information
-            </Link>
-            <Link
+                </Link>
+                <Link
               href="/contact?interest=consultation"
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-brand-charcoal px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-charcoal hover:text-brand-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-brand-white px-5 text-sm font-bold text-brand-white transition-colors hover:bg-brand-white hover:text-brand-charcoal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
             >
               <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="4" width="18" height="18" rx="2" />
                 <path d="M16 2v4M8 2v4M3 10h18" />
               </svg>
               Book a Consultation
-            </Link>
-          </div>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
