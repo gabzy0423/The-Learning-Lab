@@ -92,12 +92,12 @@ export default function Home() {
       </section>
       <LogoMarquee />
       <section className="bg-brand-charcoal/[0.03]" aria-labelledby="programs-heading">
-        <div className="mx-auto max-w-[74rem] px-7 pb-14 pt-16 sm:px-10 lg:px-14">
+        <div className="mx-auto max-w-[80rem] px-7 pb-14 pt-16 sm:px-10 lg:px-0">
         <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
           <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
           Signature learning portfolio
         </p>
-        <h2 id="programs-heading" className="mt-4 max-w-4xl font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
+        <h2 id="programs-heading" className="mt-4 max-w-4xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
           Programs built around <span className="text-brand-mint-green">what matters</span> at work.
         </h2>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
