@@ -15,9 +15,10 @@ const programDescriptions = [
 export default function Home() {
   return (
     <main className="relative flex-1 overflow-hidden bg-brand-white text-brand-charcoal">
-      <section className="overflow-hidden bg-brand-white" aria-label="Hero and organization overview">
-      <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:px-0 xl:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
-        <div className="max-w-2xl lg:-translate-y-2 lg:scale-[1.04] lg:origin-left lg:pt-6">
+      <section className="overflow-hidden bg-brand-white" aria-label="Hero">
+      {/* Desktop navbar occupies 4rem plus its 1px bottom border. */}
+      <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:min-h-[calc(100dvh-4rem-1px)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:px-0 xl:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+        <div className="max-w-2xl lg:scale-[1.04] lg:origin-left">
           <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
             <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
             The Learning Lab
@@ -64,7 +65,7 @@ export default function Home() {
             <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:pl-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Real-world impact</li>
           </ul>
         </div>
-        <div className="relative isolate order-2 flex w-full justify-center lg:order-none lg:translate-y-2 lg:justify-end">
+        <div className="relative isolate order-2 flex w-full justify-center lg:order-none lg:justify-end">
           <span aria-hidden="true" className="pointer-events-none absolute -top-8 left-1/4 size-44 rotate-12 rounded-[62%_38%_48%_52%] bg-brand-mint-green/20 blur-sm lg:size-56" />
           <span aria-hidden="true" className="pointer-events-none absolute -bottom-8 right-12 size-40 -rotate-12 rounded-[38%_62%_57%_43%] bg-brand-turquoise/20 blur-sm lg:size-52" />
           <Image

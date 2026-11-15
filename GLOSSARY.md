@@ -50,6 +50,10 @@ _Avoid_: Teaching method, LMS feature
 The opening homepage section that communicates The Learning Lab's value and directs visitors toward the primary action.
 _Avoid_: Banner, splash screen
 
+**Hero Boundary**:
+The visual boundary of the opening homepage Hero: on desktop it occupies the available first viewport below the Primary Navigation; on mobile it remains content-driven so the copy, CTAs, and Hero Image are not cramped.
+_Avoid_: Marquee container, full-page takeover
+
 **Hero Image**:
 A photorealistic visual used in the homepage Hero to represent collaborative development through a circular group-workshop composition; the current asset is derived from an existing concept reference and remains proposed until rights and public-use approval are confirmed.
 _Avoid_: Course Visual, stock-photo claim, operational product image
@@ -61,6 +65,10 @@ _Avoid_: Hero animation, carousel, scroll-jacking
 **Hero Callout**:
 A static, non-clickable visual label positioned around the Hero Image to reinforce its message; current wording is Proposed Copy until stakeholder approval.
 _Avoid_: Navigation shortcut, verified claim, testimonial
+
+**Trust Strip**:
+An independent section immediately after the Hero that presents organization logos or other approved trust signals; it is visually separate from the Hero and is normally reached after a small scroll on desktop.
+_Avoid_: Hero content, logo decoration, testimonial proof
 
 ## Content and Inquiry
 
