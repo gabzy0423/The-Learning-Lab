@@ -1,6 +1,11 @@
-const logos = Array.from({ length: 36 }, (_, index) => ({
-  position: `${(index % 9) * 12.5}% ${Math.floor(index / 9) * (100 / 3)}%`,
-}));
+import Image from "next/image";
+
+const marqueeRows = [
+  { src: "/assets/marquees/1.png", width: 1270, height: 122 },
+  { src: "/assets/marquees/2.png", width: 1220, height: 97 },
+  { src: "/assets/marquees/3.png", width: 1273, height: 100 },
+  { src: "/assets/marquees/4.png", width: 1266, height: 103 },
+];
 
 export function LogoMarquee() {
   return (
@@ -20,18 +25,16 @@ export function LogoMarquee() {
           <div className="logo-marquee-track flex w-max">
             {[0, 1].map((copy) => (
               <div key={copy} className="flex shrink-0 gap-4 pr-4">
-                {logos.map((logo, index) => (
-                  <span
-                    key={index}
-                    className="shrink-0"
-                    style={{
-                      width: 138.333,
-                      height: 105.5,
-                      backgroundImage: "url('/assets/logo/approved-organizations.png')",
-                      backgroundSize: "1245px 422px",
-                      backgroundPosition: logo.position,
-                      backgroundRepeat: "no-repeat",
-                    }}
+                {marqueeRows.map((row) => (
+                  <Image
+                    key={row.src}
+                    src={row.src}
+                    alt=""
+                    aria-hidden="true"
+                    width={row.width}
+                    height={row.height}
+                    sizes="100vw"
+                    className="h-auto w-[min(80rem,calc(100vw-3.5rem))] shrink-0 object-contain"
                   />
                 ))}
               </div>
