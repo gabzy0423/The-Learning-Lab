@@ -71,7 +71,7 @@ A static, non-clickable visual label positioned around the Hero Image to reinfor
 _Avoid_: Navigation shortcut, verified claim, testimonial
 
 **Trust Strip**:
-An independent section immediately after the Hero that presents organization logos or other approved trust signals; on desktop it floats 24px into the top of the following content section, while mobile and tablet keep it inline.
+An independent section immediately after the Hero that presents organization logos or other approved trust signals; it remains visually separate from the Hero and uses the same horizontal alignment as the primary content.
 _Avoid_: Hero content, logo decoration, testimonial proof
 
 ## Content and Inquiry
