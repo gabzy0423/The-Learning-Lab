@@ -8,7 +8,7 @@ import { programs } from "@/content/programs";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/solutions", label: "Solutions" },
+  { href: "/solutions", label: "Digital Solutions" },
   { href: "/contact", label: "Contact" },
 ];
 
