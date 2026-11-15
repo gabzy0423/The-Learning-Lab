@@ -225,7 +225,7 @@ export default function Home() {
       </section>
       <section className="bg-brand-charcoal/[0.03]" aria-labelledby="about-preview-heading">
         <div className="mx-auto grid max-w-[80rem] items-start gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:px-0">
-          <div className="lg:pt-3">
+          <div>
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               About The Learning Lab
