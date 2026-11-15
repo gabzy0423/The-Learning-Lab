@@ -34,7 +34,7 @@ export function LogoMarquee() {
                     width={row.width}
                     height={row.height}
                     sizes="100vw"
-                    className="h-auto w-[120vw] shrink-0 object-contain sm:w-[min(80rem,calc(100vw-3.5rem))]"
+                    className="h-auto w-[140vw] shrink-0 object-contain sm:w-[min(80rem,calc(100vw-3.5rem))]"
                   />
                 ))}
               </div>
