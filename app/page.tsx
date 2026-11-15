@@ -182,12 +182,12 @@ export default function Home() {
         </div>
       </section>
       <section className="border-b border-brand-charcoal/10 bg-brand-white" aria-labelledby="methodology-heading">
-        <div className="mx-auto max-w-[74rem] px-7 py-16 sm:px-10 lg:px-14">
+        <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0">
           <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
             <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
             A practical path forward
           </p>
-          <h2 id="methodology-heading" className="mt-4 max-w-3xl font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
+          <h2 id="methodology-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
             How learning <span className="text-brand-mint-green">moves forward.</span>
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
