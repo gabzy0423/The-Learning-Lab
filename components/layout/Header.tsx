@@ -204,7 +204,7 @@ export function Header() {
             )}
           </div>
 
-          {links.slice(2).map((link) => (
+          {links.slice(1).map((link) => (
             <Link key={link.href} href={link.href} className={navClass(isActive(pathname, link.href))} aria-current={isActive(pathname, link.href) ? "page" : undefined}>
               {link.label}
             </Link>
@@ -289,7 +289,7 @@ export function Header() {
               )}
             </div>
 
-            {links.slice(2).map((link) => (
+            {links.slice(1).map((link) => (
               <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
                 {link.label}
               </Link>
