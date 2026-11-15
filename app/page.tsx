@@ -58,7 +58,7 @@ export default function Home() {
               Book a Consultation
             </Link>
           </div>
-          <ul className="mt-7 flex w-full flex-nowrap items-center justify-between gap-x-2 whitespace-nowrap text-[10px] font-semibold text-brand-charcoal sm:text-xs sm:gap-x-0">
+          <ul className="mt-7 flex w-full flex-wrap items-center justify-between gap-x-2 gap-y-2 text-[10px] font-semibold text-brand-charcoal sm:flex-nowrap sm:gap-y-0 sm:text-xs sm:gap-x-0">
             <li className="flex items-center gap-2 sm:pr-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Practical programs</li>
             <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:px-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Teams &amp; leaders</li>
             <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:pl-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Real-world impact</li>
@@ -99,7 +99,7 @@ export default function Home() {
         <h2 id="programs-heading" className="mt-4 max-w-4xl font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
           Programs built around <span className="text-brand-mint-green">what matters</span> at work.
         </h2>
-        <p className="mt-4 max-w-none text-base leading-relaxed text-brand-charcoal/70 lg:whitespace-nowrap">
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
           Focused learning experiences that help people grow, collaborate better, and create greater impact.
         </p>
         <div className="mt-10 grid items-stretch gap-3 sm:grid-cols-2 lg:grid-cols-6">

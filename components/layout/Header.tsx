@@ -87,7 +87,7 @@ export function Header() {
         scrolled ? "shadow-[0_8px_28px_rgba(41,41,41,0.12)]" : "shadow-[0_4px_18px_rgba(41,41,41,0.05)]"
       }`}
     >
-      <div className="mx-auto flex min-h-16 w-full max-w-[74rem] items-center justify-between gap-6 px-7 sm:px-10 lg:px-14">
+      <div className="mx-auto flex min-h-16 w-full max-w-[74rem] items-center justify-between gap-6 px-7 sm:px-10 lg:px-6">
         <Link
           href="/"
           className="flex min-h-11 items-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-cyan-blue"
