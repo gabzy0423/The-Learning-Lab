@@ -136,6 +136,10 @@ _Avoid_: Verified staff directory, invented biography, hiring page
 A dropdown-only navigation control that exposes the five established program categories; it does not represent a separate public Programs overview page.
 _Avoid_: Course filter, Resources menu
 
+**Navigation Submenu**:
+A grouped set of child links revealed from a primary navigation control and closed after selection, outside interaction, or Escape.
+_Avoid_: Persistent sidebar, separate navigation page
+
 **Course Directory**:
 An optional browseable view of courses across all five program categories, supporting quick discovery alongside category-first navigation.
 _Avoid_: LMS catalogue, enrollment catalogue

@@ -146,7 +146,10 @@ export function Header() {
               className={navClass(pathname.startsWith("/about"))}
               aria-expanded={aboutOpen}
               aria-controls="about-menu"
-              onClick={() => setAboutOpen((open) => !open)}
+              onClick={() => {
+                setAboutOpen((open) => !open);
+                setProgramsOpen(false);
+              }}
             >
               About
             </button>
@@ -161,7 +164,10 @@ export function Header() {
                       href={link.href}
                       className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "bg-brand-turquoise/25 text-brand-charcoal" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
                       aria-current={active ? "page" : undefined}
-                      onClick={() => setAboutOpen(false)}
+                      onClick={() => {
+                        setAboutOpen(false);
+                        setProgramsOpen(false);
+                      }}
                     >
                       {link.label}
                     </Link>
@@ -178,7 +184,10 @@ export function Header() {
               className={navClass(pathname.startsWith("/programs"))}
               aria-expanded={programsOpen}
               aria-controls="programs-menu"
-              onClick={() => setProgramsOpen((open) => !open)}
+              onClick={() => {
+                setProgramsOpen((open) => !open);
+                setAboutOpen(false);
+              }}
             >
               Learning Programs
             </button>
@@ -194,7 +203,10 @@ export function Header() {
                       href={href}
                       className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "bg-brand-turquoise/25 text-brand-charcoal" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
                       aria-current={active ? "page" : undefined}
-                      onClick={() => setProgramsOpen(false)}
+                      onClick={() => {
+                        setProgramsOpen(false);
+                        setAboutOpen(false);
+                      }}
                     >
                       {program.name}
                     </Link>
@@ -251,7 +263,10 @@ export function Header() {
             ))}
 
             <div>
-              <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/about") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileAboutOpen} aria-controls="mobile-about-menu" onClick={() => setMobileAboutOpen((open) => !open)}>
+              <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/about") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileAboutOpen} aria-controls="mobile-about-menu" onClick={() => {
+                setMobileAboutOpen((open) => !open);
+                setMobileProgramsOpen(false);
+              }}>
                 About
               </button>
               {mobileAboutOpen && (
@@ -270,7 +285,10 @@ export function Header() {
 
             <div>
               <div>
-                <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/programs") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => setMobileProgramsOpen((open) => !open)}>
+                <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/programs") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => {
+                  setMobileProgramsOpen((open) => !open);
+                  setMobileAboutOpen(false);
+                }}>
                   Learning Programs
                 </button>
               </div>
