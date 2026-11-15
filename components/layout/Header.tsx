@@ -89,6 +89,11 @@ export function Header() {
     menuButtonRef.current?.focus();
   };
 
+  const closeDesktopMenus = () => {
+    setAboutOpen(false);
+    setProgramsOpen(false);
+  };
+
   const navClass = (active: boolean) =>
     `relative flex min-h-11 items-center px-1 text-[13px] font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-cyan-blue ${
       active
@@ -134,6 +139,7 @@ export function Header() {
               href={link.href}
               className={navClass(isActive(pathname, link.href))}
               aria-current={isActive(pathname, link.href) ? "page" : undefined}
+              onClick={closeDesktopMenus}
             >
               {link.label}
             </Link>
@@ -217,12 +223,12 @@ export function Header() {
           </div>
 
           {links.slice(1).map((link) => (
-            <Link key={link.href} href={link.href} className={navClass(isActive(pathname, link.href))} aria-current={isActive(pathname, link.href) ? "page" : undefined}>
+            <Link key={link.href} href={link.href} className={navClass(isActive(pathname, link.href))} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeDesktopMenus}>
               {link.label}
             </Link>
           ))}
 
-          <Link href="/contact?interest=program-information" className="ml-5 inline-flex min-h-10 items-center justify-center rounded-xl bg-brand-charcoal px-4 text-xs font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue">
+          <Link href="/contact?interest=program-information" className="ml-5 inline-flex min-h-10 items-center justify-center rounded-xl bg-brand-charcoal px-4 text-xs font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue" onClick={closeDesktopMenus}>
             Request Information
           </Link>
         </nav>
