@@ -263,17 +263,17 @@ export default function Home() {
         </div>
       </section>
       <section className="border-y border-brand-charcoal/10 bg-brand-white text-brand-charcoal" aria-labelledby="contact-cta-heading">
-        <div className="mx-auto grid max-w-[74rem] items-center gap-8 px-7 py-14 sm:px-10 lg:grid-cols-[1fr_auto] lg:px-14 lg:py-16">
+        <div className="mx-auto grid max-w-[80rem] items-center gap-8 px-7 py-14 sm:px-10 lg:grid-cols-[1fr_auto] lg:px-0 lg:py-16">
           <div>
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               Start a conversation
             </p>
-            <h2 id="contact-cta-heading" className="mt-4 max-w-3xl font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Ready to <span className="text-brand-mint-green">explore a<br />learning need?</span>
+            <h2 id="contact-cta-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+              Ready to <span className="text-brand-mint-green">explore a learning need?</span>
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
-              Tell us what you&apos;re working on, and let&apos;s explore how learning<br />can support your goals.
+              Tell us what you&apos;re working on, and let&apos;s explore how learning can support your goals.
             </p>
           </div>
           <div className="rounded-lg border border-brand-charcoal/10 bg-brand-charcoal/[0.03] p-5 sm:p-6">
