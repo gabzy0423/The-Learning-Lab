@@ -74,6 +74,10 @@ _Avoid_: Navigation shortcut, verified claim, testimonial
 An independent section immediately after the Hero that presents organization logos or other approved trust signals; it remains visually separate from the Hero and uses the same horizontal alignment as the primary content.
 _Avoid_: Hero content, logo decoration, testimonial proof
 
+**Footer**:
+The closing website section that provides brand context, navigation, program discovery, contact direction, and ownership information.
+_Avoid_: Secondary navigation, sitemap-only area, contact form
+
 ## Content and Inquiry
 
 **Verified Content**:

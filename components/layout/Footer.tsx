@@ -13,7 +13,7 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer className="bg-brand-charcoal text-brand-white">
-      <div className="mx-auto grid max-w-[74rem] gap-10 px-7 py-12 sm:px-10 lg:grid-cols-[1.25fr_0.8fr_1.15fr_1.25fr] lg:gap-0 lg:px-14 lg:py-14">
+      <div className="mx-auto grid max-w-[80rem] gap-10 px-7 py-12 sm:px-10 lg:grid-cols-[1.25fr_0.8fr_1.15fr_1.25fr] lg:gap-0 lg:px-0 lg:py-14">
         <div className="lg:pr-10">
           <Link href="/" aria-label="The Learning Lab home" className="inline-flex rounded-md focus-visible:outline-2 focus-visible:outline-brand-cyan-blue">
             <Image src="/assets/logo/learning-lab-logo-transparent.png" alt="The Learning Lab" width={360} height={132} className="h-12 w-auto" />
@@ -71,7 +71,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-brand-white/15">
-        <div className="mx-auto max-w-[74rem] px-7 py-5 text-xs text-brand-white/55 sm:px-10 lg:px-14">
+        <div className="mx-auto max-w-[80rem] px-7 py-5 text-xs text-brand-white/55 sm:px-10 lg:px-0">
           © The Learning Lab. All rights reserved.
         </div>
       </div>
