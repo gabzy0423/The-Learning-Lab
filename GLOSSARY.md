@@ -54,6 +54,10 @@ _Avoid_: Banner, splash screen
 The visual boundary of the opening homepage Hero: on desktop it occupies the available first viewport below the Primary Navigation; on mobile it remains content-driven so the copy, CTAs, and Hero Image are not cramped.
 _Avoid_: Marquee container, full-page takeover
 
+**Hero Emphasis**:
+The visual balance between the Hero copy and Hero Image, with the image slightly larger and the headline, supporting copy, CTAs, proof points, and callouts scaled as one composition.
+_Avoid_: Oversized headline, decorative image dominance
+
 **Hero Image**:
 A photorealistic visual used in the homepage Hero to represent collaborative development through a circular group-workshop composition; the current asset is derived from an existing concept reference and remains proposed until rights and public-use approval are confirmed.
 _Avoid_: Course Visual, stock-photo claim, operational product image

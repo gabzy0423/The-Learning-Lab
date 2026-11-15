@@ -17,23 +17,23 @@ export default function Home() {
     <main className="relative flex-1 overflow-hidden bg-brand-white text-brand-charcoal">
       <section className="overflow-hidden bg-brand-white" aria-label="Hero">
       {/* Desktop navbar occupies 4rem plus its 1px bottom border. */}
-      <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:min-h-[calc(100dvh-4rem-1px)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:px-0 xl:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
-        <div className="max-w-2xl lg:scale-[1.04] lg:origin-left">
+      <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:min-h-[calc(100dvh-4rem-1px)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:px-0">
+        <div className="max-w-2xl">
           <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
             <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
             The Learning Lab
           </p>
-          <h1 className="mt-4 max-w-2xl text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl xl:text-[3.25rem] 2xl:text-5xl">
+          <h1 className="mt-4 max-w-2xl text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-[clamp(3rem,4.7vw,4rem)]">
             <span className="sm:block">Learning that </span>
             <span className="text-brand-mint-green sm:block">moves people </span>
             <span className="sm:block">forward.</span>
           </h1>
-          <p className="mt-5 max-w-lg text-base leading-7 text-brand-charcoal/80 sm:text-lg sm:leading-8">
+          <p className="mt-5 max-w-lg text-base leading-7 text-brand-charcoal/80 sm:text-lg sm:leading-8 lg:text-xl">
             Meaningful development experiences for teams, leaders, and
             organizations. Discover practical programs designed to turn new
             knowledge into real-world impact.
           </p>
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:[&>a]:min-h-13 lg:[&>a]:px-6 lg:[&>a]:text-base">
             <Link
               href="/programs"
               className="group inline-flex min-h-11 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-brand-charcoal px-5 text-sm font-extrabold text-brand-white transition-transform duration-200 hover:-translate-y-0.5 hover:bg-brand-charcoal/90 active:translate-y-0 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transition-none"
@@ -59,13 +59,13 @@ export default function Home() {
               Book a Consultation
             </Link>
           </div>
-          <ul className="mt-7 flex w-full flex-wrap items-center justify-between gap-x-2 gap-y-2 text-[10px] font-semibold text-brand-charcoal sm:flex-nowrap sm:gap-y-0 sm:text-xs sm:gap-x-0">
+          <ul className="mt-7 flex w-full flex-wrap items-center justify-between gap-x-2 gap-y-2 text-[10px] font-semibold text-brand-charcoal sm:text-xs lg:text-sm">
             <li className="flex items-center gap-2 sm:pr-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Practical programs</li>
             <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:px-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Teams &amp; leaders</li>
             <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:pl-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Real-world impact</li>
           </ul>
         </div>
-        <div className="relative isolate order-2 flex w-full justify-center lg:order-none lg:justify-end">
+        <div className="relative isolate order-2 flex w-full justify-center lg:order-none lg:justify-end lg:[&>span:not([aria-hidden])]:text-base lg:[&>span:not([aria-hidden])]:px-6">
           <span aria-hidden="true" className="pointer-events-none absolute -top-8 left-1/4 size-44 rotate-12 rounded-[62%_38%_48%_52%] bg-brand-mint-green/20 blur-sm lg:size-56" />
           <span aria-hidden="true" className="pointer-events-none absolute -bottom-8 right-12 size-40 -rotate-12 rounded-[38%_62%_57%_43%] bg-brand-turquoise/20 blur-sm lg:size-52" />
           <Image
@@ -75,7 +75,7 @@ export default function Home() {
             height={1024}
             priority
             sizes="(min-width: 1280px) 60vw, (min-width: 1024px) 55vw, 100vw"
-            className="relative z-10 block h-auto w-full lg:translate-x-[4%]"
+            className="relative z-10 block h-auto w-full lg:w-[108%] lg:max-w-none lg:shrink-0 lg:translate-x-[4%]"
           />
           <span className="pointer-events-none absolute left-[6%] top-[11%] z-20 inline-flex items-center gap-2 rounded-full bg-white px-4 py-3 text-xs font-bold text-brand-charcoal shadow-[0_8px_24px_rgba(0,0,0,0.16)] sm:gap-3 sm:px-5 sm:py-4 sm:text-sm">
             <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5 shrink-0 text-brand-turquoise sm:size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z" /><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6" /></svg>
