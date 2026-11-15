@@ -180,7 +180,7 @@ export function Header() {
               aria-controls="programs-menu"
               onClick={() => setProgramsOpen((open) => !open)}
             >
-              Programs
+              Learning Programs
             </button>
 
             {programsOpen && (
@@ -271,7 +271,7 @@ export function Header() {
             <div>
               <div>
                 <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/programs") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => setMobileProgramsOpen((open) => !open)}>
-                  Programs
+                  Learning Programs
                 </button>
               </div>
               {mobileProgramsOpen && (
