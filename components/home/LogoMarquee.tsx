@@ -3,7 +3,7 @@ import Image from "next/image";
 const marqueeRows = [
   { src: "/assets/marquees/1.png", width: 1270, height: 122 },
   { src: "/assets/marquees/2.png", width: 1220, height: 97 },
-  { src: "/assets/marquees/3.png", width: 1273, height: 100 },
+  { src: "/assets/marquees/image.png", width: 1230, height: 85 },
   { src: "/assets/marquees/4.png", width: 1266, height: 103 },
 ];
 
