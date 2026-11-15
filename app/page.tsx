@@ -17,7 +17,7 @@ export default function Home() {
     <main className="relative flex-1 overflow-hidden bg-brand-white text-brand-charcoal">
       <section className="overflow-hidden bg-brand-white" aria-label="Hero">
       {/* Desktop navbar occupies 4rem plus its 1px bottom border. */}
-      <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:min-h-[calc(100dvh-4rem-1px)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:px-0">
+      <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:min-h-[calc(100dvh-4rem-1px+1.5rem)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:px-0">
         <div className="max-w-2xl">
           <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
             <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
