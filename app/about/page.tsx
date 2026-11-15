@@ -42,6 +42,18 @@ export default function AboutPage() {
           </article>
         </div>
       </section>
+
+      <section id="meet-the-team" className="mt-16 scroll-mt-24" aria-labelledby="meet-the-team-heading">
+        <p className="text-sm font-bold text-brand-cyan-blue">Proposed team section</p>
+        <h2 id="meet-the-team-heading" className="mt-2 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
+          Meet The Team
+        </h2>
+        <div className="mt-6 rounded-2xl border border-dashed border-brand-charcoal/20 bg-brand-charcoal/[0.03] p-7 sm:p-8">
+          <p className="max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
+            This section will introduce the people behind The Learning Lab once approved names, roles, photos, and biographies are available.
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
