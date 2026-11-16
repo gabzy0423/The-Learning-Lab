@@ -180,6 +180,10 @@ _Avoid_: Equal visual weight to the illustration, plain unstructured copy, decor
 The About page’s 2×2 desktop composition with the perspective heading top-left, intro copy top-right, illustration bottom-left, and Learner Perspective Panel bottom-right; it stacks in reading order on mobile.
 _Avoid_: Four unrelated blocks, image-first mobile flow, dense copy before the section heading
 
+**Mission Vision Zigzag**:
+The About page layout that alternates Mission and Vision rows on desktop, pairing each approved statement with its matching image and a shadcn Card content block; each row places the image before its content on mobile.
+_Avoid_: Repeated two-column direction, unrelated image pairing, heavy media cards
+
 **Portfolio Placeholder Card**:
 An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.
 _Avoid_: Empty broken link, unpublished program, missing content error
