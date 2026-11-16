@@ -321,7 +321,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative z-10 mt-6 min-h-64 lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:w-[36%]">
+            <div className="relative z-10 mt-6 min-h-64 translate-y-6 lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:w-[36%] lg:translate-y-0">
               <span aria-hidden="true" className="pointer-events-none absolute -right-8 bottom-0 z-0 size-40 rounded-full bg-brand-mint-green/25 blur-2xl lg:size-56" />
               <span aria-hidden="true" className="pointer-events-none absolute right-1/3 top-8 z-0 size-32 rounded-full bg-brand-cyan-blue/20 blur-2xl lg:size-44" />
               <Image
