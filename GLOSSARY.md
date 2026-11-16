@@ -181,8 +181,13 @@ The About page’s 2×2 desktop composition with the perspective heading top-lef
 _Avoid_: Four unrelated blocks, image-first mobile flow, dense copy before the section heading
 
 **Mission Vision Zigzag**:
-The About page layout that alternates Mission and Vision rows on desktop, pairing each approved statement with its matching image and a shadcn Card content block; each row places the image before its content on mobile.
+The About page layout that alternates Mission and Vision rows on desktop, pairing each approved statement with its matching image and editorial content block; each row places the image before its content on mobile.
 _Avoid_: Repeated two-column direction, unrelated image pairing, heavy media cards
+
+**Editorial Mission Vision**:
+The Mission Vision Zigzag variant that removes Card containers, uses larger editorial headings, and pairs Mission with an academic-cap icon and Vision with a direction/eye icon.
+Mission and Vision copy is vertically centered against its matching image, with the icon above the heading and consistent text width, alignment, and spacing.
+_Avoid_: Heavy text cards, ambiguous icon meaning, icon-only labels, mismatched vertical alignment
 
 **Portfolio Placeholder Card**:
 An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.

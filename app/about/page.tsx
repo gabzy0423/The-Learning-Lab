@@ -1,6 +1,6 @@
 import Image from "next/image";
+import { AcademicCapIcon, EyeIcon } from "@heroicons/react/24/outline";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Card, CardContent } from "@/components/ui/card";
 
 export default function AboutPage() {
   return (
@@ -131,28 +131,26 @@ export default function AboutPage() {
             <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
               <Image src="/assets/pages/about/mission.png" alt="Colleagues learning and collaborating together" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
-            <Card className="rounded-2xl border-brand-charcoal/10 bg-brand-charcoal py-0 text-brand-white">
-              <CardContent className="flex h-full flex-col justify-center p-7 sm:p-8">
-                <p className="text-sm font-bold text-brand-mint-green">Mission</p>
-                <p className="mt-5 max-w-xl font-heading text-2xl font-extrabold leading-tight sm:text-3xl">
-                  To create practical, human-centered learning experiences that help people grow, work better together, and turn insight into action.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="flex h-full flex-col justify-center text-brand-charcoal lg:order-2">
+              <AcademicCapIcon aria-hidden="true" className="size-9 text-brand-mint-green" />
+              <h3 className="mt-4 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Mission</h3>
+              <p className="mt-5 max-w-xl font-heading text-xl font-extrabold leading-relaxed sm:text-2xl">
+                To create practical, human-centered learning experiences that help people grow, work better together, and turn insight into action.
+              </p>
+            </div>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
             <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-brand-mint-green/30 bg-brand-mint-green lg:order-2">
               <Image src="/assets/pages/about/vision.png" alt="Learner working confidently in a modern workspace" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
-            <Card className="rounded-2xl border-brand-mint-green/30 bg-brand-mint-green py-0 text-brand-charcoal lg:order-1">
-              <CardContent className="flex h-full flex-col justify-center p-7 sm:p-8">
-                <p className="text-sm font-bold text-brand-charcoal/70">Vision</p>
-                <p className="mt-5 max-w-xl font-heading text-2xl font-extrabold leading-tight sm:text-3xl">
-                  A workplace culture where learning moves people, teams, and organizations forward.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="flex h-full flex-col justify-center text-brand-charcoal lg:order-1">
+              <EyeIcon aria-hidden="true" className="size-9 text-brand-mint-green" />
+              <h3 className="mt-4 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Vision</h3>
+              <p className="mt-5 max-w-xl font-heading text-xl font-extrabold leading-relaxed sm:text-2xl">
+                A workplace culture where learning moves people, teams, and organizations forward.
+              </p>
+            </div>
           </div>
         </div>
       </section>
