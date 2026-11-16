@@ -160,6 +160,10 @@ _Avoid_: Carousel, automatic image rotation, touch-only image replacement
 The sixth Signature Learning Portfolio grid card that directs visitors toward a tailored learning conversation instead of representing a program category.
 _Avoid_: Program card, placeholder-only slot, generic promotional tile
 
+**Methodology Image Checklist**:
+The Methodology section composition that pairs a learning visual with the section explanation and its three checkmarked learning steps.
+_Avoid_: Numeric performance proof, separate card grid, decorative image-only block
+
 **Course Directory**:
 An optional browseable view of courses across all five program categories, supporting quick discovery alongside category-first navigation.
 _Avoid_: LMS catalogue, enrollment catalogue

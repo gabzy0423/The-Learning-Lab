@@ -173,37 +173,49 @@ export default function Home() {
         </div>
       </section>
       <section className="border-b border-brand-charcoal/10 bg-brand-white" aria-labelledby="methodology-heading">
-        <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0">
-          <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
-            <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
-            A practical path forward
-          </p>
-          <h2 id="methodology-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-            How learning <span className="text-brand-mint-green">moves forward.</span>
-          </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
-            A practical approach to turning learning into everyday progress.
-          </p>
-          <ol className="relative mt-10 grid gap-4 md:grid-cols-3 md:gap-6">
-            <span aria-hidden="true" className="pointer-events-none absolute left-[16.67%] right-[16.67%] top-5 hidden h-px bg-brand-turquoise/50 md:block" />
-            {[
-              [UserGroupIcon, "Understand the need", "Start with the people, context, and priorities that shape the learning experience."],
-              [AcademicCapIcon, "Build practical capability", "Focus on relevant knowledge, skills, and conversations people can use at work."],
-              [ChartBarIcon, "Apply learning at work", "Create space to connect new learning with everyday decisions, collaboration, and impact."],
-            ].map(([Icon, title, description], index) => (
-              <li key={title as string} className="relative z-10 flex min-h-full flex-col rounded-lg border border-brand-charcoal/10 bg-white p-6">
-                <div className="flex items-center justify-between">
-                  <span className="inline-flex size-10 items-center justify-center rounded-full bg-brand-charcoal text-brand-white">
-                    <Icon className="size-5" aria-hidden="true" />
-                  </span>
-                  <span className="text-sm font-bold text-brand-charcoal/45">0{index + 1}</span>
-                </div>
-                <h3 className="mt-8 font-heading text-xl font-bold">{title as string}</h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-brand-charcoal/70">{description as string}</p>
-              </li>
-            ))}
-          </ol>
-          <div className="mt-8 flex justify-center">
+        <div className="mx-auto grid max-w-[80rem] items-center gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-0">
+          <div className="overflow-hidden rounded-lg border border-brand-charcoal/10 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.12)]">
+            <Image
+              src="/assets/hero/learning.png"
+              alt="People learning together across in-person and digital settings"
+              width={768}
+              height={512}
+              className="aspect-[3/2] w-full object-cover"
+            />
+          </div>
+          <div>
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              A practical path forward
+            </p>
+            <h2 id="methodology-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+              How learning <span className="text-brand-mint-green">moves forward.</span>
+            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
+              A practical approach to turning learning into everyday progress.
+            </p>
+            <div className="mt-8 border-t border-brand-charcoal/15 pt-6">
+              <ol className="space-y-5">
+                {[
+                  ["Understand the need", "Start with the people, context, and priorities that shape the learning experience."],
+                  ["Build practical capability", "Focus on relevant knowledge, skills, and conversations people can use at work."],
+                  ["Apply learning at work", "Create space to connect new learning with everyday decisions, collaboration, and impact."],
+                ].map(([title, description]) => (
+                  <li key={title} className="flex gap-3">
+                    <span className="mt-1 inline-flex size-5 shrink-0 items-center justify-center rounded-full bg-brand-cyan-blue/15 text-brand-cyan-blue">
+                      <svg aria-hidden="true" viewBox="0 0 24 24" className="size-3.5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="m5 12 4 4L19 6" />
+                      </svg>
+                    </span>
+                    <div>
+                      <h3 className="font-heading text-lg font-bold">{title}</h3>
+                      <p className="mt-1 text-sm leading-relaxed text-brand-charcoal/70">{description}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <div className="mt-8">
             <Link
               href="/contact?interest=program-information"
               className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-charcoal px-5 text-sm font-bold text-brand-white transition-colors hover:bg-brand-charcoal/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
@@ -211,6 +223,7 @@ export default function Home() {
               Talk to us about your learning needs
               <span aria-hidden="true">→</span>
             </Link>
+            </div>
           </div>
         </div>
       </section>
