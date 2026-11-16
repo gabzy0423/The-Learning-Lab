@@ -27,6 +27,8 @@ export function Header() {
   const aboutButtonRef = useRef<HTMLButtonElement>(null);
   const programsButtonRef = useRef<HTMLButtonElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const mobileScrollRef = useRef<HTMLDivElement>(null);
+  const lastMobileScrollTopRef = useRef(0);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [programsOpen, setProgramsOpen] = useState(false);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
@@ -80,6 +82,22 @@ export function Header() {
     };
   }, [mobileMenuOpen]);
 
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    const closeOnMeaningfulScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (Math.abs(currentScrollY - lastScrollY) < 8) return;
+      lastScrollY = currentScrollY;
+      setAboutOpen(false);
+      setProgramsOpen(false);
+      setMobileAboutOpen(false);
+      setMobileProgramsOpen(false);
+    };
+
+    window.addEventListener("scroll", closeOnMeaningfulScroll, { passive: true });
+    return () => window.removeEventListener("scroll", closeOnMeaningfulScroll);
+  }, [aboutOpen, mobileAboutOpen, mobileMenuOpen, mobileProgramsOpen, programsOpen]);
+
   const openMobileMenu = () => setMobileMenuOpen(true);
 
   const closeMobileMenu = () => {
@@ -92,6 +110,14 @@ export function Header() {
   const closeDesktopMenus = () => {
     setAboutOpen(false);
     setProgramsOpen(false);
+  };
+
+  const closeMobileSubmenusOnScroll = () => {
+    const currentScrollTop = mobileScrollRef.current?.scrollTop ?? 0;
+    if (Math.abs(currentScrollTop - lastMobileScrollTopRef.current) < 8) return;
+    lastMobileScrollTopRef.current = currentScrollTop;
+    setMobileAboutOpen(false);
+    setMobileProgramsOpen(false);
   };
 
   const navClass = (active: boolean) =>
@@ -259,7 +285,7 @@ export function Header() {
             aria-label="Mobile navigation"
             onClick={(event) => event.stopPropagation()}
           >
-        <div className="flex h-full flex-col overflow-y-auto px-5 pb-6 pt-4">
+        <div ref={mobileScrollRef} onScroll={closeMobileSubmenusOnScroll} className="flex h-full flex-col overflow-y-auto px-5 pb-6 pt-4">
           <div className="flex items-center justify-between border-b border-brand-charcoal/10 pb-4">
             <Link href="/" aria-label="The Learning Lab home" className="inline-flex rounded-md focus-visible:outline-2 focus-visible:outline-brand-cyan-blue" onClick={closeMobileMenu}>
               <Image src="/assets/logo/learning_lab_logo.png" alt="The Learning Lab" width={1700} height={624} className="h-10 w-auto" />

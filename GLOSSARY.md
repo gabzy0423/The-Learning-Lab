@@ -142,7 +142,11 @@ _Avoid_: Persistent sidebar, separate navigation page
 
 **Animated Navigation Submenu**:
 A Navigation Submenu that uses a short fade and slide transition when opening or closing, with motion disabled for reduced-motion preferences.
-_Avoid_: Delayed navigation, decorative animation, scroll-driven menu
+_Avoid_: Delayed navigation, decorative animation
+
+**Scroll-Dismissed Submenu**:
+A Navigation Submenu that closes after approximately 8px of meaningful page scroll in either direction; on mobile, the submenu closes while the navigation drawer remains open.
+_Avoid_: Micro-scroll dismissal, closing the full mobile drawer, direction-specific dismissal
 
 **Split Section Intro**:
 A section-opening layout that keeps the primary heading in one column and its supporting description in a separate, top-aligned column on larger screens.
