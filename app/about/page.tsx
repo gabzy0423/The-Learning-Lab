@@ -6,7 +6,7 @@ export default function AboutPage() {
     <main className="mx-auto min-h-[70vh] w-full max-w-7xl px-7 py-20 sm:px-10 lg:px-0">
       <section className="relative isolate overflow-hidden rounded-2xl bg-brand-charcoal px-7 py-16 text-brand-white sm:px-10 sm:py-20 lg:px-0 lg:py-24" aria-labelledby="about-heading">
         <Image
-          src="/assets/hero/about_us_banner.png"
+          src="/assets/pages/about/about_us_banner.png"
           alt=""
           fill
           priority
@@ -38,6 +38,15 @@ export default function AboutPage() {
             <h2 id="learner-centered-heading" className="mt-4 max-w-2xl font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
               The Learning Lab sets a new standard for <span className="text-brand-mint-green">learner-centered education.</span>
             </h2>
+            <div className="mt-8 overflow-hidden rounded-2xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
+              <Image
+                src="/assets/pages/about/perspective.png"
+                alt="Illustration representing The Learning Lab perspective"
+                width={400}
+                height={300}
+                className="h-auto w-full object-contain"
+              />
+            </div>
           </div>
           <div className="space-y-5 text-base leading-relaxed text-brand-charcoal/70">
             <p>

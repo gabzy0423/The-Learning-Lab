@@ -168,6 +168,10 @@ _Avoid_: Repeating the banner hero, single long text block, generic training cla
 An optional disclosure below the Learner-Centered Intro copy that expands three approved learner-focused ideas: how people think and retain information, how they absorb and engage with knowledge, and what helps them commit to lasting change.
 _Avoid_: Hiding the primary intro, unsupported learner research claims, unrelated FAQ content
 
+**Perspective Illustration**:
+The approved full-composition illustration placed below the Learner-Centered Intro heading on the left, balancing the supporting copy and Accordion on the right without cropping or overlay treatment.
+_Avoid_: Decorative replacement for the copy, cropped artwork, darkened illustration
+
 **Portfolio Placeholder Card**:
 An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.
 _Avoid_: Empty broken link, unpublished program, missing content error
