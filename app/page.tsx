@@ -321,13 +321,13 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative z-10 mt-6 min-h-64 lg:mt-0">
+            <div className="relative z-10 mt-6 min-h-64 lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:w-[40%]">
               <Image
                 src="/assets/hero/cta_hero.png"
                 alt=""
                 fill
                 sizes="(min-width: 1024px) 32vw, 100vw"
-                className="object-contain object-bottom lg:scale-110"
+                className="origin-bottom-right object-contain object-bottom lg:scale-110"
               />
             </div>
           </div>
