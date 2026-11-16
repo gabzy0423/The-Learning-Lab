@@ -48,7 +48,8 @@ export default function AboutPage() {
               />
             </div>
           </div>
-          <div className="space-y-5 text-base leading-relaxed text-brand-charcoal/70">
+          <div className="space-y-5 rounded-2xl border-l-4 border-brand-mint-green bg-brand-charcoal/[0.04] p-6 text-base leading-relaxed text-brand-charcoal/70 sm:p-8">
+            <p className="text-sm font-bold text-brand-cyan-blue">How we design learning</p>
             <p>
               To create world-class learning experiences, we commit to understanding you—the modern learner: how you think and retain information, how you absorb and engage with new knowledge, and what helps you commit to lasting change.
             </p>
@@ -58,6 +59,7 @@ export default function AboutPage() {
             <Accordion className="border-t border-brand-charcoal/10 pt-2">
               <AccordionItem value="think-and-retain" className="border-brand-charcoal/10">
                 <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
+                  <span className="mr-3 text-xs font-extrabold text-brand-mint-green">01</span>
                   How learners think and retain information
                 </AccordionTrigger>
                 <AccordionContent className="text-brand-charcoal/70">
@@ -66,6 +68,7 @@ export default function AboutPage() {
               </AccordionItem>
               <AccordionItem value="absorb-and-engage" className="border-brand-charcoal/10">
                 <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
+                  <span className="mr-3 text-xs font-extrabold text-brand-mint-green">02</span>
                   How learners absorb and engage with knowledge
                 </AccordionTrigger>
                 <AccordionContent className="text-brand-charcoal/70">
@@ -74,6 +77,7 @@ export default function AboutPage() {
               </AccordionItem>
               <AccordionItem value="commit-to-change" className="border-brand-charcoal/10">
                 <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
+                  <span className="mr-3 text-xs font-extrabold text-brand-mint-green">03</span>
                   What helps learners commit to lasting change
                 </AccordionTrigger>
                 <AccordionContent className="text-brand-charcoal/70">

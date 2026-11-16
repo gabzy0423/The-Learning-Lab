@@ -172,6 +172,10 @@ _Avoid_: Hiding the primary intro, unsupported learner research claims, unrelate
 The approved full-composition illustration placed below the Learner-Centered Intro heading on the left, balancing the supporting copy and Accordion on the right without cropping or overlay treatment.
 _Avoid_: Decorative replacement for the copy, cropped artwork, darkened illustration
 
+**Learner Perspective Panel**:
+The right-side content panel paired with the Perspective Illustration, using a light charcoal tint, rounded container, slim mint accent, an explanatory eyebrow, and numbered Accordion triggers.
+_Avoid_: Equal visual weight to the illustration, plain unstructured copy, decorative numbering without content purpose
+
 **Portfolio Placeholder Card**:
 An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.
 _Avoid_: Empty broken link, unpublished program, missing content error
