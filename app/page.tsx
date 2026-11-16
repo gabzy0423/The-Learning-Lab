@@ -151,7 +151,24 @@ export default function Home() {
               </span>
             </Link>
           ))}
-          <div aria-hidden="true" className="hidden min-h-44 rounded-lg border border-brand-charcoal/15 bg-white lg:col-span-2 lg:block" />
+          <Link
+            href="/contact?interest=consultation"
+            className="group hidden min-h-[29rem] flex-col justify-between rounded-lg border border-brand-mint-green/30 bg-gradient-to-br from-brand-mint-green via-brand-white to-brand-cyan-blue/30 p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 lg:flex"
+          >
+            <div>
+              <p className="text-sm font-bold text-brand-charcoal/65">Tailored learning</p>
+              <h3 className="mt-4 max-w-xs font-heading text-2xl font-extrabold leading-tight">
+                Need a learning solution for your team?
+              </h3>
+              <p className="mt-4 max-w-sm text-sm leading-relaxed text-brand-charcoal/75">
+                Let&apos;s explore a practical approach shaped around your people, priorities, and goals.
+              </p>
+            </div>
+            <span className="inline-flex min-h-11 w-fit items-center gap-2 rounded-xl bg-brand-charcoal px-5 text-sm font-bold text-brand-white transition-colors group-hover:bg-brand-charcoal/90">
+              Talk to Us
+              <span aria-hidden="true" className="text-base leading-none">→</span>
+            </span>
+          </Link>
         </div>
         <div className="mt-8 flex justify-center">
           <Link

@@ -156,6 +156,10 @@ _Avoid_: Course detail page, promotional claim, hidden hover-only content
 The accessible card interaction that crossfades a program’s base image to its matching alternate image on hover or keyboard focus while keeping the base image for touch and mobile contexts.
 _Avoid_: Carousel, automatic image rotation, touch-only image replacement
 
+**Portfolio CTA Card**:
+The sixth Signature Learning Portfolio grid card that directs visitors toward a tailored learning conversation instead of representing a program category.
+_Avoid_: Program card, placeholder-only slot, generic promotional tile
+
 **Course Directory**:
 An optional browseable view of courses across all five program categories, supporting quick discovery alongside category-first navigation.
 _Avoid_: LMS catalogue, enrollment catalogue
