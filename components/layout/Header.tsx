@@ -164,7 +164,7 @@ export function Header() {
               id="about-menu"
               aria-hidden={!aboutOpen}
               inert={!aboutOpen}
-              className={`absolute left-0 top-[calc(100%+0.75rem)] w-64 rounded-2xl border border-brand-charcoal/10 bg-white p-2 shadow-[0_18px_50px_rgba(41,41,41,0.16)] transition-[opacity,transform] duration-200 ease-out motion-reduce:transition-none motion-reduce:transform-none ${aboutOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"}`}
+              className={`absolute left-0 top-[calc(100%+0.75rem)] w-64 origin-top transform-gpu rounded-2xl border border-brand-charcoal/10 bg-white p-2 shadow-[0_18px_50px_rgba(41,41,41,0.16)] transition-[opacity,transform] duration-200 ease-out will-change-[opacity,transform] motion-reduce:transition-none motion-reduce:transform-none ${aboutOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"}`}
             >
                 {aboutLinks.map((link) => {
                   const active = pathname === "/about" && link.href === "/about";
@@ -205,7 +205,7 @@ export function Header() {
               id="programs-menu"
               aria-hidden={!programsOpen}
               inert={!programsOpen}
-              className={`absolute left-0 top-[calc(100%+0.75rem)] w-72 rounded-2xl border border-brand-charcoal/10 bg-white p-2 shadow-[0_18px_50px_rgba(41,41,41,0.16)] transition-[opacity,transform] duration-200 ease-out motion-reduce:transition-none motion-reduce:transform-none ${programsOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"}`}
+              className={`absolute left-0 top-[calc(100%+0.75rem)] w-72 origin-top transform-gpu rounded-2xl border border-brand-charcoal/10 bg-white p-2 shadow-[0_18px_50px_rgba(41,41,41,0.16)] transition-[opacity,transform] duration-200 ease-out will-change-[opacity,transform] motion-reduce:transition-none motion-reduce:transform-none ${programsOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"}`}
             >
                 {programs.map((program) => {
                   const href = `/programs/${program.slug}`;
@@ -289,7 +289,7 @@ export function Header() {
                 id="mobile-about-menu"
                 aria-hidden={!mobileAboutOpen}
                 inert={!mobileAboutOpen}
-                className={`ml-4 overflow-hidden border-l-2 border-brand-turquoise pl-3 transition-[max-height,opacity,transform] duration-200 ease-out motion-reduce:transition-none motion-reduce:transform-none ${mobileAboutOpen ? "max-h-96 translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 max-h-0 opacity-0"}`}
+                className={`ml-4 overflow-hidden border-l-2 border-brand-turquoise pl-3 transition-[max-height,opacity] duration-200 ease-out will-change-[max-height,opacity] motion-reduce:transition-none ${mobileAboutOpen ? "max-h-96 opacity-100" : "pointer-events-none max-h-0 opacity-0"}`}
               >
                   {aboutLinks.map((link) => {
                     const active = pathname === "/about" && link.href === "/about";
@@ -315,7 +315,7 @@ export function Header() {
                 id="mobile-programs-menu"
                 aria-hidden={!mobileProgramsOpen}
                 inert={!mobileProgramsOpen}
-                className={`ml-4 overflow-hidden border-l-2 border-brand-turquoise pl-3 transition-[max-height,opacity,transform] duration-200 ease-out motion-reduce:transition-none motion-reduce:transform-none ${mobileProgramsOpen ? "max-h-96 translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 max-h-0 opacity-0"}`}
+                className={`ml-4 overflow-hidden border-l-2 border-brand-turquoise pl-3 transition-[max-height,opacity] duration-200 ease-out will-change-[max-height,opacity] motion-reduce:transition-none ${mobileProgramsOpen ? "max-h-96 opacity-100" : "pointer-events-none max-h-0 opacity-0"}`}
               >
                   {programs.map((program) => {
                     const href = `/programs/${program.slug}`;
