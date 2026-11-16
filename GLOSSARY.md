@@ -140,6 +140,10 @@ _Avoid_: Course filter, Resources menu
 A grouped set of child links revealed from a primary navigation control and closed after selection, outside interaction, or Escape.
 _Avoid_: Persistent sidebar, separate navigation page
 
+**Animated Navigation Submenu**:
+A Navigation Submenu that uses a short fade and slide transition when opening or closing, with motion disabled for reduced-motion preferences.
+_Avoid_: Delayed navigation, decorative animation, scroll-driven menu
+
 **Split Section Intro**:
 A section-opening layout that keeps the primary heading in one column and its supporting description in a separate, top-aligned column on larger screens.
 _Avoid_: Two unrelated content blocks, equal-priority columns, card grid
