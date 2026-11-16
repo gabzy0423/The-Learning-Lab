@@ -160,6 +160,10 @@ _Avoid_: Section-specific desktop offsets, mobile edge-to-edge content, unrelate
 The About page’s contained hero treatment that uses the approved team image as a background with a charcoal overlay, left-aligned white copy, and content-driven height on smaller screens.
 _Avoid_: Standalone image card, unprotected text over photography, full-bleed desktop misalignment
 
+**Learner-Centered Intro**:
+The About page section that introduces The Learning Lab’s learner-centered education perspective through a left-aligned heading and readable supporting copy on the right at desktop, stacked on smaller screens.
+_Avoid_: Repeating the banner hero, single long text block, generic training claim
+
 **Portfolio Placeholder Card**:
 An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.
 _Avoid_: Empty broken link, unpublished program, missing content error

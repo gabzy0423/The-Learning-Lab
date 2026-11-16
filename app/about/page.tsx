@@ -26,6 +26,28 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+
+      <section className="mt-20 border-t border-brand-charcoal/10 pt-12 lg:mt-28 lg:pt-16" aria-labelledby="learner-centered-heading">
+        <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <div>
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              Our perspective
+            </p>
+            <h2 id="learner-centered-heading" className="mt-4 max-w-2xl font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+              The Learning Lab sets a new standard for <span className="text-brand-mint-green">learner-centered education.</span>
+            </h2>
+          </div>
+          <div className="space-y-5 text-base leading-relaxed text-brand-charcoal/70">
+            <p>
+              To create world-class learning experiences, we commit to understanding you—the modern learner: how you think and retain information, how you absorb and engage with new knowledge, and what helps you commit to lasting change.
+            </p>
+            <p>
+              That perspective shapes how we design every experience: practical, engaging, and connected to the way people learn and work today.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
