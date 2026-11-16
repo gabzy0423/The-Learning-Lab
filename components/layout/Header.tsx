@@ -230,7 +230,7 @@ export function Header() {
 
         </nav>
 
-        <Link href="/contact?interest=program-information" className="hidden min-h-10 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-brand-charcoal px-4 text-xs font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue lg:inline-flex" onClick={closeDesktopMenus}>
+        <Link href="/contact?interest=program-information" className="hidden min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-brand-charcoal px-5 text-sm font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue lg:inline-flex" onClick={closeDesktopMenus}>
           <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 11.5a8.38 8.38 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.8L3 21l1.8-4.2A8.5 8.5 0 1 1 21 11.5Z" />
           </svg>
