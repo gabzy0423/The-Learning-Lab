@@ -172,6 +172,28 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <section className="mt-20 border-t border-brand-charcoal/10 pt-12 lg:mt-28 lg:pt-16" aria-labelledby="different-approach-heading">
+        <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+          <div>
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              A different approach
+            </p>
+            <h2 id="different-approach-heading" className="mt-4 max-w-xl font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+              Not all training courses are created equal.
+            </h2>
+          </div>
+          <div className="space-y-5 text-base leading-relaxed text-brand-charcoal/70">
+            <p>
+              In today&apos;s world, it can be challenging to find courses that meet modern learners&apos; needs.
+            </p>
+            <p>
+              Our <span className="font-bold text-brand-charcoal">Signature Courses</span> seamlessly blend theory with real-world practice, offering a professional yet fun approach. We call this unique learning framework The Learning Lab.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
