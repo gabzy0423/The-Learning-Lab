@@ -228,10 +228,11 @@ export function Header() {
             </Link>
           ))}
 
-          <Link href="/contact?interest=program-information" className="absolute left-full top-1/2 ml-5 inline-flex min-h-10 -translate-y-1/2 items-center justify-center whitespace-nowrap rounded-xl bg-brand-charcoal px-4 text-xs font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue" onClick={closeDesktopMenus}>
-            Request Information
-          </Link>
         </nav>
+
+        <Link href="/contact?interest=program-information" className="hidden min-h-10 items-center justify-center whitespace-nowrap rounded-xl bg-brand-charcoal px-4 text-xs font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue lg:inline-flex" onClick={closeDesktopMenus}>
+          Request Information
+        </Link>
 
         <button ref={menuButtonRef} type="button" className="grid size-11 place-items-center rounded-xl text-brand-charcoal transition-colors hover:bg-brand-turquoise/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue lg:hidden" aria-label="Open navigation menu" onClick={openMobileMenu}>
           <svg aria-hidden="true" viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
