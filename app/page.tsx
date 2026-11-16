@@ -242,17 +242,20 @@ export default function Home() {
             </p>
             <ul className="mt-8 space-y-5 border-t border-brand-charcoal/15 pt-6 text-sm font-semibold text-brand-charcoal/80">
               {[
-                "Human-centered perspective",
-                "Practical learning approach",
-                "Progress people can carry into work",
-              ].map((point) => (
-                <li key={point} className="flex items-center gap-3">
+                ["Human-centered perspective", "Start with people, context, and priorities."],
+                ["Practical learning approach", "Focus on relevant ideas, skills, and conversations people can use."],
+                ["Progress people can carry into work", "Turn learning into everyday decisions, collaboration, and impact."],
+              ].map(([title, description]) => (
+                <li key={title} className="flex items-start gap-3">
                   <span className="inline-flex size-5 shrink-0 items-center justify-center rounded-full bg-brand-cyan-blue/15 text-brand-cyan-blue">
                     <svg aria-hidden="true" viewBox="0 0 24 24" className="size-3.5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                       <path d="m5 12 4 4L19 6" />
                     </svg>
                   </span>
-                  {point}
+                  <div>
+                    <h3 className="font-heading text-base font-bold text-brand-charcoal">{title}</h3>
+                    <p className="mt-1 text-sm font-normal leading-relaxed text-brand-charcoal/70">{description}</p>
+                  </div>
                 </li>
               ))}
             </ul>
