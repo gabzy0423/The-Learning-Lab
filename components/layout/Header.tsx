@@ -108,7 +108,7 @@ export function Header() {
         scrolled ? "shadow-[0_8px_28px_rgba(41,41,41,0.12)]" : "shadow-[0_4px_18px_rgba(41,41,41,0.05)]"
       }`}
     >
-      <div className="mx-auto flex min-h-16 w-full max-w-[80rem] items-center justify-between gap-6 px-7 sm:px-10 lg:px-0">
+      <div className="relative mx-auto flex min-h-16 w-full max-w-[80rem] items-center justify-between gap-6 px-7 sm:px-10 lg:px-0">
         <Link
           href="/"
           className="flex min-h-11 items-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-cyan-blue"
@@ -132,7 +132,7 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-4 lg:flex" aria-label="Primary navigation">
+        <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-4 lg:flex" aria-label="Primary navigation">
           {links.slice(0, 1).map((link) => (
             <Link
               key={link.href}
@@ -228,7 +228,7 @@ export function Header() {
             </Link>
           ))}
 
-          <Link href="/contact?interest=program-information" className="ml-5 inline-flex min-h-10 items-center justify-center rounded-xl bg-brand-charcoal px-4 text-xs font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue" onClick={closeDesktopMenus}>
+          <Link href="/contact?interest=program-information" className="absolute left-full top-1/2 ml-5 inline-flex min-h-10 -translate-y-1/2 items-center justify-center whitespace-nowrap rounded-xl bg-brand-charcoal px-4 text-xs font-extrabold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue" onClick={closeDesktopMenus}>
             Request Information
           </Link>
         </nav>
