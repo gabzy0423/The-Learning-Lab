@@ -148,6 +148,10 @@ _Avoid_: Two unrelated content blocks, equal-priority columns, card grid
 An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.
 _Avoid_: Empty broken link, unpublished program, missing content error
 
+**Portfolio Program Card**:
+A Signature Learning Portfolio card that presents one program category through its icon, name, description, approved image, and an Explore Program action.
+_Avoid_: Course detail page, promotional claim, hidden hover-only content
+
 **Course Directory**:
 An optional browseable view of courses across all five program categories, supporting quick discovery alongside category-first navigation.
 _Avoid_: LMS catalogue, enrollment catalogue

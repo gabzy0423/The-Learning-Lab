@@ -112,65 +112,28 @@ export default function Home() {
             <Link
               key={program.slug}
               href={`/programs/${program.slug}`}
-              className={`group relative isolate flex min-h-44 flex-col justify-end overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-4 transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 ${index < 5 ? "text-white" : ""}`}
+              className="group relative flex min-h-[27rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-4 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2"
             >
-              {index === 0 && (
-                <>
-                  <Image src="/assets/courses/personal.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-[center_25%] transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
-                  <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-brand-charcoal/25 to-brand-charcoal/20" />
-                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-charcoal/65 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
-                    Explore Personal Development
-                  </span>
-                </>
-              )}
-              {index === 1 && (
-                <>
-                  <Image src="/assets/courses/managing_work.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
-                  <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
-                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-mint-green/90 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
-                    Explore Managing Work
-                  </span>
-                </>
-              )}
-              {index === 2 && (
-                <>
-                  <Image src="/assets/courses/managing_relationship.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
-                  <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
-                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-charcoal/65 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
-                    Explore Managing Relationships
-                  </span>
-                </>
-              )}
-              {index === 3 && (
-                <>
-                  <Image src="/assets/courses/leadership.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
-                  <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
-                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-mint-green/90 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
-                    Explore Leadership &amp; Management
-                  </span>
-                </>
-              )}
-              {index === 4 && (
-                <>
-                  <Image src="/assets/courses/strategy.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
-                  <span aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/45" />
-                  <span className="absolute inset-0 z-10 flex items-center justify-center bg-brand-charcoal/65 px-6 text-center font-heading text-lg font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
-                    Explore Impacting Strategy
-                  </span>
-                </>
-              )}
-              <span className="absolute left-4 top-4 z-10 inline-flex size-7 items-center justify-center rounded-full bg-brand-charcoal text-brand-white transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">
+              <span className="inline-flex size-8 items-center justify-center rounded-full bg-brand-cyan-blue/10 text-brand-cyan-blue">
                 {index === 0 && <AcademicCapIcon className="size-4" aria-hidden="true" />}
                 {index === 1 && <BriefcaseIcon className="size-4" aria-hidden="true" />}
                 {index === 2 && <UserGroupIcon className="size-4" aria-hidden="true" />}
                 {index === 3 && <UserIcon className="size-4" aria-hidden="true" />}
                 {index === 4 && <ChartBarIcon className="size-4" aria-hidden="true" />}
               </span>
-              <div className="relative z-10 transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">
+              <div className="mt-4">
                 <h3 className="font-heading text-lg font-bold leading-snug">{program.name}</h3>
-                <p className="mt-2 max-w-xs text-xs leading-snug text-current/85">{programDescriptions[index]}</p>
+                <p className="mt-2 text-xs leading-relaxed text-brand-charcoal/70">{programDescriptions[index]}</p>
               </div>
-              <span aria-hidden="true" className="absolute bottom-5 right-5 z-10 inline-flex size-6 items-center justify-center rounded-full bg-brand-charcoal text-sm font-bold text-brand-white transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">→</span>
+              {index === 0 && <div className="relative mt-5 min-h-32 overflow-hidden rounded-md bg-brand-charcoal/5"><Image src="/assets/courses/personal.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-[center_25%] transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
+              {index === 1 && <div className="relative mt-5 min-h-32 overflow-hidden rounded-md bg-brand-charcoal/5"><Image src="/assets/courses/managing_work.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
+              {index === 2 && <div className="relative mt-5 min-h-32 overflow-hidden rounded-md bg-brand-charcoal/5"><Image src="/assets/courses/managing_relationship.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
+              {index === 3 && <div className="relative mt-5 min-h-32 overflow-hidden rounded-md bg-brand-charcoal/5"><Image src="/assets/courses/leadership.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
+              {index === 4 && <div className="relative mt-5 min-h-32 overflow-hidden rounded-md bg-brand-charcoal/5"><Image src="/assets/courses/strategy.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
+              <span className="mt-auto inline-flex items-center gap-2 pt-4 text-xs font-bold text-brand-charcoal transition-colors group-hover:text-brand-cyan-blue">
+                Explore Program
+                <span aria-hidden="true" className="text-base leading-none">→</span>
+              </span>
             </Link>
           ))}
           <div aria-hidden="true" className="hidden min-h-44 rounded-lg border border-brand-charcoal/15 bg-white lg:col-span-2 lg:block" />
