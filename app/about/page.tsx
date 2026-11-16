@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function AboutPage() {
   return (
@@ -45,6 +46,32 @@ export default function AboutPage() {
             <p>
               That perspective shapes how we design every experience: practical, engaging, and connected to the way people learn and work today.
             </p>
+            <Accordion className="border-t border-brand-charcoal/10 pt-2">
+              <AccordionItem value="think-and-retain" className="border-brand-charcoal/10">
+                <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
+                  How learners think and retain information
+                </AccordionTrigger>
+                <AccordionContent className="text-brand-charcoal/70">
+                  We pay attention to how people process and retain information so each learning experience can meet learners where they are.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="absorb-and-engage" className="border-brand-charcoal/10">
+                <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
+                  How learners absorb and engage with knowledge
+                </AccordionTrigger>
+                <AccordionContent className="text-brand-charcoal/70">
+                  We shape learning around the ways people prefer to absorb, explore, and engage with new knowledge.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="commit-to-change" className="border-brand-charcoal/10">
+                <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
+                  What helps learners commit to lasting change
+                </AccordionTrigger>
+                <AccordionContent className="text-brand-charcoal/70">
+                  We connect learning to the motivation and practical context that help people carry new understanding into lasting change.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>

@@ -164,6 +164,10 @@ _Avoid_: Standalone image card, unprotected text over photography, full-bleed de
 The About page section that introduces The Learning Lab’s learner-centered education perspective through a left-aligned heading and readable supporting copy on the right at desktop, stacked on smaller screens.
 _Avoid_: Repeating the banner hero, single long text block, generic training claim
 
+**Learner-Centered Accordion**:
+An optional disclosure below the Learner-Centered Intro copy that expands three approved learner-focused ideas: how people think and retain information, how they absorb and engage with knowledge, and what helps them commit to lasting change.
+_Avoid_: Hiding the primary intro, unsupported learner research claims, unrelated FAQ content
+
 **Portfolio Placeholder Card**:
 An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.
 _Avoid_: Empty broken link, unpublished program, missing content error
