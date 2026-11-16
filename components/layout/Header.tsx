@@ -14,7 +14,7 @@ const links = [
 
 const aboutLinks = [
   { href: "/about", label: "About The Learning Lab" },
-  { href: "/about#meet-the-team", label: "Meet The Team" },
+  { href: "/about/team", label: "Meet The Team" },
 ];
 
 function isActive(pathname: string, href: string) {

@@ -125,11 +125,11 @@ The persistent website menu connecting visitors to Home, About, Programs, Soluti
 _Avoid_: Sitemap, course directory
 
 **About Menu**:
-A section menu within the Primary Navigation that routes visitors to the About The Learning Lab page and the Meet The Team section on that same page.
+A section menu within the Primary Navigation that routes visitors to the About The Learning Lab page and the standalone Meet The Team page.
 _Avoid_: Standalone About page replacement, Programs menu
 
-**Meet The Team Section**:
-A section of the About page reserved for the organization’s team introduction; until approved people data is available, its structure and copy remain clearly marked as proposed.
+**Meet The Team Page**:
+A standalone About-area page reserved for the organization’s team introduction; until approved people data is available, its structure and copy remain clearly marked as proposed.
 _Avoid_: Verified staff directory, invented biography, hiring page
 
 **Programs Menu**:
