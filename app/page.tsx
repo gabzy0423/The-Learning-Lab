@@ -173,7 +173,7 @@ export default function Home() {
               <span aria-hidden="true" className="absolute bottom-5 right-5 z-10 inline-flex size-6 items-center justify-center rounded-full bg-brand-charcoal text-sm font-bold text-brand-white transition-opacity duration-200 group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none">→</span>
             </Link>
           ))}
-          <div aria-hidden="true" className="hidden min-h-44 rounded-lg lg:col-span-2 lg:block" />
+          <div aria-hidden="true" className="hidden min-h-44 rounded-lg border border-brand-charcoal/15 bg-white lg:col-span-2 lg:block" />
         </div>
         <div className="mt-8 flex justify-center">
           <Link
