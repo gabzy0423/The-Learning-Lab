@@ -165,7 +165,7 @@ The About page section that introduces The Learning Lab’s learner-centered edu
 _Avoid_: Repeating the banner hero, single long text block, generic training claim
 
 **Learner-Centered Accordion**:
-An optional disclosure below the Learner-Centered Intro copy that expands three approved learner-focused ideas: how people think and retain information, how they absorb and engage with knowledge, and what helps them commit to lasting change.
+An optional disclosure below the Learner-Centered Intro copy that expands five approved learner-focused ideas: how people think and retain information, how they absorb and engage with knowledge, what helps them commit to lasting change, how learning stays practical and engaging, and how learning supports lasting change.
 _Avoid_: Hiding the primary intro, unsupported learner research claims, unrelated FAQ content
 
 **Perspective Illustration**:

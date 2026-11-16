@@ -48,7 +48,7 @@ export default function AboutPage() {
               />
             </div>
           </div>
-          <div className="space-y-5 rounded-2xl border-l-4 border-brand-mint-green bg-brand-charcoal/[0.04] p-6 text-base leading-relaxed text-brand-charcoal/70 sm:p-8">
+          <div className="h-full space-y-5 rounded-2xl border-l-4 border-brand-mint-green bg-brand-charcoal/[0.04] p-6 pb-5 text-base leading-relaxed text-brand-charcoal/70 sm:p-8 sm:pb-6">
             <p className="text-sm font-bold text-brand-cyan-blue">How we design learning</p>
             <p>
               To create world-class learning experiences, we commit to understanding you—the modern learner: how you think and retain information, how you absorb and engage with new knowledge, and what helps you commit to lasting change.
@@ -82,6 +82,24 @@ export default function AboutPage() {
                 </AccordionTrigger>
                 <AccordionContent className="text-brand-charcoal/70">
                   We connect learning to the motivation and practical context that help people carry new understanding into lasting change.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="practical-and-engaging" className="border-brand-charcoal/10">
+                <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
+                  <span className="mr-3 text-xs font-extrabold text-brand-mint-green">04</span>
+                  How learning stays practical and engaging
+                </AccordionTrigger>
+                <AccordionContent className="text-brand-charcoal/70">
+                  We blend theory with real-world practice so learning feels relevant, active, and connected to everyday work.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="lasting-change" className="border-brand-charcoal/10">
+                <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
+                  <span className="mr-3 text-xs font-extrabold text-brand-mint-green">05</span>
+                  How learning supports lasting change
+                </AccordionTrigger>
+                <AccordionContent className="text-brand-charcoal/70">
+                  We design experiences that help people move from new knowledge to the commitment and action needed for lasting change.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
