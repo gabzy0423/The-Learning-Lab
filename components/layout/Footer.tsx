@@ -5,8 +5,8 @@ import { programs } from "@/content/programs";
 const footerLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/programs", label: "Programs" },
-  { href: "/solutions", label: "Solutions" },
+  { href: "/programs", label: "Learning Programs" },
+  { href: "/solutions", label: "Digital Solutions" },
   { href: "/contact", label: "Contact" },
 ];
 
