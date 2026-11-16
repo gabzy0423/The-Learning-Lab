@@ -322,12 +322,15 @@ export default function Home() {
               </div>
             </div>
             <div className="relative z-10 mt-6 min-h-64 lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:w-[36%]">
+              <span aria-hidden="true" className="hero-dot-grid pointer-events-none absolute right-2 top-6 z-0 size-24 opacity-20 lg:size-32 lg:opacity-35" />
+              <span aria-hidden="true" className="pointer-events-none absolute -right-8 bottom-0 z-0 size-40 rounded-full bg-brand-mint-green/25 blur-2xl lg:size-56" />
+              <span aria-hidden="true" className="pointer-events-none absolute right-1/3 top-8 z-0 size-32 rounded-full bg-brand-cyan-blue/20 blur-2xl lg:size-44" />
               <Image
                 src="/assets/hero/cta_hero.png"
                 alt=""
                 fill
                 sizes="(min-width: 1024px) 32vw, 100vw"
-                className="origin-bottom-right object-contain object-bottom lg:scale-100"
+                className="relative z-10 origin-bottom-right object-contain object-bottom lg:scale-100"
               />
             </div>
           </div>
