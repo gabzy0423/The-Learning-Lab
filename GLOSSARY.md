@@ -156,6 +156,10 @@ _Avoid_: Two unrelated content blocks, equal-priority columns, card grid
 The shared left and right edge used by the desktop header logo, page introductions, and major sections; mobile and tablet layouts retain their existing readable gutters.
 _Avoid_: Section-specific desktop offsets, mobile edge-to-edge content, unrelated container widths
 
+**About Banner**:
+The About page’s contained hero treatment that uses the approved team image as a background with a charcoal overlay, left-aligned white copy, and content-driven height on smaller screens.
+_Avoid_: Standalone image card, unprotected text over photography, full-bleed desktop misalignment
+
 **Portfolio Placeholder Card**:
 An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.
 _Avoid_: Empty broken link, unpublished program, missing content error
