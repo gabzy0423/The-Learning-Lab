@@ -228,7 +228,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-brand-charcoal/[0.03]" aria-labelledby="about-preview-heading">
-        <div className="mx-auto grid max-w-[80rem] items-start gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-0">
+        <div className="mx-auto grid max-w-[80rem] items-stretch gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-0">
           <div>
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
@@ -267,12 +267,12 @@ export default function Home() {
               <span aria-hidden="true">→</span>
             </Link>
           </div>
-          <div className="relative isolate">
+          <div className="relative isolate h-full">
             <span aria-hidden="true" className="pointer-events-none absolute -right-5 -top-6 z-0 size-28 rotate-12 rounded-[42%_58%_55%_45%] bg-brand-mint-green/85 blur-[1px] sm:size-36" />
             <span aria-hidden="true" className="pointer-events-none absolute -bottom-6 -left-6 z-0 size-24 -rotate-12 rounded-[58%_42%_45%_55%] bg-brand-cyan-blue/55 blur-[1px] sm:size-32" />
-            <div className="relative z-10 overflow-hidden rounded-lg border border-brand-charcoal/10 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.12)]">
+            <div className="relative z-10 h-full overflow-hidden rounded-lg border border-brand-charcoal/10 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.12)]">
               <video
-                className="aspect-[3/2] w-full object-cover"
+                className="h-auto aspect-[3/2] w-full object-cover lg:h-full lg:aspect-auto"
                 controls
                 preload="metadata"
                 aria-label="About The Learning Lab video"
