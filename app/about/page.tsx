@@ -56,10 +56,10 @@ export default function AboutPage() {
               className="h-auto w-full object-contain"
             />
           </div>
-          <div className="h-full space-y-5 rounded-2xl border-l-4 border-brand-mint-green bg-brand-charcoal/[0.04] p-6 pb-5 text-base leading-relaxed text-brand-charcoal/70 sm:p-8 sm:pb-6 lg:col-start-2 lg:row-start-2">
+          <div className="h-full space-y-5 text-base leading-relaxed text-brand-charcoal/70 lg:col-start-2 lg:row-start-2">
             <p className="text-sm font-bold text-brand-cyan-blue">How we design learning</p>
             <Accordion className="border-t border-brand-charcoal/10 pt-2">
-              <AccordionItem value="think-and-retain" className="border-brand-charcoal/10">
+              <AccordionItem value="think-and-retain" className="border-brand-charcoal/10 py-2">
                 <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
                   <span className="mr-3 text-xs font-extrabold text-brand-mint-green">01</span>
                   How learners think and retain information
@@ -68,7 +68,7 @@ export default function AboutPage() {
                   We pay attention to how people process and retain information so each learning experience can meet learners where they are.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem value="absorb-and-engage" className="border-brand-charcoal/10">
+              <AccordionItem value="absorb-and-engage" className="border-brand-charcoal/10 py-2">
                 <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
                   <span className="mr-3 text-xs font-extrabold text-brand-mint-green">02</span>
                   How learners absorb and engage with knowledge
@@ -77,7 +77,7 @@ export default function AboutPage() {
                   We shape learning around the ways people prefer to absorb, explore, and engage with new knowledge.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem value="commit-to-change" className="border-brand-charcoal/10">
+              <AccordionItem value="commit-to-change" className="border-brand-charcoal/10 py-2">
                 <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
                   <span className="mr-3 text-xs font-extrabold text-brand-mint-green">03</span>
                   What helps learners commit to lasting change
@@ -86,7 +86,7 @@ export default function AboutPage() {
                   We connect learning to the motivation and practical context that help people carry new understanding into lasting change.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem value="practical-and-engaging" className="border-brand-charcoal/10">
+              <AccordionItem value="practical-and-engaging" className="border-brand-charcoal/10 py-2">
                 <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
                   <span className="mr-3 text-xs font-extrabold text-brand-mint-green">04</span>
                   How learning stays practical and engaging
@@ -95,7 +95,7 @@ export default function AboutPage() {
                   We blend theory with real-world practice so learning feels relevant, active, and connected to everyday work.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem value="lasting-change" className="border-brand-charcoal/10">
+              <AccordionItem value="lasting-change" className="border-brand-charcoal/10 py-2">
                 <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
                   <span className="mr-3 text-xs font-extrabold text-brand-mint-green">05</span>
                   How learning supports lasting change
