@@ -75,6 +75,38 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <section className="mt-20 lg:mt-28" aria-labelledby="mission-vision-heading">
+        <div className="flex flex-wrap items-end justify-between gap-5">
+          <div>
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              Our direction
+            </p>
+            <h2 id="mission-vision-heading" className="mt-4 font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+              What guides our work
+            </h2>
+          </div>
+          <p className="max-w-md text-base leading-relaxed text-brand-charcoal/70">
+            A clear purpose and shared direction shape how we design learning experiences.
+          </p>
+        </div>
+
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
+          <article className="rounded-2xl border border-brand-charcoal/10 bg-brand-charcoal p-7 text-brand-white sm:p-8">
+            <p className="text-sm font-bold text-brand-mint-green">Mission</p>
+            <p className="mt-5 max-w-xl font-heading text-2xl font-extrabold leading-tight sm:text-3xl">
+              To create practical, human-centered learning experiences that help people grow, work better together, and turn insight into action.
+            </p>
+          </article>
+          <article className="rounded-2xl border border-brand-mint-green/30 bg-brand-mint-green p-7 text-brand-charcoal sm:p-8">
+            <p className="text-sm font-bold text-brand-charcoal/70">Vision</p>
+            <p className="mt-5 max-w-xl font-heading text-2xl font-extrabold leading-tight sm:text-3xl">
+              A workplace culture where learning moves people, teams, and organizations forward.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
   );
 }
