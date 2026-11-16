@@ -152,6 +152,10 @@ _Avoid_: Empty broken link, unpublished program, missing content error
 A Signature Learning Portfolio card that presents one program category through its icon, name, description, approved image, and an Explore Program action.
 _Avoid_: Course detail page, promotional claim, hidden hover-only content
 
+**Portfolio Image Swap**:
+The accessible card interaction that crossfades a program’s base image to its matching alternate image on hover or keyboard focus while keeping the base image for touch and mobile contexts.
+_Avoid_: Carousel, automatic image rotation, touch-only image replacement
+
 **Course Directory**:
 An optional browseable view of courses across all five program categories, supporting quick discovery alongside category-first navigation.
 _Avoid_: LMS catalogue, enrollment catalogue
