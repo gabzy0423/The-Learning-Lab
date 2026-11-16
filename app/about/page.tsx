@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function AboutPage() {
   return (
@@ -173,25 +174,59 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mt-20 border-t border-brand-charcoal/10 pt-12 lg:mt-28 lg:pt-16" aria-labelledby="different-approach-heading">
-        <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+      <section className="mt-20 border-t border-brand-charcoal/10 pt-12 lg:mt-28 lg:pt-16" aria-labelledby="learning-method-heading">
+        <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           <div>
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
-              A different approach
+              The Learning Lab method
             </p>
-            <h2 id="different-approach-heading" className="mt-4 max-w-xl font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
-              Not all training courses are created equal.
+            <h2 id="learning-method-heading" className="mt-4 max-w-2xl font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+              Four core elements that make learning stick.
             </h2>
           </div>
-          <div className="space-y-5 text-base leading-relaxed text-brand-charcoal/70">
-            <p>
-              In today&apos;s world, it can be challenging to find courses that meet modern learners&apos; needs.
-            </p>
-            <p>
-              Our <span className="font-bold text-brand-charcoal">Signature Courses</span> seamlessly blend theory with real-world practice, offering a professional yet fun approach. We call this unique learning framework The Learning Lab.
-            </p>
-          </div>
+          <p className="max-w-xl text-base leading-relaxed text-brand-charcoal/70">
+            Based on four core elements, The Learning Lab method combines the latest in cognitive learning science with proven teaching techniques.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
+          <Card className="rounded-2xl border-brand-mint-green/40 bg-brand-mint-green/10 py-0">
+            <CardContent className="p-7 sm:p-8">
+              <p className="text-sm font-extrabold text-brand-cyan-blue">01</p>
+              <h3 className="mt-4 font-heading text-2xl font-extrabold tracking-tight sm:text-3xl">Brain Engagers</h3>
+              <p className="mt-4 text-base leading-relaxed text-brand-charcoal/70">
+                Our programs bring out people&apos;s natural curiosity through story hooks, analogies, and multi-sensory learning methods. We use a thoughtful blend of left- and right-brain approaches to help people connect ideas, create new insights, and stay energized.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="rounded-2xl border-brand-cyan-blue/30 bg-brand-cyan-blue/10 py-0">
+            <CardContent className="p-7 sm:p-8">
+              <p className="text-sm font-extrabold text-brand-cyan-blue">02</p>
+              <h3 className="mt-4 font-heading text-2xl font-extrabold tracking-tight sm:text-3xl">Co-Active Learning</h3>
+              <p className="mt-4 text-base leading-relaxed text-brand-charcoal/70">
+                Modern learners are goal-oriented, collaborative, and sophisticated. We help trainees set clear learning goals and participate actively, learning from and teaching one another throughout the program.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="rounded-2xl border-brand-charcoal/15 bg-brand-charcoal/[0.04] py-0">
+            <CardContent className="p-7 sm:p-8">
+              <p className="text-sm font-extrabold text-brand-cyan-blue">03</p>
+              <h3 className="mt-4 font-heading text-2xl font-extrabold tracking-tight sm:text-3xl">Retrieval Practice</h3>
+              <p className="mt-4 text-base leading-relaxed text-brand-charcoal/70">
+                We connect learning to real-world application through opportunities to retrieve new knowledge, practise skills, and complete practical missions that strengthen retention.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="rounded-2xl border-brand-turquoise/40 bg-brand-turquoise/10 py-0">
+            <CardContent className="p-7 sm:p-8">
+              <p className="text-sm font-extrabold text-brand-cyan-blue">04</p>
+              <h3 className="mt-4 font-heading text-2xl font-extrabold tracking-tight sm:text-3xl">Play Space</h3>
+              <p className="mt-4 text-base leading-relaxed text-brand-charcoal/70">
+                We create informal environments where participants can experiment, make mistakes without judgment, and stay focused on their learning. Humor and playfulness help adults relax, participate, and have fun while they learn.
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
     </main>
