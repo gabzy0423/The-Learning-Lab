@@ -144,6 +144,10 @@ _Avoid_: Persistent sidebar, separate navigation page
 A section-opening layout that keeps the primary heading in one column and its supporting description in a separate, top-aligned column on larger screens.
 _Avoid_: Two unrelated content blocks, equal-priority columns, card grid
 
+**Portfolio Placeholder Card**:
+An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.
+_Avoid_: Empty broken link, unpublished program, missing content error
+
 **Course Directory**:
 An optional browseable view of courses across all five program categories, supporting quick discovery alongside category-first navigation.
 _Avoid_: LMS catalogue, enrollment catalogue

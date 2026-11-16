@@ -112,7 +112,7 @@ export default function Home() {
             <Link
               key={program.slug}
               href={`/programs/${program.slug}`}
-              className={`group relative isolate flex min-h-44 flex-col justify-end overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-4 transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 ${index < 5 ? "text-white" : ""} ${index === 3 ? "lg:col-start-2" : index === 4 ? "lg:col-start-4" : ""}`}
+              className={`group relative isolate flex min-h-44 flex-col justify-end overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-4 transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 ${index < 5 ? "text-white" : ""}`}
             >
               {index === 0 && (
                 <>
