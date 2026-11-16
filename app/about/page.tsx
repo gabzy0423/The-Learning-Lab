@@ -127,8 +127,11 @@ export default function AboutPage() {
 
         <div className="mt-10 space-y-8 lg:space-y-10">
           <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
-              <Image src="/assets/pages/about/mission.png" alt="Colleagues learning and collaborating together" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+            <div className="relative isolate">
+              <span aria-hidden="true" className="pointer-events-none absolute -bottom-3 -left-2 z-0 size-20 rounded-[40%_60%_55%_45%] bg-brand-turquoise/25 blur-[1px] sm:size-28" />
+              <div className="relative z-10 aspect-[16/9] overflow-hidden rounded-2xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
+                <Image src="/assets/pages/about/mission.png" alt="Colleagues learning and collaborating together" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              </div>
             </div>
             <div className="flex h-full flex-col justify-center text-brand-charcoal lg:order-2">
               <h3 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Mission</h3>
@@ -139,13 +142,31 @@ export default function AboutPage() {
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-brand-mint-green/30 bg-brand-mint-green lg:order-2">
-              <Image src="/assets/pages/about/vision.png" alt="Learner working confidently in a modern workspace" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+            <div className="relative isolate lg:order-2">
+              <span aria-hidden="true" className="pointer-events-none absolute -right-2 -top-3 z-0 size-20 rounded-[55%_45%_40%_60%] bg-brand-mint-green/30 blur-[1px] sm:size-28" />
+              <div className="relative z-10 aspect-[16/9] overflow-hidden rounded-2xl border border-brand-mint-green/30 bg-brand-mint-green">
+                <Image src="/assets/pages/about/vision.png" alt="Learner working confidently in a modern workspace" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              </div>
             </div>
             <div className="flex h-full flex-col justify-center text-brand-charcoal lg:order-1">
               <h3 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Vision</h3>
               <p className="mt-5 max-w-xl text-lg font-normal leading-relaxed text-brand-charcoal/80 sm:text-xl">
                 A workplace culture where learning moves people, teams, and organizations forward.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
+            <div className="relative isolate">
+              <span aria-hidden="true" className="pointer-events-none absolute -bottom-3 -left-2 z-0 size-20 rounded-[45%_55%_60%_40%] bg-brand-turquoise/25 blur-[1px] sm:size-28" />
+              <div className="relative z-10 aspect-[16/9] overflow-hidden rounded-2xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
+                <Image src="/assets/pages/about/commitment.png" alt="Colleagues celebrating a collaborative learning moment" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+              </div>
+            </div>
+            <div className="flex h-full flex-col justify-center text-brand-charcoal lg:order-2">
+              <h3 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Our Commitment</h3>
+              <p className="mt-5 max-w-xl text-lg font-normal leading-relaxed text-brand-charcoal/80 sm:text-xl">
+                To continually innovate, support lifelong learning, and create opportunities for a brighter, more inclusive future.
               </p>
             </div>
           </div>

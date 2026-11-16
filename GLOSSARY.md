@@ -181,12 +181,11 @@ The About page’s 2×2 desktop composition with the perspective heading top-lef
 _Avoid_: Four unrelated blocks, image-first mobile flow, dense copy before the section heading
 
 **Mission Vision Zigzag**:
-The About page layout that alternates Mission and Vision rows on desktop, pairing each approved statement with its matching image and editorial content block; each row places the image before its content on mobile.
+The About page layout that alternates Mission, Vision, and Our Commitment rows on desktop, pairing each approved statement with its matching image and editorial content block; each row places the image before its content on mobile.
 _Avoid_: Repeated two-column direction, unrelated image pairing, heavy media cards
 
 **Editorial Mission Vision**:
-The Mission Vision Zigzag variant that removes Card containers and uses larger editorial headings with regular-weight descriptions.
-Mission and Vision copy is vertically centered against its matching image with consistent text width, alignment, and spacing.
+The Mission Vision Zigzag variant that removes Card containers and uses larger editorial headings with regular-weight descriptions. Mission and Vision copy is vertically centered against its matching image with consistent text width, alignment, and spacing; Our Commitment continues the same pattern with a subtle mint/turquoise decorative shape behind its image.
 _Avoid_: Heavy text cards, decorative icons, bold body copy, mismatched vertical alignment
 
 **Portfolio Placeholder Card**:
