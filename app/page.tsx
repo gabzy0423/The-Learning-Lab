@@ -161,22 +161,13 @@ export default function Home() {
                 Need a learning solution for your team?
               </h3>
               <p className="mt-4 max-w-sm text-sm leading-relaxed text-brand-charcoal/75">
-                Let&apos;s explore a practical approach shaped around your people, priorities, and goals.
+                Explore the full range of practical learning programs designed to support personal growth, stronger collaboration, confident leadership, and strategic impact. Find the path that best fits your team&apos;s needs and goals.
               </p>
             </div>
             <span className="inline-flex min-h-11 w-fit items-center gap-2 rounded-xl bg-brand-charcoal px-5 text-sm font-bold text-brand-white transition-colors group-hover:bg-brand-charcoal/90">
-              Talk to Us
+              Explore All Programs
               <span aria-hidden="true" className="text-base leading-none">→</span>
             </span>
-          </Link>
-        </div>
-        <div className="mt-8 flex justify-center">
-          <Link
-            href="/programs"
-            className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-charcoal px-5 text-sm font-bold text-brand-white transition-colors hover:bg-brand-charcoal/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
-          >
-            Explore All Programs
-            <span aria-hidden="true">→</span>
           </Link>
         </div>
         </div>
