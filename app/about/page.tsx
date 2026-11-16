@@ -12,16 +12,16 @@ export default function AboutPage() {
           sizes="(min-width: 1280px) 1280px, 100vw"
           className="object-cover"
         />
-        <div aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/70 sm:bg-brand-charcoal/65 lg:bg-brand-charcoal/55" />
-        <div className="relative max-w-3xl">
-          <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
+        <div aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/80 sm:bg-brand-charcoal/75 lg:bg-brand-charcoal/65" />
+        <div className="relative mx-auto max-w-3xl text-center">
+          <p className="flex items-center justify-center gap-3 text-sm font-bold text-brand-white">
           <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
           About The Learning Lab
           </p>
           <h1 id="about-heading" className="mt-4 font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-[clamp(3rem,4.7vw,4rem)]">
           Learning designed to move <span className="text-brand-mint-green">people forward.</span>
           </h1>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-white/85">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-brand-white/85">
           A closer look at the purpose and direction behind The Learning Lab.
           </p>
         </div>
