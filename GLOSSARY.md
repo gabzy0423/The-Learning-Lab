@@ -164,6 +164,10 @@ _Avoid_: Program card, placeholder-only slot, generic promotional tile
 The Methodology section composition that pairs a learning visual with the section explanation and its three checkmarked learning steps.
 _Avoid_: Numeric performance proof, separate card grid, decorative image-only block
 
+**Aligned Media Frame**:
+A shared image or video ratio and desktop sizing rule used to make visual blocks across separate sections read as a consistent system.
+_Avoid_: Forced equal content height, distorted media, unrelated crop rule
+
 **Course Directory**:
 An optional browseable view of courses across all five program categories, supporting quick discovery alongside category-first navigation.
 _Avoid_: LMS catalogue, enrollment catalogue
