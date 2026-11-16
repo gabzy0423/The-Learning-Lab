@@ -173,8 +173,12 @@ The approved full-composition illustration placed below the Learner-Centered Int
 _Avoid_: Decorative replacement for the copy, cropped artwork, darkened illustration
 
 **Learner Perspective Panel**:
-The right-side content panel paired with the Perspective Illustration, using a light charcoal tint, rounded container, slim mint accent, an explanatory eyebrow, and numbered Accordion triggers.
+The bottom-right content panel in the editorial Perspective layout, using a light charcoal tint, rounded container, slim mint accent, an explanatory eyebrow, and numbered Accordion triggers.
 _Avoid_: Equal visual weight to the illustration, plain unstructured copy, decorative numbering without content purpose
+
+**Editorial Perspective Layout**:
+The About page’s 2×2 desktop composition with the perspective heading top-left, intro copy top-right, illustration bottom-left, and Learner Perspective Panel bottom-right; it stacks in reading order on mobile.
+_Avoid_: Four unrelated blocks, image-first mobile flow, dense copy before the section heading
 
 **Portfolio Placeholder Card**:
 An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.

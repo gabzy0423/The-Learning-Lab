@@ -29,8 +29,8 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-20 border-t border-brand-charcoal/10 pt-12 lg:mt-28 lg:pt-16" aria-labelledby="learner-centered-heading">
-        <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
-          <div>
+        <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-x-16 lg:gap-y-10">
+          <div className="lg:col-start-1 lg:row-start-1">
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               Our perspective
@@ -38,24 +38,26 @@ export default function AboutPage() {
             <h2 id="learner-centered-heading" className="mt-4 max-w-2xl font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
               The Learning Lab sets a new standard for <span className="text-brand-mint-green">learner-centered education.</span>
             </h2>
-            <div className="mt-8 overflow-hidden rounded-2xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
-              <Image
-                src="/assets/pages/about/perspective.png"
-                alt="Illustration representing The Learning Lab perspective"
-                width={400}
-                height={300}
-                className="h-auto w-full object-contain"
-              />
-            </div>
           </div>
-          <div className="h-full space-y-5 rounded-2xl border-l-4 border-brand-mint-green bg-brand-charcoal/[0.04] p-6 pb-5 text-base leading-relaxed text-brand-charcoal/70 sm:p-8 sm:pb-6">
-            <p className="text-sm font-bold text-brand-cyan-blue">How we design learning</p>
+          <div className="space-y-5 text-base leading-relaxed text-brand-charcoal/70 lg:col-start-2 lg:row-start-1">
             <p>
               To create world-class learning experiences, we commit to understanding you—the modern learner: how you think and retain information, how you absorb and engage with new knowledge, and what helps you commit to lasting change.
             </p>
             <p>
               That perspective shapes how we design every experience: practical, engaging, and connected to the way people learn and work today.
             </p>
+          </div>
+          <div className="overflow-hidden rounded-2xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03] lg:col-start-1 lg:row-start-2">
+            <Image
+              src="/assets/pages/about/perspective.png"
+              alt="Illustration representing The Learning Lab perspective"
+              width={400}
+              height={300}
+              className="h-auto w-full object-contain"
+            />
+          </div>
+          <div className="h-full space-y-5 rounded-2xl border-l-4 border-brand-mint-green bg-brand-charcoal/[0.04] p-6 pb-5 text-base leading-relaxed text-brand-charcoal/70 sm:p-8 sm:pb-6 lg:col-start-2 lg:row-start-2">
+            <p className="text-sm font-bold text-brand-cyan-blue">How we design learning</p>
             <Accordion className="border-t border-brand-charcoal/10 pt-2">
               <AccordionItem value="think-and-retain" className="border-brand-charcoal/10">
                 <AccordionTrigger className="font-heading font-bold text-brand-charcoal hover:no-underline">
