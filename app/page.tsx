@@ -12,6 +12,22 @@ const programDescriptions = [
   "Turn priorities into meaningful direction and action. Connect strategic thinking with decisions that create impact.",
 ];
 
+const programImages = [
+  "/assets/courses/personal.png",
+  "/assets/courses/managing_work.png",
+  "/assets/courses/managing_relationship.png",
+  "/assets/courses/leadership.png",
+  "/assets/courses/strategy.png",
+];
+
+const programAlternateImages = [
+  "/assets/courses/alt_personal.png",
+  "/assets/courses/alt_managing_work.png",
+  "/assets/courses/alt_managing_relationship.png",
+  "/assets/courses/alt_leadership.png",
+  "/assets/courses/alt_strategy.png",
+];
+
 export default function Home() {
   return (
     <main className="relative flex-1 overflow-hidden bg-brand-white text-brand-charcoal">
@@ -125,11 +141,10 @@ export default function Home() {
                 <h3 className="font-heading text-xl font-bold leading-snug">{program.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-brand-charcoal/70">{programDescriptions[index]}</p>
               </div>
-              {index === 0 && <div className="relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 after:absolute after:inset-0 after:bg-brand-charcoal/15 sm:h-44"><Image src="/assets/courses/personal.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-[center_25%] transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
-              {index === 1 && <div className="relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 after:absolute after:inset-0 after:bg-brand-charcoal/15 sm:h-44"><Image src="/assets/courses/managing_work.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
-              {index === 2 && <div className="relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 after:absolute after:inset-0 after:bg-brand-charcoal/15 sm:h-44"><Image src="/assets/courses/managing_relationship.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
-              {index === 3 && <div className="relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 after:absolute after:inset-0 after:bg-brand-charcoal/15 sm:h-44"><Image src="/assets/courses/leadership.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
-              {index === 4 && <div className="relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 after:absolute after:inset-0 after:bg-brand-charcoal/15 sm:h-44"><Image src="/assets/courses/strategy.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
+              <div className="group/image relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 after:absolute after:inset-0 after:bg-brand-charcoal/15 sm:h-44">
+                <Image src={programImages[index]} alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-[opacity,transform] duration-300 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
+                <Image src={programAlternateImages[index]} alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center opacity-0 transition-[opacity,transform] duration-300 ease-out group-hover:scale-105 group-hover/image:opacity-100 group-focus-visible:scale-105 group-focus-visible:opacity-100 motion-reduce:transform-none motion-reduce:transition-none" />
+              </div>
               <span className="mt-auto inline-flex items-center gap-2 pt-4 text-xs font-bold text-brand-charcoal transition-colors group-hover:text-brand-cyan-blue">
                 Explore Program
                 <span aria-hidden="true" className="text-base leading-none">→</span>
