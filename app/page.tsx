@@ -272,7 +272,7 @@ export default function Home() {
             <span aria-hidden="true" className="pointer-events-none absolute -bottom-6 -left-6 z-0 size-24 -rotate-12 rounded-[58%_42%_45%_55%] bg-brand-cyan-blue/55 blur-[1px] sm:size-32" />
             <div className="relative z-10 h-full overflow-hidden rounded-lg border border-brand-charcoal/10 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.12)]">
               <video
-                className="h-auto aspect-[3/2] w-full object-cover lg:h-full lg:aspect-auto"
+                className="h-auto aspect-[3/2] w-full object-contain lg:h-full lg:aspect-auto"
                 controls
                 preload="metadata"
                 aria-label="About The Learning Lab video"
