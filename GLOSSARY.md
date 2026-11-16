@@ -152,6 +152,10 @@ _Avoid_: Micro-scroll dismissal, closing the full mobile drawer, direction-speci
 A section-opening layout that keeps the primary heading in one column and its supporting description in a separate, top-aligned column on larger screens.
 _Avoid_: Two unrelated content blocks, equal-priority columns, card grid
 
+**Desktop Alignment Rail**:
+The shared left and right edge used by the desktop header logo, page introductions, and major sections; mobile and tablet layouts retain their existing readable gutters.
+_Avoid_: Section-specific desktop offsets, mobile edge-to-edge content, unrelated container widths
+
 **Portfolio Placeholder Card**:
 An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.
 _Avoid_: Empty broken link, unpublished program, missing content error
