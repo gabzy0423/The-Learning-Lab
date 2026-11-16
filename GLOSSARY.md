@@ -185,9 +185,9 @@ The About page layout that alternates Mission and Vision rows on desktop, pairin
 _Avoid_: Repeated two-column direction, unrelated image pairing, heavy media cards
 
 **Editorial Mission Vision**:
-The Mission Vision Zigzag variant that removes Card containers, uses larger editorial headings, and pairs Mission with an academic-cap icon and Vision with a direction/eye icon.
-Mission and Vision copy is vertically centered against its matching image, with the icon above the heading and consistent text width, alignment, and spacing.
-_Avoid_: Heavy text cards, ambiguous icon meaning, icon-only labels, mismatched vertical alignment
+The Mission Vision Zigzag variant that removes Card containers and uses larger editorial headings with regular-weight descriptions.
+Mission and Vision copy is vertically centered against its matching image with consistent text width, alignment, and spacing.
+_Avoid_: Heavy text cards, decorative icons, bold body copy, mismatched vertical alignment
 
 **Portfolio Placeholder Card**:
 An intentionally blank visual slot completing the Signature Learning Portfolio desktop grid until approved content is available.

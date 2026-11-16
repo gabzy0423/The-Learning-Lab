@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { AcademicCapIcon, EyeIcon } from "@heroicons/react/24/outline";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function AboutPage() {
@@ -132,9 +131,8 @@ export default function AboutPage() {
               <Image src="/assets/pages/about/mission.png" alt="Colleagues learning and collaborating together" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div className="flex h-full flex-col justify-center text-brand-charcoal lg:order-2">
-              <AcademicCapIcon aria-hidden="true" className="size-9 text-brand-mint-green" />
-              <h3 className="mt-4 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Mission</h3>
-              <p className="mt-5 max-w-xl font-heading text-xl font-extrabold leading-relaxed sm:text-2xl">
+              <h3 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Mission</h3>
+              <p className="mt-5 max-w-xl text-lg font-normal leading-relaxed text-brand-charcoal/80 sm:text-xl">
                 To create practical, human-centered learning experiences that help people grow, work better together, and turn insight into action.
               </p>
             </div>
@@ -145,9 +143,8 @@ export default function AboutPage() {
               <Image src="/assets/pages/about/vision.png" alt="Learner working confidently in a modern workspace" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div className="flex h-full flex-col justify-center text-brand-charcoal lg:order-1">
-              <EyeIcon aria-hidden="true" className="size-9 text-brand-mint-green" />
-              <h3 className="mt-4 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Vision</h3>
-              <p className="mt-5 max-w-xl font-heading text-xl font-extrabold leading-relaxed sm:text-2xl">
+              <h3 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Vision</h3>
+              <p className="mt-5 max-w-xl text-lg font-normal leading-relaxed text-brand-charcoal/80 sm:text-xl">
                 A workplace culture where learning moves people, teams, and organizations forward.
               </p>
             </div>
