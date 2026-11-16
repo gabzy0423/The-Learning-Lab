@@ -12,7 +12,7 @@ export default function AboutPage() {
           sizes="(min-width: 1280px) 1280px, 100vw"
           className="object-cover"
         />
-        <div aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/80 sm:bg-brand-charcoal/75 lg:bg-brand-charcoal/65" />
+        <div aria-hidden="true" className="absolute inset-0 bg-brand-charcoal/85 sm:bg-brand-charcoal/80 lg:bg-brand-charcoal/70" />
         <div className="relative mx-auto max-w-3xl text-center">
           <p className="flex items-center justify-center gap-3 text-sm font-bold text-brand-white">
           <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
