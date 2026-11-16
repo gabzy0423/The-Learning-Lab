@@ -176,6 +176,10 @@ _Avoid_: Hero replacement, team directory, generic company bio
 A desktop media frame that stretches to the height of its neighboring content block so both sides of a split section share aligned visual edges.
 _Avoid_: Distorted media, fixed-height crop unrelated to content, forced mobile height
 
+**Human Cutout CTA**:
+A conversion card that pairs conversation copy and actions with a transparent human image to add a personable visual cue without replacing the CTA hierarchy.
+_Avoid_: Decorative mascot, testimonial portrait, action-obscuring image
+
 **Course Directory**:
 An optional browseable view of courses across all five program categories, supporting quick discovery alongside category-first navigation.
 _Avoid_: LMS catalogue, enrollment catalogue

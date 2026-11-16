@@ -286,46 +286,49 @@ export default function Home() {
       </section>
       <section className="border-y border-brand-charcoal/10 bg-brand-white text-brand-charcoal" aria-labelledby="contact-cta-heading">
         <div className="mx-auto max-w-[80rem] px-7 py-12 sm:px-10 lg:px-0 lg:py-14">
-          <div className="grid items-center gap-8 rounded-2xl bg-brand-charcoal p-6 text-brand-white sm:p-8 lg:grid-cols-[1fr_auto] lg:p-10">
-            <div>
-            <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
-              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
-              Start a conversation
-            </p>
-            <h2 id="contact-cta-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-              Ready to <span className="text-brand-mint-green">explore a learning need?</span>
-            </h2>
-            <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-white/70">
-              Tell us what you&apos;re working on, and let&apos;s explore how learning can support your goals.
-            </p>
-            </div>
-            <div className="rounded-xl border border-brand-white/15 bg-brand-white/5 p-5 sm:p-6">
-              <p className="font-heading text-lg font-extrabold text-brand-white">Choose your next step</p>
-              <p className="mt-2 max-w-xs text-sm leading-relaxed text-brand-white/65">
-              Find the right path for your team or learning need.
+          <div className="relative isolate grid overflow-hidden rounded-2xl bg-brand-charcoal p-6 text-brand-white sm:p-8 lg:grid-cols-[1.2fr_0.8fr] lg:p-10">
+            <div className="relative z-10 max-w-2xl">
+              <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
+                <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+                Start a conversation
               </p>
-              <div className="mt-5 flex flex-col gap-3">
+              <h2 id="contact-cta-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+                Ready to <span className="text-brand-mint-green">explore a learning need?</span>
+              </h2>
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-white/70">
+                Tell us what you&apos;re working on, and let&apos;s explore how learning can support your goals.
+              </p>
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <Link
-              href="/contact?interest=program-information"
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand-mint-green px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-mint-green/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
-            >
-              <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
-                <path d="M14 2v6h6M8 13h8M8 17h6" />
-              </svg>
-              Request Program Information
+                  href="/contact?interest=program-information"
+                  className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand-mint-green px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-mint-green/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+                >
+                  <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+                    <path d="M14 2v6h6M8 13h8M8 17h6" />
+                  </svg>
+                  Request Program Information
                 </Link>
                 <Link
-              href="/contact?interest=consultation"
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-brand-white px-5 text-sm font-bold text-brand-white transition-colors hover:bg-brand-white hover:text-brand-charcoal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
-            >
-              <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="3" y="4" width="18" height="18" rx="2" />
-                <path d="M16 2v4M8 2v4M3 10h18" />
-              </svg>
-              Book a Consultation
+                  href="/contact?interest=consultation"
+                  className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-brand-white px-5 text-sm font-bold text-brand-white transition-colors hover:bg-brand-white hover:text-brand-charcoal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+                >
+                  <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                    <path d="M16 2v4M8 2v4M3 10h18" />
+                  </svg>
+                  Book a Consultation
                 </Link>
               </div>
+            </div>
+            <div className="relative z-10 mt-6 min-h-64 lg:mt-0">
+              <Image
+                src="/assets/hero/cta_hero.png"
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 32vw, 100vw"
+                className="object-contain object-bottom lg:scale-110"
+              />
             </div>
           </div>
         </div>
