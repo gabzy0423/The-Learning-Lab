@@ -240,7 +240,7 @@ export default function Home() {
             <p className="mt-4 max-w-lg text-base leading-relaxed text-brand-charcoal/70">
               Explore the story, perspective, and approach behind The Learning Lab through this short introduction.
             </p>
-            <ul className="mt-6 space-y-3 text-sm font-semibold text-brand-charcoal/80">
+            <ul className="mt-8 space-y-5 border-t border-brand-charcoal/15 pt-6 text-sm font-semibold text-brand-charcoal/80">
               {[
                 "Human-centered perspective",
                 "Practical learning approach",
@@ -258,7 +258,7 @@ export default function Home() {
             </ul>
             <Link
               href="/about"
-              className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-charcoal px-5 text-sm font-extrabold text-brand-white transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-brand-charcoal/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+              className="mt-8 inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-charcoal px-5 text-sm font-extrabold text-brand-white transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-brand-charcoal/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
             >
               Learn More About Us
               <span aria-hidden="true">→</span>
