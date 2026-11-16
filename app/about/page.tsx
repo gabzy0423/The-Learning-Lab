@@ -33,7 +33,7 @@ export default function AboutPage() {
           <div className="lg:col-start-1 lg:row-start-1">
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
-              Our perspective
+              Who we are
             </p>
             <h2 id="learner-centered-heading" className="mt-4 max-w-2xl font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
               The Learning Lab sets a new standard for <span className="text-brand-mint-green">learner-centered education.</span>
@@ -49,10 +49,10 @@ export default function AboutPage() {
           </div>
           <div className="overflow-hidden rounded-2xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03] lg:col-start-1 lg:row-start-2">
             <Image
-              src="/assets/pages/about/perspective.png"
-              alt="Illustration representing The Learning Lab perspective"
-              width={400}
-              height={300}
+              src="/assets/pages/about/whoweare.png"
+              alt="The Learning Lab team member working in a learning environment"
+              width={807}
+              height={503}
               className="h-auto w-full object-contain"
             />
           </div>
