@@ -5,11 +5,11 @@ import { LogoMarquee } from "@/components/home/LogoMarquee";
 import { programs } from "@/content/programs";
 
 const programDescriptions = [
-  "Build confidence, skills, and a growth mindset.",
-  "Work with focus, clarity, and confidence.",
-  "Strengthen connection, communication, and trust.",
-  "Lead people with clarity, empathy, and purpose.",
-  "Turn priorities into meaningful direction and action.",
+  "Build confidence, self-awareness, and a growth mindset. Develop practical habits that support continued progress.",
+  "Work with focus, clarity, and confidence. Strengthen everyday practices that help people prioritize, plan, and deliver.",
+  "Strengthen connection, communication, and trust. Navigate collaboration and relationships with greater awareness.",
+  "Lead people with clarity, empathy, and purpose. Build practical capability to support teams and move work forward.",
+  "Turn priorities into meaningful direction and action. Connect strategic thinking with decisions that create impact.",
 ];
 
 export default function Home() {
@@ -112,24 +112,24 @@ export default function Home() {
             <Link
               key={program.slug}
               href={`/programs/${program.slug}`}
-              className="group relative flex min-h-[27rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-4 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2"
+              className="group relative flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2"
             >
-              <span className="inline-flex size-8 items-center justify-center rounded-full bg-brand-cyan-blue/10 text-brand-cyan-blue">
-                {index === 0 && <AcademicCapIcon className="size-4" aria-hidden="true" />}
-                {index === 1 && <BriefcaseIcon className="size-4" aria-hidden="true" />}
-                {index === 2 && <UserGroupIcon className="size-4" aria-hidden="true" />}
-                {index === 3 && <UserIcon className="size-4" aria-hidden="true" />}
-                {index === 4 && <ChartBarIcon className="size-4" aria-hidden="true" />}
+              <span className="inline-flex text-brand-cyan-blue">
+                {index === 0 && <AcademicCapIcon className="size-9" aria-hidden="true" />}
+                {index === 1 && <BriefcaseIcon className="size-9" aria-hidden="true" />}
+                {index === 2 && <UserGroupIcon className="size-9" aria-hidden="true" />}
+                {index === 3 && <UserIcon className="size-9" aria-hidden="true" />}
+                {index === 4 && <ChartBarIcon className="size-9" aria-hidden="true" />}
               </span>
               <div className="mt-4">
-                <h3 className="font-heading text-lg font-bold leading-snug">{program.name}</h3>
-                <p className="mt-2 text-xs leading-relaxed text-brand-charcoal/70">{programDescriptions[index]}</p>
+                <h3 className="font-heading text-xl font-bold leading-snug">{program.name}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-brand-charcoal/70">{programDescriptions[index]}</p>
               </div>
-              {index === 0 && <div className="relative mt-5 min-h-32 overflow-hidden rounded-md bg-brand-charcoal/5"><Image src="/assets/courses/personal.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-[center_25%] transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
-              {index === 1 && <div className="relative mt-5 min-h-32 overflow-hidden rounded-md bg-brand-charcoal/5"><Image src="/assets/courses/managing_work.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
-              {index === 2 && <div className="relative mt-5 min-h-32 overflow-hidden rounded-md bg-brand-charcoal/5"><Image src="/assets/courses/managing_relationship.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
-              {index === 3 && <div className="relative mt-5 min-h-32 overflow-hidden rounded-md bg-brand-charcoal/5"><Image src="/assets/courses/leadership.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
-              {index === 4 && <div className="relative mt-5 min-h-32 overflow-hidden rounded-md bg-brand-charcoal/5"><Image src="/assets/courses/strategy.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
+              {index === 0 && <div className="relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 sm:h-44"><Image src="/assets/courses/personal.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-[center_25%] transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
+              {index === 1 && <div className="relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 sm:h-44"><Image src="/assets/courses/managing_work.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
+              {index === 2 && <div className="relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 sm:h-44"><Image src="/assets/courses/managing_relationship.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
+              {index === 3 && <div className="relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 sm:h-44"><Image src="/assets/courses/leadership.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
+              {index === 4 && <div className="relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 sm:h-44"><Image src="/assets/courses/strategy.png" alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" /></div>}
               <span className="mt-auto inline-flex items-center gap-2 pt-4 text-xs font-bold text-brand-charcoal transition-colors group-hover:text-brand-cyan-blue">
                 Explore Program
                 <span aria-hidden="true" className="text-base leading-none">→</span>
