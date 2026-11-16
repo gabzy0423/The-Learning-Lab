@@ -235,15 +235,30 @@ export default function Home() {
               About The Learning Lab
             </p>
             <h2 id="about-preview-heading" className="mt-4 max-w-xl text-balance font-heading text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-4xl lg:text-5xl">
-              A closer look at<br />
-              <span className="text-brand-mint-green">The Learning Lab.</span>
+              Learning with a <span className="text-brand-mint-green">human point of view.</span>
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-brand-charcoal/70">
               Explore the story, perspective, and approach behind The Learning Lab through this short introduction.
             </p>
+            <ul className="mt-6 space-y-3 text-sm font-semibold text-brand-charcoal/80">
+              {[
+                "Human-centered perspective",
+                "Practical learning approach",
+                "Progress people can carry into work",
+              ].map((point) => (
+                <li key={point} className="flex items-center gap-3">
+                  <span className="inline-flex size-5 shrink-0 items-center justify-center rounded-full bg-brand-cyan-blue/15 text-brand-cyan-blue">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" className="size-3.5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="m5 12 4 4L19 6" />
+                    </svg>
+                  </span>
+                  {point}
+                </li>
+              ))}
+            </ul>
             <Link
               href="/about"
-              className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-charcoal px-5 text-sm font-bold text-brand-white transition-colors hover:bg-brand-charcoal/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+              className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-charcoal px-5 text-sm font-extrabold text-brand-white transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-brand-charcoal/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
             >
               Learn More About Us
               <span aria-hidden="true">→</span>

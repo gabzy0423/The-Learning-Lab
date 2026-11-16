@@ -168,6 +168,10 @@ _Avoid_: Numeric performance proof, separate card grid, decorative image-only bl
 A shared image or video ratio and desktop sizing rule used to make visual blocks across separate sections read as a consistent system.
 _Avoid_: Forced equal content height, distorted media, unrelated crop rule
 
+**About Preview Intro**:
+The homepage introduction to The Learning Lab’s human perspective, practical approach, and real-work impact, linking visitors to the full About page.
+_Avoid_: Hero replacement, team directory, generic company bio
+
 **Course Directory**:
 An optional browseable view of courses across all five program categories, supporting quick discovery alongside category-first navigation.
 _Avoid_: LMS catalogue, enrollment catalogue
