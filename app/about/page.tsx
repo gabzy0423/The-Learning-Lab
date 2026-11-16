@@ -7,7 +7,7 @@ export default function AboutPage() {
           About The Learning Lab
         </p>
         <h1 id="about-heading" className="mt-4 max-w-3xl font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-[clamp(3rem,4.7vw,4rem)]">
-          Learning designed to move people forward.
+          Learning designed to move <span className="text-brand-mint-green">people forward.</span>
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
           A closer look at the purpose and direction behind The Learning Lab.
