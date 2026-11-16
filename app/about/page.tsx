@@ -6,7 +6,7 @@ export default function AboutPage() {
           <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
           About The Learning Lab
         </p>
-        <h1 id="about-heading" className="mt-4 max-w-3xl font-heading text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
+        <h1 id="about-heading" className="mt-4 max-w-3xl font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-[clamp(3rem,4.7vw,4rem)]">
           Learning designed to move people forward.
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
