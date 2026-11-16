@@ -140,6 +140,10 @@ _Avoid_: Course filter, Resources menu
 A grouped set of child links revealed from a primary navigation control and closed after selection, outside interaction, or Escape.
 _Avoid_: Persistent sidebar, separate navigation page
 
+**Split Section Intro**:
+A section-opening layout that keeps the primary heading in one column and its supporting description in a separate, top-aligned column on larger screens.
+_Avoid_: Two unrelated content blocks, equal-priority columns, card grid
+
 **Course Directory**:
 An optional browseable view of courses across all five program categories, supporting quick discovery alongside category-first navigation.
 _Avoid_: LMS catalogue, enrollment catalogue
