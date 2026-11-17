@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -227,6 +228,35 @@ export default function AboutPage() {
               </p>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      <section className="mt-20 lg:mt-28" aria-labelledby="about-contact-cta-heading">
+        <div className="relative isolate grid overflow-hidden rounded-2xl bg-brand-charcoal p-6 text-brand-white sm:p-8 lg:grid-cols-[1.2fr_0.8fr] lg:p-10">
+          <div className="relative z-10 max-w-2xl">
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              Start a conversation
+            </p>
+            <h2 id="about-contact-cta-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+              Ready to <span className="text-brand-mint-green">explore a learning need?</span>
+            </h2>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-white/70">
+              Tell us what you&apos;re working on, and let&apos;s explore how learning can support your goals.
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Link href="/contact?interest=program-information" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand-mint-green px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-mint-green/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue">
+                Request Program Information
+              </Link>
+              <Link href="/contact?interest=consultation" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-brand-white px-5 text-sm font-bold text-brand-white transition-colors hover:bg-brand-white hover:text-brand-charcoal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue">
+                Talk to Us
+              </Link>
+            </div>
+          </div>
+          <div className="relative z-10 mt-6 min-h-64 translate-y-6 lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:w-[36%] lg:translate-y-0">
+            <span aria-hidden="true" className="pointer-events-none absolute -right-8 bottom-0 z-0 size-40 rounded-full bg-brand-mint-green/25 blur-2xl lg:size-56" />
+            <Image src="/assets/hero/cta_hero.png" alt="" fill sizes="(min-width: 1024px) 32vw, 100vw" className="relative z-10 origin-bottom-right object-contain object-bottom lg:scale-100" />
+          </div>
         </div>
       </section>
     </main>
