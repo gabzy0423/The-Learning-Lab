@@ -30,7 +30,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mt-20 border-t border-brand-charcoal/10 pt-12 lg:mt-28 lg:pt-16" aria-labelledby="learner-centered-heading">
+      <section className="relative isolate mt-20 border-t border-brand-charcoal/10 pt-12 before:absolute before:inset-y-0 before:left-1/2 before:-z-10 before:w-screen before:-translate-x-1/2 before:bg-brand-charcoal/[0.03] lg:mt-28 lg:pt-16" aria-labelledby="learner-centered-heading">
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-x-16 lg:gap-y-10">
           <div className="lg:col-start-1 lg:row-start-1">
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
