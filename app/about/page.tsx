@@ -127,7 +127,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="mt-10 space-y-8 lg:space-y-10">
+        <div className="mt-10 space-y-10 lg:space-y-12">
           <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
             <div className="relative isolate">
               <span aria-hidden="true" className="pointer-events-none absolute -bottom-3 -left-2 z-0 size-20 rounded-[40%_60%_55%_45%] bg-brand-turquoise/25 blur-[1px] sm:size-28" />
