@@ -164,6 +164,33 @@ export default async function CategoryPage({
     );
   }
 
+  if (program.slug === "managing-work") {
+    return (
+      <main className="min-h-[70vh] bg-brand-white text-brand-charcoal">
+        <section className="relative isolate overflow-hidden border-b border-brand-charcoal/10 text-brand-white">
+          <Image
+            src="/assets/pages/programs/managing-work-bg.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="pointer-events-none absolute inset-0 -z-20 size-full object-cover opacity-40"
+          />
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-brand-charcoal/85 sm:bg-brand-charcoal/80 lg:bg-brand-charcoal/70" />
+          <div className="relative z-10 mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              Program category
+            </p>
+            <h1 className="mt-4 max-w-3xl font-heading text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+              {program.name}
+            </h1>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
   return (
     <main className="mx-auto min-h-[70vh] w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <p className="font-bold text-brand-cyan-blue">Program category</p>
