@@ -409,7 +409,7 @@ export default async function CategoryPage({
                   </div>
                   <span className={`mt-auto inline-flex items-center gap-2 pt-5 text-sm font-bold ${card.accent}`}>
                     Learn more
-                    <span aria-hidden="true" className="text-base leading-none">â†’</span>
+                    <span aria-hidden="true" className="text-base leading-none">→</span>
                   </span>
                 </article>
               ))}
