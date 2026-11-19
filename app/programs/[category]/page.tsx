@@ -44,6 +44,34 @@ const personalDevelopmentCards = [
   },
 ];
 
+const managingWorkCards = [
+  {
+    title: "Complete Staff Work",
+    description: "Build a structured approach to preparing complete recommendations, coordinating details, and helping teams make informed decisions.",
+    accent: "text-brand-mint-green",
+  },
+  {
+    title: "Practical Project Management",
+    description: "Strengthen the planning, coordination, and delivery habits needed to move projects forward with clarity and confidence.",
+    accent: "text-brand-cyan-blue",
+  },
+  {
+    title: "Innovation & Design Thinking",
+    description: "Explore practical ways to understand challenges, generate ideas, and shape solutions around real needs.",
+    accent: "text-brand-turquoise",
+  },
+  {
+    title: "The Problem-Solving Toolkit",
+    description: "Use practical tools to break down complex challenges, evaluate options, and move toward workable solutions.",
+    accent: "text-brand-mint-green",
+  },
+  {
+    title: "Managing Meetings",
+    description: "Plan and facilitate focused meetings that encourage participation, clarify decisions, and end with clear next steps.",
+    accent: "text-brand-cyan-blue",
+  },
+];
+
 export function generateStaticParams() {
   return programs.map((program) => ({ category: program.slug }));
 }
@@ -188,6 +216,37 @@ export default async function CategoryPage({
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-white/85">
               Work with focus, clarity, and confidence. Strengthen everyday practices that help people prioritize, plan, and deliver.
             </p>
+          </div>
+        </section>
+        <section aria-labelledby="managing-work-programs-heading">
+          <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+            <div className="grid items-start gap-4 lg:grid-cols-[1.4fr_0.6fr] lg:gap-12">
+              <h2 id="managing-work-programs-heading" className="max-w-3xl text-balance font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+                Explore our <span className="text-brand-mint-green">Managing Work programs</span>
+              </h2>
+              <p className="max-w-2xl text-base leading-relaxed text-brand-charcoal/70 lg:pt-2">
+                Explore practical learning experiences designed to help people prioritize, plan, and deliver with greater clarity.
+              </p>
+            </div>
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {managingWorkCards.map((card, index) => (
+                <article
+                  key={card.title}
+                  className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
+                >
+                  <p className={`text-sm font-extrabold ${card.accent}`}>{String(index + 1).padStart(2, "0")}</p>
+                  <div aria-hidden="true" className="relative mt-4 aspect-square overflow-hidden rounded-md border border-dashed border-brand-charcoal/15 bg-brand-charcoal/[0.03]" />
+                  <h3 className="mt-5 font-heading text-xl font-extrabold leading-tight tracking-tight">{card.title}</h3>
+                  <div className="mt-4 border-t border-brand-charcoal/10 pt-4">
+                    <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
+                  </div>
+                  <span className={`mt-auto inline-flex items-center gap-2 pt-5 text-sm font-bold ${card.accent}`}>
+                    Learn more
+                    <span aria-hidden="true" className="text-base leading-none">→</span>
+                  </span>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
       </main>
