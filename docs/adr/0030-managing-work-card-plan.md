@@ -10,4 +10,13 @@ Card order and Proposed Copy:
 4. **The Problem-Solving Toolkit** — Use practical tools to break down complex challenges, evaluate options, and move toward workable solutions.
 5. **Managing Meetings** — Plan and facilitate focused meetings that encourage participation, clarify decisions, and end with clear next steps.
 
+Closing CTA:
+
+- Use the same contained charcoal CTA card and `cta_hero.png` human cutout treatment as Personal Development.
+- Eyebrow: `Start a conversation`
+- Heading: `Not sure where to start?`
+- Supporting copy: `Tell us what you're working toward, and we'll help you find the right learning direction.`
+- Action: `Talk to us` linking to `/contact?interest=program-information`.
+- Place the CTA directly below the five cards using the Personal Development section spacing.
+
 **Status:** accepted
