@@ -72,6 +72,34 @@ const managingWorkCards = [
   },
 ];
 
+const managingRelationshipsCards = [
+  {
+    title: "Emotional Intelligence at Work",
+    description: "Build awareness of emotions, improve self-management, and strengthen workplace relationships through practical emotional intelligence skills.",
+    accent: "text-brand-mint-green",
+  },
+  {
+    title: "Managing Conflict",
+    description: "Develop practical approaches to understand differences, navigate difficult conversations, and move toward constructive outcomes.",
+    accent: "text-brand-cyan-blue",
+  },
+  {
+    title: "Essential Selling Skills",
+    description: "Strengthen the communication and relationship skills needed to understand customer needs and present value with confidence.",
+    accent: "text-brand-turquoise",
+  },
+  {
+    title: "Managing Up",
+    description: "Build practical skills for communicating with managers, aligning expectations, and working effectively across priorities.",
+    accent: "text-brand-mint-green",
+  },
+  {
+    title: "World Class Service",
+    description: "Strengthen service habits that help teams understand needs, respond thoughtfully, and create consistent customer experiences.",
+    accent: "text-brand-cyan-blue",
+  },
+];
+
 export function generateStaticParams() {
   return programs.map((program) => ({ category: program.slug }));
 }
@@ -230,6 +258,59 @@ export default async function CategoryPage({
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {managingWorkCards.map((card, index) => (
+                <article
+                  key={card.title}
+                  className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
+                >
+                  <p className={`text-sm font-extrabold ${card.accent}`}>{String(index + 1).padStart(2, "0")}</p>
+                  <div aria-hidden="true" className="relative mt-4 aspect-square overflow-hidden rounded-md border border-dashed border-brand-charcoal/15 bg-brand-charcoal/[0.03]" />
+                  <h3 className="mt-5 font-heading text-xl font-extrabold leading-tight tracking-tight">{card.title}</h3>
+                  <div className="mt-4 border-t border-brand-charcoal/10 pt-4">
+                    <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
+                  </div>
+                  <span className={`mt-auto inline-flex items-center gap-2 pt-5 text-sm font-bold ${card.accent}`}>
+                    Learn more
+                    <span aria-hidden="true" className="text-base leading-none">→</span>
+                  </span>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
+  if (program.slug === "managing-relationships") {
+    return (
+      <main className="min-h-[70vh] bg-brand-white text-brand-charcoal">
+        <section className="border-b border-brand-charcoal/10 bg-brand-charcoal text-brand-white">
+          <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              Program category
+            </p>
+            <h1 className="mt-4 max-w-3xl font-heading text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+              Managing <span className="text-brand-mint-green">Relationships</span>
+            </h1>
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-white/85">
+              Strengthen connection, communication, and trust. Navigate collaboration and relationships with greater awareness.
+            </p>
+          </div>
+        </section>
+
+        <section aria-labelledby="managing-relationships-programs-heading">
+          <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+            <div className="grid items-start gap-4 lg:grid-cols-[1.4fr_0.6fr] lg:gap-12">
+              <h2 id="managing-relationships-programs-heading" className="max-w-3xl text-balance font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+                Explore our <span className="text-brand-mint-green">Managing Relationships programs</span>
+              </h2>
+              <p className="max-w-2xl text-base leading-relaxed text-brand-charcoal/70 lg:pt-2">
+                Explore practical learning experiences designed to strengthen communication, collaboration, and trust at work.
+              </p>
+            </div>
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {managingRelationshipsCards.map((card, index) => (
                 <article
                   key={card.title}
                   className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
