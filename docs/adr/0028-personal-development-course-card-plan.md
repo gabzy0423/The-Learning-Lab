@@ -13,4 +13,6 @@ Approved card copy order:
 5. Learn practical strategies to manage stress, support wellbeing, and improve productivity at work and in personal life using the Six Dimensions framework.
 6. Learn how to recognize when you or your employees may be struggling, support open workplace dialogue, and develop a growth mindset that strengthens your Adversity Quotient.
 
+The Personal Development page uses `/assets/pages/programs/personal-development-bg.png`, a generated wide photorealistic background visual of diverse professionals collaborating in a learning or workshop setting. It expresses personal growth and confidence without making organization-specific claims and remains subtle behind the cards through a soft brand overlay. It contains no text or logo and preserves enough negative space for readable responsive content.
+
 **Status:** accepted

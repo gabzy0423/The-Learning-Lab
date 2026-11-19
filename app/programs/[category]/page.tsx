@@ -47,7 +47,15 @@ export default async function CategoryPage({
 
   if (program.slug === "personal-development") {
     return (
-      <main className="min-h-[70vh] bg-brand-white text-brand-charcoal">
+      <main className="relative isolate min-h-[70vh] overflow-hidden bg-brand-white text-brand-charcoal">
+        <Image
+          src="/assets/pages/programs/personal-development-bg.png"
+          alt=""
+          fill
+          sizes="100vw"
+          className="pointer-events-none absolute inset-0 -z-20 size-full object-cover opacity-20"
+        />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-brand-white/75" />
         <section className="border-b border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
           <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
