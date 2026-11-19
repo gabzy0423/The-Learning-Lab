@@ -151,16 +151,19 @@ const leadershipManagementCards = [
 
 const impactingStrategyCards = [
   {
+    image: "/assets/pages/programs/impact1.png",
     title: "Competency Based Talent Management",
     description: "Build a practical approach to connecting workforce capabilities with organizational priorities and long-term performance.",
     accent: "text-brand-mint-green",
   },
   {
+    image: "/assets/pages/programs/impact2.png",
     title: "Strategic Planning with the Balanced Scorecard",
     description: "Translate strategy into clear priorities, measures, and coordinated action using the Balanced Scorecard approach.",
     accent: "text-brand-cyan-blue",
   },
   {
+    image: "/assets/pages/programs/impact3.png",
     title: "Succession Planning & Management",
     description: "Strengthen continuity by preparing future leaders and managing key transitions with greater clarity.",
     accent: "text-brand-turquoise",
@@ -600,7 +603,15 @@ export default async function CategoryPage({
                   className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
                 >
                   <p className={`text-sm font-extrabold ${card.accent}`}>{String(index + 1).padStart(2, "0")}</p>
-                  <div aria-hidden="true" className="relative mt-4 aspect-square overflow-hidden rounded-md border border-dashed border-brand-charcoal/15 bg-brand-charcoal/[0.03]" />
+                  <div className="relative mt-4 aspect-square overflow-hidden rounded-md border border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
+                    <Image
+                      src={card.image}
+                      alt={`${card.title} course visual`}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
+                    />
+                  </div>
                   <h3 className="mt-5 font-heading text-xl font-extrabold leading-tight tracking-tight">{card.title}</h3>
                   <div className="mt-4 border-t border-brand-charcoal/10 pt-4">
                     <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
