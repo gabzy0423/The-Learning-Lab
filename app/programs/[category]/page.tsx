@@ -139,7 +139,7 @@ export default async function CategoryPage({
                   <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
                   Start a conversation
                 </p>
-                <h2 id="personal-development-cta-heading" className="mt-4 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
+                <h2 id="personal-development-cta-heading" className="mt-4 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
                   Not sure where to start?
                 </h2>
                 <p className="mt-3 max-w-xl text-base leading-relaxed text-brand-white/70">
