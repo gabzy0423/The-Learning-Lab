@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProgram, programs } from "@/content/programs";
 
@@ -126,6 +127,32 @@ export default async function CategoryPage({
                   </span>
                 </article>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="personal-development-cta-heading">
+          <div className="mx-auto max-w-[80rem] px-7 pb-16 sm:px-10 lg:px-0 lg:pb-20">
+            <div className="flex flex-col gap-6 rounded-2xl bg-brand-charcoal p-7 text-brand-white sm:p-10 lg:flex-row lg:items-center lg:justify-between">
+              <div className="max-w-2xl">
+                <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
+                  <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+                  Start a conversation
+                </p>
+                <h2 id="personal-development-cta-heading" className="mt-4 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
+                  Not sure where to start?
+                </h2>
+                <p className="mt-3 max-w-xl text-base leading-relaxed text-brand-white/70">
+                  Tell us what you&apos;re working toward, and we&apos;ll help you find the right learning direction.
+                </p>
+              </div>
+              <Link
+                href="/contact?interest=program-information"
+                className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-brand-mint-green px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-mint-green/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+              >
+                Talk to us
+                <span aria-hidden="true" className="text-base leading-none">→</span>
+              </Link>
             </div>
           </div>
         </section>
