@@ -1,6 +1,5 @@
-import { notFound } from "next/navigation";
 import Image from "next/image";
-import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
+import { notFound } from "next/navigation";
 import { getProgram, programs } from "@/content/programs";
 
 export const instant = false;
@@ -83,67 +82,28 @@ export default async function CategoryPage({
           <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {personalDevelopmentCards.map((card, index) => (
-                index === 0 ? (
-                  <article
-                    key={card.image}
-                    className="group flex min-h-[36rem] flex-col overflow-hidden rounded-2xl border border-brand-charcoal/15 bg-white text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
-                  >
-                    <div className="relative aspect-[4/5] overflow-hidden rounded-t-2xl bg-brand-charcoal">
-                      <Image
-                        src={card.image}
-                        alt="Communicate with Impact course visual"
-                        fill
-                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                        className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
-                      />
-                      <span aria-hidden="true" className="absolute left-4 top-4 inline-flex size-10 items-center justify-center rounded-full bg-brand-white/90 text-sm font-extrabold text-brand-charcoal">
-                        01
-                      </span>
-                      <span aria-hidden="true" className="absolute right-4 top-4 inline-flex size-10 items-center justify-center rounded-full bg-brand-white/90 text-lg font-bold text-brand-charcoal">
-                        →
-                      </span>
-                      <div className="absolute inset-x-0 bottom-0 isolate overflow-hidden rounded-[4rem_1.5rem_1.5rem_1.5rem] bg-gradient-to-br from-brand-charcoal via-brand-charcoal to-brand-turquoise/90 p-6 text-brand-white before:absolute before:-top-5 before:left-0 before:h-10 before:w-[72%] before:rounded-full before:bg-brand-charcoal sm:p-7">
-                        <span aria-hidden="true" className="pointer-events-none absolute -bottom-12 -right-8 z-0 size-36 rounded-full bg-brand-mint-green/20 blur-[1px]" />
-                        <div className="relative z-10">
-                          <ChatBubbleLeftRightIcon className="size-8 text-brand-mint-green" aria-hidden="true" />
-                          <h3 className="mt-4 max-w-xs font-heading text-2xl font-extrabold leading-tight sm:text-3xl">
-                            Communicate with <span className="text-brand-mint-green">Impact</span>
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-1 flex-col border-t border-brand-charcoal/10 p-6 sm:p-7">
-                      <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
-                      <span className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold text-brand-charcoal">
-                        Learn More
-                        <span aria-hidden="true" className="text-base leading-none">→</span>
-                      </span>
-                    </div>
-                  </article>
-                ) : (
-                  <article
-                    key={card.image}
-                    className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
-                  >
-                    <p className="text-sm font-extrabold text-brand-cyan-blue">{String(index + 1).padStart(2, "0")}</p>
-                    <div className="relative mt-4 aspect-square overflow-hidden rounded-md bg-brand-charcoal/5">
-                      <Image
-                        src={card.image}
-                        alt={`Personal Development course visual ${index + 1}`}
-                        fill
-                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                        className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
-                      />
-                      <span aria-hidden="true" className="pointer-events-none absolute inset-0 bg-brand-charcoal/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none" />
-                      <span aria-hidden="true" className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center text-sm font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none">
-                        Learn more
-                      </span>
-                    </div>
-                    <div className="mt-5 border-t border-brand-charcoal/10 pt-5">
-                      <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
-                    </div>
-                  </article>
-                )
+                <article
+                  key={card.image}
+                  className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
+                >
+                  <p className="text-sm font-extrabold text-brand-cyan-blue">{String(index + 1).padStart(2, "0")}</p>
+                  <div className="relative mt-4 aspect-square overflow-hidden rounded-md bg-brand-charcoal/5">
+                    <Image
+                      src={card.image}
+                      alt={`Personal Development course visual ${index + 1}`}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
+                    />
+                    <span aria-hidden="true" className="pointer-events-none absolute inset-0 bg-brand-charcoal/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none" />
+                    <span aria-hidden="true" className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center text-sm font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none">
+                      Learn more
+                    </span>
+                  </div>
+                  <div className="mt-5 border-t border-brand-charcoal/10 pt-5">
+                    <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
+                  </div>
+                </article>
               ))}
             </div>
           </div>

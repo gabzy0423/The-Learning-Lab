@@ -17,6 +17,6 @@ The Personal Development page uses `/assets/pages/programs/personal-development-
 
 The header description is followed by a mint `Start your journey` button that smoothly scrolls to the course-card section. The target begins at the card section’s top edge, and reduced-motion preferences use the browser’s non-animated scroll behavior.
 
-Card 1, `Communicate with Impact`, will serve as the first visual prototype for a tall editorial card treatment before the design is applied to the remaining grid. It will use the existing `perso1.png` as a full-bleed upper image with controlled `cover` cropping, a freeform charcoal-to-mint/turquoise bubble panel with a wavy top edge and rounded lower corners, a low-opacity mint/turquoise accent shape at the panel’s lower-right, a decorative Heroicon communication mark, the approved course title and description, and a visual-only `Learn More →` label until a course route is confirmed. Cards 2–6 remain unchanged during this validation pass.
+Card 1 uses the same standard card treatment as Cards 2–6: a square `contain` image frame, numbered marker, hover overlay, divider, and approved description. The temporary editorial/bubble-card experiment was removed to keep the full grid visually consistent until course titles and routes are approved.
 
 **Status:** accepted
