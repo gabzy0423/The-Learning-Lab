@@ -15,4 +15,6 @@ Approved card copy order:
 
 The Personal Development page uses `/assets/pages/programs/personal-development-bg.png`, a generated wide photorealistic background visual of diverse professionals collaborating in a learning or workshop setting. It expresses personal growth and confidence without making organization-specific claims and remains subtle behind the cards through a soft brand overlay. It contains no text or logo and preserves enough negative space for readable responsive content.
 
+The header description is followed by a mint `Start your journey` button that smoothly scrolls to the course-card section. The target begins at the card section’s top edge, and reduced-motion preferences use the browser’s non-animated scroll behavior.
+
 **Status:** accepted
