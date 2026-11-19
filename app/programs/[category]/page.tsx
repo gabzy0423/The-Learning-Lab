@@ -102,11 +102,14 @@ export default async function CategoryPage({
                       <span aria-hidden="true" className="absolute right-4 top-4 inline-flex size-10 items-center justify-center rounded-full bg-brand-white/90 text-lg font-bold text-brand-charcoal">
                         →
                       </span>
-                      <div className="absolute inset-x-0 bottom-0 rounded-t-[3rem] bg-gradient-to-br from-brand-charcoal via-brand-charcoal to-brand-turquoise/90 p-6 text-brand-white sm:p-7">
-                        <ChatBubbleLeftRightIcon className="size-8 text-brand-mint-green" aria-hidden="true" />
-                        <h3 className="mt-4 max-w-xs font-heading text-2xl font-extrabold leading-tight sm:text-3xl">
-                          Communicate with <span className="text-brand-mint-green">Impact</span>
-                        </h3>
+                      <div className="absolute inset-x-0 bottom-0 isolate overflow-hidden rounded-[4rem_1.5rem_1.5rem_1.5rem] bg-gradient-to-br from-brand-charcoal via-brand-charcoal to-brand-turquoise/90 p-6 text-brand-white before:absolute before:-top-5 before:left-0 before:h-10 before:w-[72%] before:rounded-full before:bg-brand-charcoal sm:p-7">
+                        <span aria-hidden="true" className="pointer-events-none absolute -bottom-12 -right-8 z-0 size-36 rounded-full bg-brand-mint-green/20 blur-[1px]" />
+                        <div className="relative z-10">
+                          <ChatBubbleLeftRightIcon className="size-8 text-brand-mint-green" aria-hidden="true" />
+                          <h3 className="mt-4 max-w-xs font-heading text-2xl font-extrabold leading-tight sm:text-3xl">
+                            Communicate with <span className="text-brand-mint-green">Impact</span>
+                          </h3>
+                        </div>
                       </div>
                     </div>
                     <div className="flex flex-1 flex-col border-t border-brand-charcoal/10 p-6 sm:p-7">
