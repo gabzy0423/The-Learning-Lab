@@ -9,6 +9,7 @@ const personalDevelopmentCards = [
   {
     image: "/assets/pages/programs/perso1.png",
     title: "Communicate with Impact",
+    href: "/programs/personal-development/communicate-with-impact",
     description: "Build confidence, authority, and tact in discussions through assertive communication techniques for working effectively with different people and situations.",
     accent: "text-brand-mint-green",
   },
@@ -231,8 +232,9 @@ export default async function CategoryPage({
               {personalDevelopmentCards.map((card, index) => (
                 <article
                   key={card.image}
-                  className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
+                  className={`group relative flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none ${card.href ? "cursor-pointer" : ""}`}
                 >
+                  {card.href && <Link href={card.href} className="absolute inset-0 z-10 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue" aria-label={`View ${card.title} course details`} />}
                   <p className={`text-sm font-extrabold ${card.accent}`}>{String(index + 1).padStart(2, "0")}</p>
                   <div className="relative mt-4 aspect-square overflow-hidden rounded-md bg-brand-charcoal/5">
                     <Image
