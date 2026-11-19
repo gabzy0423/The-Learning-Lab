@@ -26,6 +26,8 @@ The Personal Development page uses `/assets/pages/programs/personal-development-
 
 The header description is followed by a mint `Start your journey` button that smoothly scrolls to the course-card section. The target begins at the card section’s top edge, and reduced-motion preferences use the browser’s non-animated scroll behavior.
 
+The course-card section begins with a clean white split intro: `Explore our Personal Development programs` as the left-aligned heading and this supporting copy on the right: `Explore practical learning experiences designed to build confidence, strengthen everyday capability, and support positive progress at work.` The generated people background remains limited to the page header so the card visuals stay primary.
+
 Card 1 uses the same standard card treatment as Cards 2–6: a square `contain` image frame, numbered marker, hover overlay, divider, and approved description. The temporary editorial/bubble-card experiment was removed to keep the full grid visually consistent until course titles and routes are approved.
 
 **Status:** accepted

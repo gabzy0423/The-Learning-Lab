@@ -90,9 +90,17 @@ export default async function CategoryPage({
           </div>
         </section>
 
-        <section id="personal-development-courses" aria-label="Personal Development courses">
+        <section id="personal-development-courses" aria-labelledby="personal-development-programs-heading">
           <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid items-start gap-4 lg:grid-cols-[1.4fr_0.6fr] lg:gap-12">
+              <h2 id="personal-development-programs-heading" className="max-w-3xl text-balance font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+                Explore our Personal Development programs
+              </h2>
+              <p className="max-w-2xl text-base leading-relaxed text-brand-charcoal/70 lg:pt-2">
+                Explore practical learning experiences designed to build confidence, strengthen everyday capability, and support positive progress at work.
+              </p>
+            </div>
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {personalDevelopmentCards.map((card, index) => (
                 <article
                   key={card.image}
