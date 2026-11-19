@@ -60,11 +60,14 @@ export default async function CategoryPage({
           <div className="relative z-10 mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
             <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
-              Personal Development
+              Learn . Grow . Achieve
             </p>
             <h1 className="mt-4 max-w-3xl font-heading text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
               Personal <span className="text-brand-mint-green">Development</span>
             </h1>
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-white/85">
+              Build new skills, unlock your potential, and take the next step toward a more fulfilling future.
+            </p>
           </div>
         </section>
 
