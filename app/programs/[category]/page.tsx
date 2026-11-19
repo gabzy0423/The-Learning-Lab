@@ -63,7 +63,7 @@ export default async function CategoryPage({
               Personal Development
             </p>
             <h1 className="mt-4 max-w-3xl font-heading text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-              {program.name}
+              Personal <span className="text-brand-mint-green">Development</span>
             </h1>
           </div>
         </section>
