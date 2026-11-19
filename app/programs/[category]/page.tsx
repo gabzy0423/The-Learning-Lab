@@ -391,8 +391,17 @@ export default async function CategoryPage({
   if (program.slug === "managing-relationships") {
     return (
       <main className="min-h-[70vh] bg-brand-white text-brand-charcoal">
-        <section className="border-b border-brand-charcoal/10 bg-brand-charcoal text-brand-white">
-          <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+        <section className="relative isolate overflow-hidden border-b border-brand-charcoal/10 text-brand-white">
+          <Image
+            src="/assets/pages/programs/managing-relationships-bg.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="pointer-events-none absolute inset-0 -z-20 size-full object-cover opacity-40"
+          />
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-brand-charcoal/85 sm:bg-brand-charcoal/80 lg:bg-brand-charcoal/70" />
+          <div className="relative z-10 mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
             <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               Program category
