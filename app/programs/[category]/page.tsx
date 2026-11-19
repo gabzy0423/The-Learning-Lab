@@ -174,7 +174,7 @@ export default async function CategoryPage({
             fill
             priority
             sizes="100vw"
-            className="pointer-events-none absolute inset-0 -z-20 size-full object-cover opacity-40"
+            className="pointer-events-none absolute inset-0 -z-20 size-full object-cover object-bottom opacity-40"
           />
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-brand-charcoal/85 sm:bg-brand-charcoal/80 lg:bg-brand-charcoal/70" />
           <div className="relative z-10 mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
