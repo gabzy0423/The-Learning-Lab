@@ -78,7 +78,9 @@ export default async function CategoryPage({
                       className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
                     />
                   </div>
-                  <p className="mt-5 text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
+                  <div className="mt-5 border-t border-brand-charcoal/10 pt-5">
+                    <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
+                  </div>
                 </article>
               ))}
             </div>
