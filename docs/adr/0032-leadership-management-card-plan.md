@@ -2,7 +2,13 @@
 
 The Leadership & Management page will use six cards in the same visual system as Personal Development, Managing Work, and Managing Relationships: numbered marker, square blank image frame, approved title, concise Proposed Copy description, subtle brand accent, and a muted non-clickable `Learn more` label. The page will use the shared charcoal category banner, split card-section intro, and a three-column desktop, two-column tablet, and one-column mobile grid.
 
-No image mapping, course detail route, or extra placeholder card will be added until approved content exists. The page will not add a separate CTA in this implementation so the category pages remain consistent while course destinations are pending.
+No course detail route or extra placeholder card will be added until approved content exists. The page will use a dedicated Leadership & Management banner visual while keeping the card image mapping separate from the category header.
+
+Leadership & Management banner visual:
+
+- Use one primary leader guiding or mentoring one colleague, with no large group scene.
+- Use a wide landscape composition with the subjects positioned on the right and calm negative space on the left for the banner copy.
+- Use premium photorealistic corporate editorial styling, natural daylight, an approachable leadership mood, subtle teal/mint accents, and no text, logos, or watermark.
 
 Banner Proposed Copy:
 
