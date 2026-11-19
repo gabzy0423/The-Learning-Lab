@@ -112,31 +112,37 @@ const managingRelationshipsCards = [
 
 const leadershipManagementCards = [
   {
+    image: "/assets/pages/programs/leader1.png",
     title: "Coaching & Developing Your Team",
     description: "Build practical coaching habits that help leaders support growth, improve performance, and create stronger team relationships.",
     accent: "text-brand-mint-green",
   },
   {
+    image: "/assets/pages/programs/leader2.png",
     title: "Leadership 2.0",
     description: "Strengthen modern leadership skills for guiding people, navigating change, and creating meaningful progress at work.",
     accent: "text-brand-cyan-blue",
   },
   {
+    image: "/assets/pages/programs/leader3.png",
     title: "Leading with Emotional Intelligence",
     description: "Develop the self-awareness, empathy, and communication skills needed to lead people with clarity and trust.",
     accent: "text-brand-turquoise",
   },
   {
+    image: "/assets/pages/programs/leader4.png",
     title: "Leading Change",
     description: "Help people move through change with clearer direction, constructive communication, and practical leadership support.",
     accent: "text-brand-mint-green",
   },
   {
+    image: "/assets/pages/programs/leader5.png",
     title: "Managing Millennials",
     description: "Build a more inclusive approach to understanding, engaging, and developing a multigenerational workforce.",
     accent: "text-brand-cyan-blue",
   },
   {
+    image: "/assets/pages/programs/leader6.png",
     title: "Management Essentials",
     description: "Strengthen the everyday management skills needed to set expectations, support performance, and lead with consistency.",
     accent: "text-brand-turquoise",
@@ -504,7 +510,15 @@ export default async function CategoryPage({
                   className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
                 >
                   <p className={`text-sm font-extrabold ${card.accent}`}>{String(index + 1).padStart(2, "0")}</p>
-                  <div aria-hidden="true" className="relative mt-4 aspect-square overflow-hidden rounded-md border border-dashed border-brand-charcoal/15 bg-brand-charcoal/[0.03]" />
+                  <div className="relative mt-4 aspect-square overflow-hidden rounded-md border border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
+                    <Image
+                      src={card.image}
+                      alt={`${card.title} course visual`}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
+                    />
+                  </div>
                   <h3 className="mt-5 font-heading text-xl font-extrabold leading-tight tracking-tight">{card.title}</h3>
                   <div className="mt-4 border-t border-brand-charcoal/10 pt-4">
                     <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
