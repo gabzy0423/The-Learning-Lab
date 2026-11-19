@@ -140,7 +140,7 @@ export default async function CategoryPage({
                   Start a conversation
                 </p>
                 <h2 id="personal-development-cta-heading" className="mt-4 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-                  Not sure where to start?
+                  Not sure <span className="text-brand-mint-green">where to start?</span>
                 </h2>
                 <p className="mt-3 max-w-xl text-base leading-relaxed text-brand-white/70">
                   Tell us what you&apos;re working toward, and we&apos;ll help you find the right learning direction.
