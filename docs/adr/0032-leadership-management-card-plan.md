@@ -23,4 +23,13 @@ Card order and Proposed Copy:
 5. **Managing Millennials** — Build a more inclusive approach to understanding, engaging, and developing a multigenerational workforce.
 6. **Management Essentials** — Strengthen the everyday management skills needed to set expectations, support performance, and lead with consistency.
 
+Closing CTA:
+
+- Use the same contained charcoal CTA card and `cta_hero.png` human cutout treatment as Managing Work, Managing Relationships, and Personal Development.
+- Eyebrow: `Start a conversation`
+- Heading: `Not sure where to start?`
+- Supporting copy: `Tell us what you're working toward, and we'll help you find the right learning direction.`
+- Action: `Talk to us` linking to `/contact?interest=program-information`.
+- Place the CTA directly below the six cards using the established category-page spacing.
+
 **Status:** accepted
