@@ -133,6 +133,24 @@ const leadershipManagementCards = [
   },
 ];
 
+const impactingStrategyCards = [
+  {
+    title: "Competency Based Talent Management",
+    description: "Build a practical approach to connecting workforce capabilities with organizational priorities and long-term performance.",
+    accent: "text-brand-mint-green",
+  },
+  {
+    title: "Strategic Planning with the Balanced Scorecard",
+    description: "Translate strategy into clear priorities, measures, and coordinated action using the Balanced Scorecard approach.",
+    accent: "text-brand-cyan-blue",
+  },
+  {
+    title: "Succession Planning & Management",
+    description: "Strengthen continuity by preparing future leaders and managing key transitions with greater clarity.",
+    accent: "text-brand-turquoise",
+  },
+];
+
 export function generateStaticParams() {
   return programs.map((program) => ({ category: program.slug }));
 }
@@ -420,10 +438,58 @@ export default async function CategoryPage({
     );
   }
 
-  return (
-    <main className="mx-auto min-h-[70vh] w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-      <p className="font-bold text-brand-cyan-blue">Program category</p>
-      <h1 className="mt-3 text-5xl font-bold">{program.name}</h1>
-    </main>
-  );
+  if (program.slug === "impacting-strategy") {
+    return (
+      <main className="min-h-[70vh] bg-brand-white text-brand-charcoal">
+        <section className="border-b border-brand-charcoal/10 bg-brand-charcoal text-brand-white">
+          <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              Plan . Align . Impact
+            </p>
+            <h1 className="mt-4 max-w-3xl font-heading text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+              Impacting <span className="text-brand-mint-green">Strategy</span>
+            </h1>
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-white/85">
+              Connect people, priorities, and practical strategy to help organizations move forward with purpose.
+            </p>
+          </div>
+        </section>
+
+        <section aria-labelledby="impacting-strategy-programs-heading">
+          <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+            <div className="grid items-start gap-4 lg:grid-cols-[1.4fr_0.6fr] lg:gap-12">
+              <h2 id="impacting-strategy-programs-heading" className="max-w-3xl text-balance font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+                Explore our <span className="text-brand-mint-green">Impacting Strategy programs</span>
+              </h2>
+              <p className="max-w-2xl text-base leading-relaxed text-brand-charcoal/70 lg:pt-2">
+                Explore practical learning experiences designed to connect strategic priorities, organizational capability, and long-term progress.
+              </p>
+            </div>
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {impactingStrategyCards.map((card, index) => (
+                <article
+                  key={card.title}
+                  className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
+                >
+                  <p className={`text-sm font-extrabold ${card.accent}`}>{String(index + 1).padStart(2, "0")}</p>
+                  <div aria-hidden="true" className="relative mt-4 aspect-square overflow-hidden rounded-md border border-dashed border-brand-charcoal/15 bg-brand-charcoal/[0.03]" />
+                  <h3 className="mt-5 font-heading text-xl font-extrabold leading-tight tracking-tight">{card.title}</h3>
+                  <div className="mt-4 border-t border-brand-charcoal/10 pt-4">
+                    <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
+                  </div>
+                  <span className={`mt-auto inline-flex items-center gap-2 pt-5 text-sm font-bold ${card.accent}`}>
+                    Learn more
+                    <span aria-hidden="true" className="text-base leading-none">→</span>
+                  </span>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
+  notFound();
 }
