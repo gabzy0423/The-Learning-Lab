@@ -26,6 +26,14 @@ _Avoid_: General public
 One of the five established learning areas used to organize the catalogue: Personal Development, Managing Work, Managing Relationships, Leadership & Management, or Impacting Strategy.
 _Avoid_: Course group, department
 
+**Personal Development Category Page**:
+The focused catalogue page for the Personal Development program category, initially presented as six ordered course-image slots while course titles, descriptions, and destinations await approval.
+_Avoid_: Full course catalogue, published course list
+
+**Pending Course Card**:
+A visual course-card slot that uses an approved or pending-mapping image but intentionally withholds unapproved title, description, claims, and navigation until the course is validated.
+_Avoid_: Empty error state, clickable placeholder course
+
 **Course**:
 A named learning offering presented within a program category and described using the shared course-detail structure.
 _Avoid_: Product, class, module
