@@ -7,27 +7,39 @@ export const instant = false;
 const personalDevelopmentCards = [
   {
     image: "/assets/pages/programs/perso1.png",
+    title: "Communicate with Impact",
     description: "Build confidence, authority, and tact in discussions through assertive communication techniques for working effectively with different people and situations.",
+    accent: "text-brand-mint-green",
   },
   {
     image: "/assets/pages/programs/perso2.png",
+    title: "Developing Digital Savvy",
     description: "Discover better ways to work in a technology-driven workplace by learning how to leverage technology for yourself and your team.",
+    accent: "text-brand-cyan-blue",
   },
   {
     image: "/assets/pages/programs/perso3.png",
+    title: "Effective Presentation Skills",
     description: "Develop practical presentation skills through application, feedback, and coaching to communicate ideas clearly and achieve stronger outcomes.",
+    accent: "text-brand-turquoise",
   },
   {
     image: "/assets/pages/programs/perso4.png",
+    title: "High Performance Habits",
     description: "Build a professional image that strengthens confidence, credibility, and working relationships across generations in today’s workplace.",
+    accent: "text-brand-mint-green",
   },
   {
     image: "/assets/pages/programs/perso5.png",
+    title: "Stress & Time Management",
     description: "Learn practical strategies to manage stress, support wellbeing, and improve productivity at work and in personal life using the Six Dimensions framework.",
+    accent: "text-brand-cyan-blue",
   },
   {
     image: "/assets/pages/programs/perso6.png",
+    title: "Managing Your Mental Health",
     description: "Learn how to recognize when you or your employees may be struggling, support open workplace dialogue, and develop a growth mindset that strengthens your Adversity Quotient.",
+    accent: "text-brand-turquoise",
   },
 ];
 
@@ -86,7 +98,7 @@ export default async function CategoryPage({
                   key={card.image}
                   className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
                 >
-                  <p className="text-sm font-extrabold text-brand-cyan-blue">{String(index + 1).padStart(2, "0")}</p>
+                  <p className={`text-sm font-extrabold ${card.accent}`}>{String(index + 1).padStart(2, "0")}</p>
                   <div className="relative mt-4 aspect-square overflow-hidden rounded-md bg-brand-charcoal/5">
                     <Image
                       src={card.image}
@@ -95,14 +107,15 @@ export default async function CategoryPage({
                       sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                       className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
                     />
-                    <span aria-hidden="true" className="pointer-events-none absolute inset-0 bg-brand-charcoal/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none" />
-                    <span aria-hidden="true" className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center text-sm font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none">
-                      Learn more
-                    </span>
                   </div>
-                  <div className="mt-5 border-t border-brand-charcoal/10 pt-5">
+                  <h2 className="mt-5 font-heading text-xl font-extrabold leading-tight tracking-tight">{card.title}</h2>
+                  <div className="mt-4 border-t border-brand-charcoal/10 pt-4">
                     <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
                   </div>
+                  <span className={`mt-auto inline-flex items-center gap-2 pt-5 text-sm font-bold ${card.accent}`}>
+                    Learn more
+                    <span aria-hidden="true" className="text-base leading-none">→</span>
+                  </span>
                 </article>
               ))}
             </div>

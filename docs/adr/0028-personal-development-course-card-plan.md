@@ -1,6 +1,6 @@
 # Plan Personal Development around ordered course image cards
 
-The Personal Development category page will use a focused category intro followed by six course-card image slots, mapped in filename order from `perso1.png` through `perso6.png`. The cards will reuse the Signature Learning Portfolio treatment: the established card proportions, a square image frame with `contain` behavior so the complete square assets remain visible, a subtle full-width low-contrast divider between image and description, and a hover/focus-only charcoal overlay with centered `Learn more` text. The overlay is visual-only until a confirmed course destination exists; touch and mobile views keep the normal image visible. The responsive grid will use three columns on desktop, two on tablet, and one on mobile.
+The Personal Development category page will use a focused category intro followed by six course-card image slots, mapped in filename order from `perso1.png` through `perso6.png`. The cards will reuse the Signature Learning Portfolio treatment: the established card proportions, a square image frame with `contain` behavior so the complete square assets remain visible, a consistent number/image/title/description/`Learn more` reading order, and subtle brand accent variation. The `Learn more` label remains muted and non-clickable until a confirmed course destination exists. The responsive grid will use three columns on desktop, two on tablet, and one on mobile.
 
 The supplied descriptions will follow the same filename order for `perso1.png` through `perso5.png` and will be shortened to one or two readable sentences without adding claims. The sixth card remains on hold because its supplied description duplicates the fifth. Original approved course titles must be used; no title will be inferred from a description. Until titles and destinations are confirmed, cards remain non-clickable and do not create course routes.
 
@@ -12,6 +12,15 @@ Approved card copy order:
 4. Build a professional image that strengthens confidence, credibility, and working relationships across generations in today’s workplace.
 5. Learn practical strategies to manage stress, support wellbeing, and improve productivity at work and in personal life using the Six Dimensions framework.
 6. Learn how to recognize when you or your employees may be struggling, support open workplace dialogue, and develop a growth mindset that strengthens your Adversity Quotient.
+
+Approved title order:
+
+1. Communicate with Impact
+2. Developing Digital Savvy
+3. Effective Presentation Skills
+4. High Performance Habits
+5. Stress & Time Management
+6. Managing Your Mental Health
 
 The Personal Development page uses `/assets/pages/programs/personal-development-bg.png`, a generated wide photorealistic background visual of diverse professionals collaborating in a learning or workshop setting. It expresses personal growth and confidence without making organization-specific claims and remains subtle behind the cards through a soft brand overlay. It contains no text or logo and preserves enough negative space for readable responsive content.
 
