@@ -35,6 +35,7 @@ export function Header() {
   const [mobileProgramsOpen, setMobileProgramsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const desktopCloseTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const updateScrollState = () => setScrolled(window.scrollY > 8);
@@ -112,6 +113,28 @@ export function Header() {
     setProgramsOpen(false);
   };
 
+  const clearDesktopCloseTimer = () => {
+    if (!desktopCloseTimeoutRef.current) return;
+    clearTimeout(desktopCloseTimeoutRef.current);
+    desktopCloseTimeoutRef.current = null;
+  };
+
+  const openDesktopMenu = (menu: "about" | "programs") => {
+    clearDesktopCloseTimer();
+    setAboutOpen(menu === "about");
+    setProgramsOpen(menu === "programs");
+  };
+
+  const scheduleDesktopMenusClose = () => {
+    clearDesktopCloseTimer();
+    desktopCloseTimeoutRef.current = setTimeout(() => {
+      closeDesktopMenus();
+      desktopCloseTimeoutRef.current = null;
+    }, 150);
+  };
+
+  useEffect(() => () => clearDesktopCloseTimer(), []);
+
   const closeMobileSubmenusOnScroll = () => {
     const currentScrollTop = mobileScrollRef.current?.scrollTop ?? 0;
     if (Math.abs(currentScrollTop - lastMobileScrollTopRef.current) < 8) return;
@@ -171,7 +194,15 @@ export function Header() {
             </Link>
           ))}
 
-          <div className="relative flex items-center">
+          <div
+            className="relative flex items-center"
+            onMouseEnter={() => openDesktopMenu("about")}
+            onMouseLeave={scheduleDesktopMenusClose}
+            onFocusCapture={() => openDesktopMenu("about")}
+            onBlurCapture={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget as Node)) scheduleDesktopMenusClose();
+            }}
+          >
             <button
               ref={aboutButtonRef}
               type="button"
@@ -212,7 +243,15 @@ export function Header() {
               </div>
           </div>
 
-          <div className="relative flex items-center">
+          <div
+            className="relative flex items-center"
+            onMouseEnter={() => openDesktopMenu("programs")}
+            onMouseLeave={scheduleDesktopMenusClose}
+            onFocusCapture={() => openDesktopMenu("programs")}
+            onBlurCapture={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget as Node)) scheduleDesktopMenusClose();
+            }}
+          >
             <button
               ref={programsButtonRef}
               type="button"
