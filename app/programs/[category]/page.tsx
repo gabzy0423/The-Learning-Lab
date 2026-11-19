@@ -100,6 +100,39 @@ const managingRelationshipsCards = [
   },
 ];
 
+const leadershipManagementCards = [
+  {
+    title: "Coaching & Developing Your Team",
+    description: "Build practical coaching habits that help leaders support growth, improve performance, and create stronger team relationships.",
+    accent: "text-brand-mint-green",
+  },
+  {
+    title: "Leadership 2.0",
+    description: "Strengthen modern leadership skills for guiding people, navigating change, and creating meaningful progress at work.",
+    accent: "text-brand-cyan-blue",
+  },
+  {
+    title: "Leading with Emotional Intelligence",
+    description: "Develop the self-awareness, empathy, and communication skills needed to lead people with clarity and trust.",
+    accent: "text-brand-turquoise",
+  },
+  {
+    title: "Leading Change",
+    description: "Help people move through change with clearer direction, constructive communication, and practical leadership support.",
+    accent: "text-brand-mint-green",
+  },
+  {
+    title: "Managing Millennials",
+    description: "Build a more inclusive approach to understanding, engaging, and developing a multigenerational workforce.",
+    accent: "text-brand-cyan-blue",
+  },
+  {
+    title: "Management Essentials",
+    description: "Strengthen the everyday management skills needed to set expectations, support performance, and lead with consistency.",
+    accent: "text-brand-turquoise",
+  },
+];
+
 export function generateStaticParams() {
   return programs.map((program) => ({ category: program.slug }));
 }
@@ -324,6 +357,59 @@ export default async function CategoryPage({
                   <span className={`mt-auto inline-flex items-center gap-2 pt-5 text-sm font-bold ${card.accent}`}>
                     Learn more
                     <span aria-hidden="true" className="text-base leading-none">→</span>
+                  </span>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
+  if (program.slug === "leadership-management") {
+    return (
+      <main className="min-h-[70vh] bg-brand-white text-brand-charcoal">
+        <section className="border-b border-brand-charcoal/10 bg-brand-charcoal text-brand-white">
+          <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              Lead . Align . Grow
+            </p>
+            <h1 className="mt-4 max-w-3xl font-heading text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+              Leadership &amp; <span className="text-brand-mint-green">Management</span>
+            </h1>
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-white/85">
+              Build the confidence, awareness, and practical leadership habits needed to guide people and move work forward.
+            </p>
+          </div>
+        </section>
+
+        <section aria-labelledby="leadership-management-programs-heading">
+          <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+            <div className="grid items-start gap-4 lg:grid-cols-[1.4fr_0.6fr] lg:gap-12">
+              <h2 id="leadership-management-programs-heading" className="max-w-3xl text-balance font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+                Explore our <span className="text-brand-mint-green">Leadership &amp; Management programs</span>
+              </h2>
+              <p className="max-w-2xl text-base leading-relaxed text-brand-charcoal/70 lg:pt-2">
+                Explore practical learning experiences designed to strengthen leadership, people management, and confident decision-making at work.
+              </p>
+            </div>
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {leadershipManagementCards.map((card, index) => (
+                <article
+                  key={card.title}
+                  className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
+                >
+                  <p className={`text-sm font-extrabold ${card.accent}`}>{String(index + 1).padStart(2, "0")}</p>
+                  <div aria-hidden="true" className="relative mt-4 aspect-square overflow-hidden rounded-md border border-dashed border-brand-charcoal/15 bg-brand-charcoal/[0.03]" />
+                  <h3 className="mt-5 font-heading text-xl font-extrabold leading-tight tracking-tight">{card.title}</h3>
+                  <div className="mt-4 border-t border-brand-charcoal/10 pt-4">
+                    <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
+                  </div>
+                  <span className={`mt-auto inline-flex items-center gap-2 pt-5 text-sm font-bold ${card.accent}`}>
+                    Learn more
+                    <span aria-hidden="true" className="text-base leading-none">â†’</span>
                   </span>
                 </article>
               ))}
