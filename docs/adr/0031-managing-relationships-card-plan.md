@@ -10,4 +10,13 @@ Card order and Proposed Copy:
 4. **Managing Up** — Build practical skills for communicating with managers, aligning expectations, and working effectively across priorities.
 5. **World Class Service** — Strengthen service habits that help teams understand needs, respond thoughtfully, and create consistent customer experiences.
 
+Closing CTA:
+
+- Use the same contained charcoal CTA card and `cta_hero.png` human cutout treatment as Managing Work and Personal Development.
+- Eyebrow: `Start a conversation`
+- Heading: `Not sure where to start?`
+- Supporting copy: `Tell us what you're working toward, and we'll help you find the right learning direction.`
+- Action: `Talk to us` linking to `/contact?interest=program-information`.
+- Place the CTA directly below the five cards using the established category-page spacing.
+
 **Status:** accepted
