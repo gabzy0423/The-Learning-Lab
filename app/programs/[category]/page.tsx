@@ -133,8 +133,8 @@ export default async function CategoryPage({
 
         <section aria-labelledby="personal-development-cta-heading">
           <div className="mx-auto max-w-[80rem] px-7 pb-16 sm:px-10 lg:px-0 lg:pb-20">
-            <div className="flex flex-col gap-6 rounded-2xl bg-brand-charcoal p-7 text-brand-white sm:p-10 lg:flex-row lg:items-center lg:justify-between">
-              <div className="max-w-2xl">
+            <div className="relative isolate grid overflow-hidden rounded-2xl bg-brand-charcoal p-7 text-brand-white sm:p-10 lg:grid-cols-[1.2fr_0.8fr] lg:p-10">
+              <div className="relative z-10 max-w-2xl">
                 <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
                   <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
                   Start a conversation
@@ -148,11 +148,15 @@ export default async function CategoryPage({
               </div>
               <Link
                 href="/contact?interest=program-information"
-                className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-brand-mint-green px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-mint-green/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
+                className="mt-6 inline-flex min-h-11 w-fit items-center justify-center gap-2 rounded-xl bg-brand-mint-green px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-mint-green/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue lg:col-start-1"
               >
                 Talk to us
                 <span aria-hidden="true" className="text-base leading-none">→</span>
               </Link>
+              <div className="relative z-10 mt-6 min-h-56 translate-y-6 lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:w-[34%] lg:translate-y-0">
+                <span aria-hidden="true" className="pointer-events-none absolute -right-8 bottom-0 z-0 size-40 rounded-full bg-brand-mint-green/25 blur-2xl lg:size-52" />
+                <Image src="/assets/hero/cta_hero.png" alt="" fill sizes="(min-width: 1024px) 30vw, 100vw" className="relative z-10 object-contain object-bottom" />
+              </div>
             </div>
           </div>
         </section>

@@ -28,7 +28,7 @@ The header description is followed by a mint `Start your journey` button that sm
 
 The course-card section begins with a clean white split intro: `Explore our Personal Development programs` as the left-aligned heading and this supporting copy on the right: `Explore practical learning experiences designed to build confidence, strengthen everyday capability, and support positive progress at work.` The generated people background remains limited to the page header so the card visuals stay primary.
 
-After the cards, the page ends with a compact charcoal `Start a conversation` CTA: `Not sure where to start?`, the approved supporting direction copy, and a `Talk to us` link to the existing program-information contact flow.
+After the cards, the page ends with a compact charcoal `Start a conversation` CTA: `Not sure where to start?`, the approved supporting direction copy, the existing `Talk to us` program-information contact flow, and the reused `cta_hero.png` human cutout on the right desktop column, controlled below the copy on mobile.
 
 Card 1 uses the same standard card treatment as Cards 2–6: a square `contain` image frame, numbered marker, hover overlay, divider, and approved description. The temporary editorial/bubble-card experiment was removed to keep the full grid visually consistent until course titles and routes are approved.
 
