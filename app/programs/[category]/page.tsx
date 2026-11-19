@@ -69,7 +69,7 @@ export default async function CategoryPage({
                   className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
                 >
                   <p className="text-sm font-extrabold text-brand-cyan-blue">{String(index + 1).padStart(2, "0")}</p>
-                  <div className="relative mt-4 aspect-square overflow-hidden rounded-md bg-brand-charcoal/5 after:absolute after:inset-0 after:bg-brand-charcoal/15">
+                  <div className="relative mt-4 aspect-square overflow-hidden rounded-md bg-brand-charcoal/5">
                     <Image
                       src={card.image}
                       alt={`Personal Development course visual ${index + 1}`}
@@ -77,6 +77,10 @@ export default async function CategoryPage({
                       sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                       className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
                     />
+                    <span aria-hidden="true" className="pointer-events-none absolute inset-0 bg-brand-charcoal/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none" />
+                    <span aria-hidden="true" className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center text-sm font-bold text-brand-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none">
+                      Learn more
+                    </span>
                   </div>
                   <div className="mt-5 border-t border-brand-charcoal/10 pt-5">
                     <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
