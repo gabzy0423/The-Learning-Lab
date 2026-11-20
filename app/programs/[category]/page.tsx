@@ -250,7 +250,7 @@ export default async function CategoryPage({
                     <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
                   </div>
                   <span className={`mt-auto inline-flex items-center gap-2 pt-5 text-sm font-bold ${card.accent}`}>
-                    Learn more
+                    {card.href ? "View course details" : "Learn more"}
                     <span aria-hidden="true" className="text-base leading-none">→</span>
                   </span>
                 </article>
