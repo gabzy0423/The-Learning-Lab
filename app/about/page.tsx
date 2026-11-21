@@ -136,8 +136,8 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="flex h-full flex-col justify-center text-brand-charcoal lg:order-2">
-              <h3 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Mission</h3>
-              <p className="mt-5 max-w-xl text-lg font-normal leading-relaxed text-brand-charcoal/80 sm:text-xl">
+              <h3 className="font-heading text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-4xl">Mission</h3>
+              <p className="mt-5 max-w-xl text-base font-normal leading-relaxed text-brand-charcoal/80 sm:text-lg">
                 To create practical, human-centered learning experiences that help people grow, work better together, and turn insight into action.
               </p>
             </div>
@@ -151,8 +151,8 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="flex h-full flex-col justify-center text-brand-charcoal lg:order-1">
-              <h3 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Vision</h3>
-              <p className="mt-5 max-w-xl text-lg font-normal leading-relaxed text-brand-charcoal/80 sm:text-xl">
+              <h3 className="font-heading text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-4xl">Vision</h3>
+              <p className="mt-5 max-w-xl text-base font-normal leading-relaxed text-brand-charcoal/80 sm:text-lg">
                 A workplace culture where learning moves people, teams, and organizations forward.
               </p>
             </div>
@@ -166,8 +166,8 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="flex h-full flex-col justify-center text-brand-charcoal lg:order-2">
-              <h3 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Our Commitment</h3>
-              <p className="mt-5 max-w-xl text-lg font-normal leading-relaxed text-brand-charcoal/80 sm:text-xl">
+              <h3 className="font-heading text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-4xl">Our Commitment</h3>
+              <p className="mt-5 max-w-xl text-base font-normal leading-relaxed text-brand-charcoal/80 sm:text-lg">
                 To continually innovate, support lifelong learning, and create opportunities for a brighter, more inclusive future.
               </p>
             </div>
