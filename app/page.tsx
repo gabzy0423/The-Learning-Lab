@@ -355,8 +355,8 @@ export default function Home() {
               Explore a few starting points about our learning programs, solutions, and approach.
             </p>
           </div>
-          <Accordion className="border-t border-brand-charcoal/15 pt-2">
-            <AccordionItem value="programs" className="border-brand-charcoal/10 py-2">
+          <Accordion className="gap-3">
+            <AccordionItem value="programs" className="rounded-xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-4 py-2">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
                 <span className="mr-3 text-xs font-extrabold text-brand-mint-green">01</span>
                 What learning programs does The Learning Lab offer?
@@ -365,7 +365,7 @@ export default function Home() {
                 <p>Our program categories cover Personal Development, Managing Work, Managing Relationships, Leadership &amp; Management, and Impacting Strategy.</p>
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="approach" className="border-brand-charcoal/10 py-2">
+            <AccordionItem value="approach" className="rounded-xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-4 py-2">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
                 <span className="mr-3 text-xs font-extrabold text-brand-mint-green">02</span>
                 How does your learning approach work?
@@ -374,7 +374,7 @@ export default function Home() {
                 <p>We start with the need, build practical capability, and create space to apply learning through everyday decisions, collaboration, and work.</p>
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="solutions" className="border-brand-charcoal/10 py-2">
+            <AccordionItem value="solutions" className="rounded-xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-4 py-2">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
                 <span className="mr-3 text-xs font-extrabold text-brand-mint-green">03</span>
                 What digital solutions are available?
@@ -383,7 +383,7 @@ export default function Home() {
                 <p>Our proposed Digital Solutions include a custom HRIS, Competency Platform, and Learning Management Platform. Detailed capabilities will be added as each offering is finalized.</p>
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="conversation" className="border-brand-charcoal/10 py-2">
+            <AccordionItem value="conversation" className="rounded-xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-4 py-2">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
                 <span className="mr-3 text-xs font-extrabold text-brand-mint-green">04</span>
                 How can we talk about our learning needs?
