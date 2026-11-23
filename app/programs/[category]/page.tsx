@@ -622,7 +622,7 @@ export default async function CategoryPage({
               {impactingStrategyCards.map((card, index) => (
                 <article
                   key={card.title}
-                  className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
+                  className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] duration-500 ease-out hover:-translate-y-0.5 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none"
                 >
                   <p className={`text-sm font-extrabold ${card.accent}`}>{String(index + 1).padStart(2, "0")}</p>
                   <div className="relative mt-4 aspect-square overflow-hidden rounded-md border border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
