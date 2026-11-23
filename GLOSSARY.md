@@ -220,6 +220,10 @@ _Avoid_: Program card, placeholder-only slot, generic promotional tile
 A compact homepage section after the Signature Learning Portfolio that introduces the two Digital Solutions offerings through neutral, linked service cards.
 _Avoid_: Learning program category, detailed product catalogue, unsupported service claims
 
+**Homepage FAQ Section**:
+A compact section between the About preview and closing conversation CTA that answers four proposed general questions through an accessible Accordion.
+_Avoid_: Policy centre, confirmed support documentation, sales objection list
+
 **Methodology Image Checklist**:
 The Methodology section composition that pairs a learning visual with the section explanation and its three checkmarked learning steps.
 _Avoid_: Numeric performance proof, separate card grid, decorative image-only block

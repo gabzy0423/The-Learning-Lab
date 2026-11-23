@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AcademicCapIcon, BriefcaseIcon, ChartBarIcon, CheckIcon, UserGroupIcon, UserIcon } from "@heroicons/react/24/outline";
 import { LogoMarquee } from "@/components/home/LogoMarquee";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { programs } from "@/content/programs";
 
 const programDescriptions = [
@@ -338,6 +339,56 @@ export default function Home() {
               </video>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="border-b border-brand-charcoal/10 bg-brand-white" aria-labelledby="faq-heading">
+        <div className="mx-auto grid max-w-[80rem] items-start gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16 lg:px-0 lg:py-20">
+          <div>
+            <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+              Frequently asked questions
+            </p>
+            <h2 id="faq-heading" className="mt-4 max-w-xl text-balance font-heading text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-4xl lg:text-5xl">
+              A few useful answers before we <span className="text-brand-mint-green">get started.</span>
+            </h2>
+            <p className="mt-5 max-w-lg text-base leading-relaxed text-brand-charcoal/70">
+              Explore a few starting points about our learning programs, solutions, and approach.
+            </p>
+          </div>
+          <Accordion className="border-t border-brand-charcoal/15 pt-2">
+            <AccordionItem value="programs" className="border-brand-charcoal/10 py-2">
+              <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
+                What learning programs does The Learning Lab offer?
+              </AccordionTrigger>
+              <AccordionContent className="text-brand-charcoal/70">
+                <p>Our program categories cover Personal Development, Managing Work, Managing Relationships, Leadership &amp; Management, and Impacting Strategy.</p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="approach" className="border-brand-charcoal/10 py-2">
+              <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
+                How does your learning approach work?
+              </AccordionTrigger>
+              <AccordionContent className="text-brand-charcoal/70">
+                <p>We start with the need, build practical capability, and create space to apply learning through everyday decisions, collaboration, and work.</p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="solutions" className="border-brand-charcoal/10 py-2">
+              <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
+                What digital solutions are available?
+              </AccordionTrigger>
+              <AccordionContent className="text-brand-charcoal/70">
+                <p>Our proposed Digital Solutions include a custom HRIS, Competency Platform, and Learning Management Platform. Detailed capabilities will be added as each offering is finalized.</p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="conversation" className="border-brand-charcoal/10 py-2">
+              <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
+                How can we talk about our learning needs?
+              </AccordionTrigger>
+              <AccordionContent className="text-brand-charcoal/70">
+                <p>Use the conversation CTA below to share what you&apos;re working on, and we can explore a suitable next step together.</p>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
       <section className="border-y border-brand-charcoal/10 bg-brand-white text-brand-charcoal" aria-labelledby="contact-cta-heading">
