@@ -188,10 +188,11 @@ export default function Home() {
               Explore proposed digital solutions that can support the way people, capability, and work come together.
             </p>
           </div>
-          <div className="mt-10 grid gap-5 lg:grid-cols-2">
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
             {[
               ["Custom Human Resource Information System (HRIS)", "Explore the proposed direction for a custom HRIS solution; detailed capabilities will be added as the offering is finalized.", "/solutions/hris", BriefcaseIcon],
               ["Competency Platform", "Explore the proposed direction for a competency platform; detailed capabilities will be added as the offering is finalized.", "/solutions/competency-platform", ChartBarIcon],
+              ["Learning Management Platform", "Explore the proposed direction for a learning management platform; detailed capabilities will be added as the offering is finalized.", "/solutions/learning-management-platform", AcademicCapIcon],
             ].map(([title, description, href, Icon]) => (
               <Link
                 key={href as string}
