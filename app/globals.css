@@ -126,6 +126,14 @@ html {
   scroll-behavior: smooth;
 }
 
+html:has(.about-page) {
+  scrollbar-width: none;
+}
+
+html:has(.about-page)::-webkit-scrollbar {
+  display: none;
+}
+
 .mobile-menu-backdrop {
   animation: mobile-menu-backdrop-in 180ms ease-out both;
 }
