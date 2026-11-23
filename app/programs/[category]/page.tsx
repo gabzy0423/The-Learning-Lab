@@ -206,7 +206,7 @@ export default async function CategoryPage({
               Personal <span className="text-brand-mint-green">Development</span>
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-white/85">
-              Build new skills, unlock your potential, and take the next step toward a more fulfilling future.
+              Build new skills, unlock your potential, and take the next step toward a more fulfilling future with practical learning for work and life.
             </p>
           </div>
         </section>
