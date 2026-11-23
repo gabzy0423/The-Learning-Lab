@@ -132,6 +132,10 @@ _Avoid_: Conversion button, enrollment CTA
 The persistent website menu connecting visitors to Home, About, Programs, Solutions, and Contact, with Request Information as its primary action.
 _Avoid_: Sitemap, course directory
 
+**Active Navigation Link**:
+A Primary Navigation link whose green text identifies the visitor's current page or section; a parent menu and its exact current child link may both be active at the same time.
+_Avoid_: Hover state, open submenu, page heading
+
 **About Menu**:
 A section menu within the Primary Navigation that routes visitors to the About The Learning Lab page and the standalone Meet The Team page.
 _Avoid_: Standalone About page replacement, Programs menu

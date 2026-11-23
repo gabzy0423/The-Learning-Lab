@@ -146,7 +146,7 @@ export function Header() {
   const navClass = (active: boolean) =>
     `relative flex min-h-11 items-center px-1 text-[13px] font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-cyan-blue ${
       active
-        ? "text-brand-charcoal after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:rounded-full after:bg-brand-turquoise"
+        ? "text-brand-mint-green"
         : "text-brand-charcoal/75 hover:text-brand-charcoal"
     }`;
 
@@ -224,12 +224,12 @@ export function Header() {
               className={`absolute left-0 top-[calc(100%+0.75rem)] w-64 origin-top transform-gpu rounded-2xl border border-brand-charcoal/10 bg-white p-2 shadow-[0_18px_50px_rgba(41,41,41,0.16)] transition-[opacity,transform] duration-200 ease-out will-change-[opacity,transform] motion-reduce:transition-none motion-reduce:transform-none ${aboutOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"}`}
             >
                 {aboutLinks.map((link) => {
-                  const active = pathname === "/about" && link.href === "/about";
+                  const active = pathname === link.href;
                   return (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "bg-brand-turquoise/25 text-brand-charcoal" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
+                      className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "text-brand-mint-green" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
                       aria-current={active ? "page" : undefined}
                       onClick={() => {
                         setAboutOpen(false);
@@ -279,7 +279,7 @@ export function Header() {
                     <Link
                       key={program.slug}
                       href={href}
-                      className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "bg-brand-turquoise/25 text-brand-charcoal" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
+                      className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "text-brand-mint-green" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
                       aria-current={active ? "page" : undefined}
                       onClick={() => {
                         setProgramsOpen(false);
@@ -338,13 +338,13 @@ export function Header() {
 
           <nav className="mt-5 flex flex-col gap-1" aria-label="Mobile navigation">
             {links.slice(0, 1).map((link) => (
-              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
+              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "text-brand-mint-green" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
                 {link.label}
               </Link>
             ))}
 
             <div>
-              <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/about") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileAboutOpen} aria-controls="mobile-about-menu" onClick={() => {
+                <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/about") ? "text-brand-mint-green" : "hover:bg-white"}`} aria-expanded={mobileAboutOpen} aria-controls="mobile-about-menu" onClick={() => {
                 setMobileAboutOpen((open) => !open);
                 setMobileProgramsOpen(false);
               }}>
@@ -357,9 +357,9 @@ export function Header() {
                 className={`ml-4 overflow-hidden border-l-2 border-brand-turquoise pl-3 transition-[max-height,opacity] duration-200 ease-out will-change-[max-height,opacity] motion-reduce:transition-none ${mobileAboutOpen ? "max-h-96 opacity-100" : "pointer-events-none max-h-0 opacity-0"}`}
               >
                   {aboutLinks.map((link) => {
-                    const active = pathname === "/about" && link.href === "/about";
+                    const active = pathname === link.href;
                     return (
-                      <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold ${active ? "bg-brand-turquoise/20" : "hover:bg-white"}`} aria-current={active ? "page" : undefined} onClick={closeMobileMenu}>
+                      <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold ${active ? "text-brand-mint-green" : "hover:bg-white"}`} aria-current={active ? "page" : undefined} onClick={closeMobileMenu}>
                         {link.label}
                       </Link>
                     );
@@ -369,7 +369,7 @@ export function Header() {
 
             <div>
               <div>
-                <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/programs") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => {
+                  <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/programs") ? "text-brand-mint-green" : "hover:bg-white"}`} aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => {
                   setMobileProgramsOpen((open) => !open);
                   setMobileAboutOpen(false);
                 }}>
@@ -386,7 +386,7 @@ export function Header() {
                     const href = `/programs/${program.slug}`;
                     const active = pathname === href || pathname.startsWith(`${href}/`);
                     return (
-                      <Link key={program.slug} href={href} className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold ${active ? "bg-brand-turquoise/20" : "hover:bg-white"}`} aria-current={active ? "page" : undefined} onClick={closeMobileMenu}>
+                      <Link key={program.slug} href={href} className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold ${active ? "text-brand-mint-green" : "hover:bg-white"}`} aria-current={active ? "page" : undefined} onClick={closeMobileMenu}>
                         {program.name}
                       </Link>
                     );
@@ -395,7 +395,7 @@ export function Header() {
             </div>
 
             {links.slice(1).map((link) => (
-              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
+              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "text-brand-mint-green" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
                 {link.label}
               </Link>
             ))}
