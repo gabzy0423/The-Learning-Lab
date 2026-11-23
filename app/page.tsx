@@ -172,6 +172,44 @@ export default function Home() {
         </div>
         </div>
       </section>
+      <section className="border-b border-brand-charcoal/10 bg-brand-white" aria-labelledby="services-heading">
+        <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+          <div className="grid items-end gap-4 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
+            <div>
+              <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
+                <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
+                Our Services
+              </p>
+              <h2 id="services-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+                Solutions that support <span className="text-brand-mint-green">better work.</span>
+              </h2>
+            </div>
+            <p className="max-w-2xl text-base leading-relaxed text-brand-charcoal/70 lg:pb-1">
+              Explore proposed digital solutions that can support the way people, capability, and work come together.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-5 lg:grid-cols-2">
+            {[
+              ["Custom Human Resource Information System (HRIS)", "Explore the proposed direction for a custom HRIS solution; detailed capabilities will be added as the offering is finalized.", "/solutions/hris", BriefcaseIcon],
+              ["Competency Platform", "Explore the proposed direction for a competency platform; detailed capabilities will be added as the offering is finalized.", "/solutions/competency-platform", ChartBarIcon],
+            ].map(([title, description, href, Icon]) => (
+              <Link
+                key={href as string}
+                href={href as string}
+                className="group rounded-2xl border border-brand-charcoal/15 bg-brand-charcoal/[0.03] p-7 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue sm:p-8 motion-reduce:transform-none motion-reduce:transition-none"
+              >
+                <Icon className="size-9 text-brand-cyan-blue" aria-hidden="true" />
+                <h3 className="mt-7 max-w-xl font-heading text-2xl font-extrabold leading-tight tracking-tight">{title as string}</h3>
+                <p className="mt-4 max-w-xl text-base leading-relaxed text-brand-charcoal/70">{description as string}</p>
+                <span className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-brand-charcoal transition-colors group-hover:text-brand-cyan-blue">
+                  Learn more
+                  <span aria-hidden="true" className="text-base leading-none">→</span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
       <section className="border-b border-brand-charcoal/10 bg-brand-white" aria-labelledby="methodology-heading">
         <div className="mx-auto grid max-w-[80rem] items-center gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-0">
           <div className="overflow-hidden rounded-lg border border-brand-charcoal/10 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.12)]">

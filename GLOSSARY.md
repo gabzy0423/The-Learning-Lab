@@ -216,6 +216,10 @@ _Avoid_: Carousel, automatic image rotation, touch-only image replacement
 The sixth Signature Learning Portfolio grid card that directs visitors toward a tailored learning conversation instead of representing a program category.
 _Avoid_: Program card, placeholder-only slot, generic promotional tile
 
+**Our Services Section**:
+A compact homepage section after the Signature Learning Portfolio that introduces the two Digital Solutions offerings through neutral, linked service cards.
+_Avoid_: Learning program category, detailed product catalogue, unsupported service claims
+
 **Methodology Image Checklist**:
 The Methodology section composition that pairs a learning visual with the section explanation and its three checkmarked learning steps.
 _Avoid_: Numeric performance proof, separate card grid, decorative image-only block
