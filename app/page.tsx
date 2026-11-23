@@ -193,16 +193,23 @@ export default function Home() {
               ["Custom Human Resource Information System (HRIS)", "Explore the proposed direction for a custom HRIS solution; detailed capabilities will be added as the offering is finalized.", "/solutions/hris", BriefcaseIcon],
               ["Competency Platform", "Explore the proposed direction for a competency platform; detailed capabilities will be added as the offering is finalized.", "/solutions/competency-platform", ChartBarIcon],
               ["Learning Management Platform", "Explore the proposed direction for a learning management platform; detailed capabilities will be added as the offering is finalized.", "/solutions/learning-management-platform", AcademicCapIcon],
-            ].map(([title, description, href, Icon]) => (
+            ].map(([title, description, href, Icon], index) => (
               <Link
                 key={href as string}
                 href={href as string}
-                className="group rounded-2xl border border-brand-charcoal/15 bg-brand-charcoal/[0.03] p-7 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue sm:p-8 motion-reduce:transform-none motion-reduce:transition-none"
+                className="group flex min-h-[27rem] flex-col rounded-2xl border border-brand-charcoal/15 bg-brand-white p-7 text-brand-charcoal shadow-[0_8px_24px_rgba(41,41,41,0.05)] transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue sm:p-8 motion-reduce:transform-none motion-reduce:transition-none"
               >
-                <Icon className="size-9 text-brand-cyan-blue" aria-hidden="true" />
-                <h3 className="mt-7 max-w-xl font-heading text-2xl font-extrabold leading-tight tracking-tight">{title as string}</h3>
+                <div className="flex items-start justify-between gap-4">
+                  <span className="rounded-md border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-2.5 py-1 text-xs font-extrabold text-brand-charcoal/60">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span className="inline-flex rounded-xl border border-brand-mint-green/30 bg-brand-mint-green/10 p-3 text-brand-cyan-blue">
+                    <Icon className="size-6" aria-hidden="true" />
+                  </span>
+                </div>
+                <h3 className="mt-8 max-w-xl font-heading text-2xl font-extrabold leading-tight tracking-tight">{title as string}</h3>
                 <p className="mt-4 max-w-xl text-base leading-relaxed text-brand-charcoal/70">{description as string}</p>
-                <span className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-brand-charcoal transition-colors group-hover:text-brand-cyan-blue">
+                <span className="mt-auto inline-flex items-center gap-2 border-t border-brand-charcoal/10 pt-5 text-sm font-bold text-brand-charcoal transition-colors group-hover:text-brand-cyan-blue">
                   Learn more
                   <span aria-hidden="true" className="text-base leading-none">→</span>
                 </span>

@@ -5,6 +5,6 @@ The homepage will add a compact `Our Services` section immediately after the Sig
 - `Custom Human Resource Information System (HRIS)` → `/solutions/hris`
 - `Competency Platform` → `/solutions/competency-platform`
 
-The section will use two equal cards on desktop and stack them on mobile. Its visual treatment will be distinct from the learning-program cards while remaining within the shared page container, using a subtle Charcoal/Mint treatment. Cards will use the approved service names, short neutral descriptions, and a `Learn more` action; detailed claims remain deferred until service copy is approved.
+The section will use three equal cards on desktop and stack them on mobile. Its visual treatment will be distinct from the learning-program cards while remaining within the shared page container: white cards with a soft border and shadow, a number badge in the upper-left, a Mint/Turquoise icon tile in the upper-right, a prominent title, a neutral description, a divider, and a `Learn more` action. Checklist bullets and detailed claims remain deferred until service capabilities are approved.
 
 **Status:** accepted
