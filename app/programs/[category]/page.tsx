@@ -208,13 +208,6 @@ export default async function CategoryPage({
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-white/85">
               Build new skills, unlock your potential, and take the next step toward a more fulfilling future.
             </p>
-            <a
-              href="#personal-development-courses"
-              className="mt-7 inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-mint-green px-5 text-sm font-bold text-brand-charcoal transition-colors hover:bg-brand-mint-green/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue"
-            >
-              Start your journey
-              <span aria-hidden="true" className="text-base leading-none">→</span>
-            </a>
           </div>
         </section>
 
