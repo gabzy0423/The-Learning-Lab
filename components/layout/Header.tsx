@@ -146,7 +146,7 @@ export function Header() {
   const navClass = (active: boolean) =>
     `relative flex min-h-11 items-center px-1 text-[13px] font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-cyan-blue ${
       active
-        ? "text-brand-mint-green"
+        ? "text-brand-charcoal after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:rounded-full after:bg-brand-turquoise"
         : "text-brand-charcoal/75 hover:text-brand-charcoal"
     }`;
 
@@ -229,7 +229,7 @@ export function Header() {
                     <Link
                       key={link.href}
                       href={link.href}
-                      className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "text-brand-mint-green" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
+                      className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "bg-brand-turquoise/25 text-brand-charcoal" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
                       aria-current={active ? "page" : undefined}
                       onClick={() => {
                         setAboutOpen(false);
@@ -279,7 +279,7 @@ export function Header() {
                     <Link
                       key={program.slug}
                       href={href}
-                      className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "text-brand-mint-green" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
+                      className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "bg-brand-turquoise/25 text-brand-charcoal" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
                       aria-current={active ? "page" : undefined}
                       onClick={() => {
                         setProgramsOpen(false);
@@ -338,13 +338,13 @@ export function Header() {
 
           <nav className="mt-5 flex flex-col gap-1" aria-label="Mobile navigation">
             {links.slice(0, 1).map((link) => (
-              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "text-brand-mint-green" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
+              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
                 {link.label}
               </Link>
             ))}
 
             <div>
-                <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/about") ? "text-brand-mint-green" : "hover:bg-white"}`} aria-expanded={mobileAboutOpen} aria-controls="mobile-about-menu" onClick={() => {
+                <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/about") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileAboutOpen} aria-controls="mobile-about-menu" onClick={() => {
                 setMobileAboutOpen((open) => !open);
                 setMobileProgramsOpen(false);
               }}>
@@ -359,7 +359,7 @@ export function Header() {
                   {aboutLinks.map((link) => {
                     const active = pathname === link.href;
                     return (
-                      <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold ${active ? "text-brand-mint-green" : "hover:bg-white"}`} aria-current={active ? "page" : undefined} onClick={closeMobileMenu}>
+                      <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold ${active ? "bg-brand-turquoise/20" : "hover:bg-white"}`} aria-current={active ? "page" : undefined} onClick={closeMobileMenu}>
                         {link.label}
                       </Link>
                     );
@@ -369,7 +369,7 @@ export function Header() {
 
             <div>
               <div>
-                  <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/programs") ? "text-brand-mint-green" : "hover:bg-white"}`} aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => {
+                  <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/programs") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => {
                   setMobileProgramsOpen((open) => !open);
                   setMobileAboutOpen(false);
                 }}>
@@ -386,7 +386,7 @@ export function Header() {
                     const href = `/programs/${program.slug}`;
                     const active = pathname === href || pathname.startsWith(`${href}/`);
                     return (
-                      <Link key={program.slug} href={href} className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold ${active ? "text-brand-mint-green" : "hover:bg-white"}`} aria-current={active ? "page" : undefined} onClick={closeMobileMenu}>
+                      <Link key={program.slug} href={href} className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold ${active ? "bg-brand-turquoise/20" : "hover:bg-white"}`} aria-current={active ? "page" : undefined} onClick={closeMobileMenu}>
                         {program.name}
                       </Link>
                     );
@@ -395,7 +395,7 @@ export function Header() {
             </div>
 
             {links.slice(1).map((link) => (
-              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "text-brand-mint-green" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
+              <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
                 {link.label}
               </Link>
             ))}
