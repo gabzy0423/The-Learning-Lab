@@ -355,7 +355,7 @@ export default function Home() {
               Explore a few starting points about our learning programs, solutions, and approach.
             </p>
           </div>
-          <Accordion className="gap-3">
+          <Accordion className="gap-3 lg:pt-10">
             <AccordionItem value="programs" className="rounded-xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-4 py-2">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
                 <span className="mr-3 text-xs font-extrabold text-brand-mint-green">01</span>
