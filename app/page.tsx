@@ -358,6 +358,7 @@ export default function Home() {
           <Accordion className="border-t border-brand-charcoal/15 pt-2">
             <AccordionItem value="programs" className="border-brand-charcoal/10 py-2">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
+                <span className="mr-3 text-xs font-extrabold text-brand-mint-green">01</span>
                 What learning programs does The Learning Lab offer?
               </AccordionTrigger>
               <AccordionContent className="text-brand-charcoal/70">
@@ -366,6 +367,7 @@ export default function Home() {
             </AccordionItem>
             <AccordionItem value="approach" className="border-brand-charcoal/10 py-2">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
+                <span className="mr-3 text-xs font-extrabold text-brand-mint-green">02</span>
                 How does your learning approach work?
               </AccordionTrigger>
               <AccordionContent className="text-brand-charcoal/70">
@@ -374,6 +376,7 @@ export default function Home() {
             </AccordionItem>
             <AccordionItem value="solutions" className="border-brand-charcoal/10 py-2">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
+                <span className="mr-3 text-xs font-extrabold text-brand-mint-green">03</span>
                 What digital solutions are available?
               </AccordionTrigger>
               <AccordionContent className="text-brand-charcoal/70">
@@ -382,6 +385,7 @@ export default function Home() {
             </AccordionItem>
             <AccordionItem value="conversation" className="border-brand-charcoal/10 py-2">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
+                <span className="mr-3 text-xs font-extrabold text-brand-mint-green">04</span>
                 How can we talk about our learning needs?
               </AccordionTrigger>
               <AccordionContent className="text-brand-charcoal/70">
