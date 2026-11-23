@@ -135,7 +135,7 @@ export default function Home() {
             <Link
               key={program.slug}
               href={`/programs/${program.slug}`}
-              className="group relative flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2"
+              className="group relative flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] duration-500 ease-out hover:-translate-y-0.5 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2"
             >
               <span className="inline-flex text-brand-cyan-blue">
                 {index === 0 && <AcademicCapIcon className="size-9" aria-hidden="true" />}
@@ -160,7 +160,7 @@ export default function Home() {
           ))}
           <Link
             href="/contact?interest=consultation"
-            className="group hidden min-h-[29rem] flex-col justify-between rounded-lg border border-brand-mint-green/30 bg-gradient-to-br from-brand-mint-green via-brand-white to-brand-cyan-blue/30 p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 lg:flex"
+            className="group hidden min-h-[29rem] flex-col justify-between rounded-lg border border-brand-mint-green/30 bg-gradient-to-br from-brand-mint-green via-brand-white to-brand-cyan-blue/30 p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] duration-500 ease-out hover:-translate-y-0.5 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 lg:flex"
           >
             <div>
               <p className="text-sm font-bold text-brand-charcoal/65">Tailored learning</p>
