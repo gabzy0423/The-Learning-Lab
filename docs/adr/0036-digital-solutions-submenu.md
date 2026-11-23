@@ -4,6 +4,7 @@ The primary Digital Solutions navigation item will become a dropdown-only contro
 
 - `Custom Human Resource Information System (HRIS)` → `/solutions/hris`
 - `Competency Platform` → `/solutions/competency-platform`
+- `Learning Management Platform` → `/solutions/learning-management-platform`
 
 The existing `/solutions` route remains available as a fallback, but it is not the direct target of the top-level navigation control. Until the solution content is approved, both child routes will use clearly marked proposed placeholder pages rather than invented claims.
 

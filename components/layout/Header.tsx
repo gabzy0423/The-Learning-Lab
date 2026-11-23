@@ -20,6 +20,7 @@ const aboutLinks = [
 const solutionLinks = [
   { href: "/solutions/hris", label: "Custom Human Resource Information System (HRIS)" },
   { href: "/solutions/competency-platform", label: "Competency Platform" },
+  { href: "/solutions/learning-management-platform", label: "Learning Management Platform" },
 ];
 
 function isActive(pathname: string, href: string) {

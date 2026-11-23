@@ -145,7 +145,7 @@ A dropdown-only navigation control that exposes the five established program cat
 _Avoid_: Course filter, Resources menu
 
 **Digital Solutions Menu**:
-A dropdown-only navigation control that exposes the Custom Human Resource Information System (HRIS) and Competency Platform solution pages.
+A dropdown-only navigation control that exposes the Custom Human Resource Information System (HRIS), Competency Platform, and Learning Management Platform solution pages.
 _Avoid_: Services filter, generic Solutions overview
 
 **Navigation Submenu**:
