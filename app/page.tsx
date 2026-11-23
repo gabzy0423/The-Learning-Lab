@@ -200,7 +200,7 @@ export default function Home() {
               <Link
                 key={href}
                 href={href}
-                className="group flex min-h-[27rem] flex-col rounded-2xl border border-brand-charcoal/15 bg-brand-white p-7 text-brand-charcoal shadow-[0_8px_24px_rgba(41,41,41,0.05)] transition-[border-color,transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue sm:p-8 motion-reduce:transform-none motion-reduce:transition-none"
+                className="group flex min-h-[27rem] flex-col rounded-2xl border border-brand-charcoal/15 bg-brand-white p-7 text-brand-charcoal shadow-[0_8px_24px_rgba(41,41,41,0.05)] transition-[border-color,transform,box-shadow] duration-500 ease-out hover:-translate-y-0.5 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue sm:p-8 motion-reduce:transform-none motion-reduce:transition-none"
               >
                 <div className="flex items-start justify-between gap-4">
                   <span className="rounded-md border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-2.5 py-1 text-xs font-extrabold text-brand-charcoal/60">
