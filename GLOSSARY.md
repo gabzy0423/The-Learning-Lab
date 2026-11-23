@@ -144,6 +144,10 @@ _Avoid_: Verified staff directory, invented biography, hiring page
 A dropdown-only navigation control that exposes the five established program categories; it does not represent a separate public Programs overview page.
 _Avoid_: Course filter, Resources menu
 
+**Digital Solutions Menu**:
+A dropdown-only navigation control that exposes the Custom Human Resource Information System (HRIS) and Competency Platform solution pages.
+_Avoid_: Services filter, generic Solutions overview
+
 **Navigation Submenu**:
 A grouped set of child links revealed from a primary navigation control and closed after selection, outside interaction, or Escape.
 _Avoid_: Persistent sidebar, separate navigation page

@@ -17,6 +17,11 @@ const aboutLinks = [
   { href: "/about/team", label: "Meet The Team" },
 ];
 
+const solutionLinks = [
+  { href: "/solutions/hris", label: "Custom Human Resource Information System (HRIS)" },
+  { href: "/solutions/competency-platform", label: "Competency Platform" },
+];
+
 function isActive(pathname: string, href: string) {
   return href === "/" ? pathname === "/" : pathname.startsWith(href);
 }
@@ -26,13 +31,16 @@ export function Header() {
   const headerRef = useRef<HTMLElement>(null);
   const aboutButtonRef = useRef<HTMLButtonElement>(null);
   const programsButtonRef = useRef<HTMLButtonElement>(null);
+  const solutionsButtonRef = useRef<HTMLButtonElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const mobileScrollRef = useRef<HTMLDivElement>(null);
   const lastMobileScrollTopRef = useRef(0);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [programsOpen, setProgramsOpen] = useState(false);
+  const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [mobileProgramsOpen, setMobileProgramsOpen] = useState(false);
+  const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const desktopCloseTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -49,6 +57,7 @@ export function Header() {
       if (!headerRef.current?.contains(event.target as Node)) {
         setAboutOpen(false);
         setProgramsOpen(false);
+        setSolutionsOpen(false);
       }
     };
     const handleEscape = (event: KeyboardEvent) => {
@@ -61,10 +70,15 @@ export function Header() {
         setProgramsOpen(false);
         programsButtonRef.current?.focus();
       }
+      if (solutionsOpen) {
+        setSolutionsOpen(false);
+        solutionsButtonRef.current?.focus();
+      }
       if (mobileMenuOpen) {
         setMobileMenuOpen(false);
         setMobileAboutOpen(false);
         setMobileProgramsOpen(false);
+        setMobileSolutionsOpen(false);
         menuButtonRef.current?.focus();
       }
     };
@@ -74,7 +88,7 @@ export function Header() {
       document.removeEventListener("mousedown", closePrograms);
       document.removeEventListener("keydown", handleEscape);
     };
-  }, [aboutOpen, mobileMenuOpen, programsOpen]);
+  }, [aboutOpen, mobileMenuOpen, programsOpen, solutionsOpen]);
 
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
@@ -91,13 +105,15 @@ export function Header() {
       lastScrollY = currentScrollY;
       setAboutOpen(false);
       setProgramsOpen(false);
+      setSolutionsOpen(false);
       setMobileAboutOpen(false);
       setMobileProgramsOpen(false);
+      setMobileSolutionsOpen(false);
     };
 
     window.addEventListener("scroll", closeOnMeaningfulScroll, { passive: true });
     return () => window.removeEventListener("scroll", closeOnMeaningfulScroll);
-  }, [aboutOpen, mobileAboutOpen, mobileMenuOpen, mobileProgramsOpen, programsOpen]);
+  }, [aboutOpen, mobileAboutOpen, mobileMenuOpen, mobileProgramsOpen, mobileSolutionsOpen, programsOpen, solutionsOpen]);
 
   const openMobileMenu = () => setMobileMenuOpen(true);
 
@@ -105,12 +121,14 @@ export function Header() {
     setMobileMenuOpen(false);
     setMobileAboutOpen(false);
     setMobileProgramsOpen(false);
+    setMobileSolutionsOpen(false);
     menuButtonRef.current?.focus();
   };
 
   const closeDesktopMenus = () => {
     setAboutOpen(false);
     setProgramsOpen(false);
+    setSolutionsOpen(false);
   };
 
   const clearDesktopCloseTimer = () => {
@@ -119,10 +137,11 @@ export function Header() {
     desktopCloseTimeoutRef.current = null;
   };
 
-  const openDesktopMenu = (menu: "about" | "programs") => {
+  const openDesktopMenu = (menu: "about" | "programs" | "solutions") => {
     clearDesktopCloseTimer();
     setAboutOpen(menu === "about");
     setProgramsOpen(menu === "programs");
+    setSolutionsOpen(menu === "solutions");
   };
 
   const scheduleDesktopMenusClose = () => {
@@ -141,6 +160,7 @@ export function Header() {
     lastMobileScrollTopRef.current = currentScrollTop;
     setMobileAboutOpen(false);
     setMobileProgramsOpen(false);
+    setMobileSolutionsOpen(false);
   };
 
   const navClass = (active: boolean) =>
@@ -212,6 +232,7 @@ export function Header() {
               onClick={() => {
                 setAboutOpen((open) => !open);
                 setProgramsOpen(false);
+                setSolutionsOpen(false);
               }}
             >
               About
@@ -261,6 +282,7 @@ export function Header() {
               onClick={() => {
                 setProgramsOpen((open) => !open);
                 setAboutOpen(false);
+                setSolutionsOpen(false);
               }}
             >
               Learning Programs
@@ -293,7 +315,54 @@ export function Header() {
               </div>
           </div>
 
-          {links.slice(1).map((link) => (
+          <div
+            className="relative flex items-center"
+            onMouseEnter={() => openDesktopMenu("solutions")}
+            onMouseLeave={scheduleDesktopMenusClose}
+            onFocusCapture={() => openDesktopMenu("solutions")}
+            onBlurCapture={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget as Node)) scheduleDesktopMenusClose();
+            }}
+          >
+            <button
+              ref={solutionsButtonRef}
+              type="button"
+              className={navClass(pathname.startsWith("/solutions"))}
+              aria-expanded={solutionsOpen}
+              aria-controls="solutions-menu"
+              onClick={() => {
+                setSolutionsOpen((open) => !open);
+                setAboutOpen(false);
+                setProgramsOpen(false);
+              }}
+            >
+              Digital Solutions
+            </button>
+
+            <div
+              id="solutions-menu"
+              aria-hidden={!solutionsOpen}
+              inert={!solutionsOpen}
+              className={`absolute left-0 top-[calc(100%+0.75rem)] w-80 origin-top transform-gpu rounded-2xl border border-brand-charcoal/10 bg-white p-2 shadow-[0_18px_50px_rgba(41,41,41,0.16)] transition-[opacity,transform] duration-200 ease-out will-change-[opacity,transform] motion-reduce:transition-none motion-reduce:transform-none ${solutionsOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-2 opacity-0"}`}
+            >
+              {solutionLinks.map((link) => {
+                const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-brand-cyan-blue ${active ? "bg-brand-turquoise/25 text-brand-charcoal" : "text-brand-charcoal/75 hover:bg-brand-white hover:text-brand-charcoal"}`}
+                    aria-current={active ? "page" : undefined}
+                    onClick={closeDesktopMenus}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+
+          {links.slice(2).map((link) => (
             <Link key={link.href} href={link.href} className={navClass(isActive(pathname, link.href))} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeDesktopMenus}>
               {link.label}
             </Link>
@@ -347,6 +416,7 @@ export function Header() {
                 <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/about") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileAboutOpen} aria-controls="mobile-about-menu" onClick={() => {
                 setMobileAboutOpen((open) => !open);
                 setMobileProgramsOpen(false);
+                setMobileSolutionsOpen(false);
               }}>
                 About
               </button>
@@ -372,6 +442,7 @@ export function Header() {
                   <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/programs") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileProgramsOpen} aria-controls="mobile-programs-menu" onClick={() => {
                   setMobileProgramsOpen((open) => !open);
                   setMobileAboutOpen(false);
+                  setMobileSolutionsOpen(false);
                 }}>
                   Learning Programs
                 </button>
@@ -394,7 +465,32 @@ export function Header() {
                 </div>
             </div>
 
-            {links.slice(1).map((link) => (
+            <div>
+              <button type="button" className={`flex min-h-11 w-full items-center justify-between rounded-xl px-4 font-bold ${pathname.startsWith("/solutions") ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-expanded={mobileSolutionsOpen} aria-controls="mobile-solutions-menu" onClick={() => {
+                setMobileSolutionsOpen((open) => !open);
+                setMobileAboutOpen(false);
+                setMobileProgramsOpen(false);
+              }}>
+                Digital Solutions
+              </button>
+              <div
+                id="mobile-solutions-menu"
+                aria-hidden={!mobileSolutionsOpen}
+                inert={!mobileSolutionsOpen}
+                className={`ml-4 overflow-hidden border-l-2 border-brand-turquoise pl-3 transition-[max-height,opacity] duration-200 ease-out will-change-[max-height,opacity] motion-reduce:transition-none ${mobileSolutionsOpen ? "max-h-96 opacity-100" : "pointer-events-none max-h-0 opacity-0"}`}
+              >
+                {solutionLinks.map((link) => {
+                  const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
+                  return (
+                    <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-3 text-sm font-semibold ${active ? "bg-brand-turquoise/20" : "hover:bg-white"}`} aria-current={active ? "page" : undefined} onClick={closeMobileMenu}>
+                      {link.label}
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+
+            {links.slice(2).map((link) => (
               <Link key={link.href} href={link.href} className={`flex min-h-11 items-center rounded-xl px-4 font-bold ${isActive(pathname, link.href) ? "bg-brand-turquoise/25" : "hover:bg-white"}`} aria-current={isActive(pathname, link.href) ? "page" : undefined} onClick={closeMobileMenu}>
                 {link.label}
               </Link>
