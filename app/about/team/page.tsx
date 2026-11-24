@@ -93,8 +93,18 @@ export default function MeetTheTeamPage() {
         </h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {Array.from({ length: 9 }, (_, index) => (
-            <div key={index} className="flex aspect-square items-center justify-center rounded-2xl border border-dashed border-brand-charcoal/20 bg-brand-charcoal/[0.03] p-6 text-center">
-              <span className="text-sm font-semibold text-brand-charcoal/45">Team image {String(index + 1).padStart(2, "0")} pending</span>
+            <div key={index} className="relative flex aspect-square items-center justify-center overflow-hidden rounded-2xl border border-dashed border-brand-charcoal/20 bg-brand-charcoal/[0.03] p-6 text-center">
+              {index === 0 ? (
+                <Image
+                  src="/assets/team/image.png"
+                  alt="Team member profile portrait"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover object-top"
+                />
+              ) : (
+                <span className="text-sm font-semibold text-brand-charcoal/45">Team image {String(index + 1).padStart(2, "0")} pending</span>
+              )}
             </div>
           ))}
         </div>
