@@ -148,6 +148,10 @@ _Avoid_: Staff portrait directory, verified team claim, embedded image text
 The first Meet The Team content section after the banner, introducing four proposed principles through a numbered Accordion before the Our people placeholders.
 _Avoid_: Approved company values, employee handbook, culture claims presented as verified
 
+**Team Profile Card**:
+A Meet The Team card that presents an approved person’s name, credential and location line, role label, portrait, and concise professional summary; cards without approved data remain placeholders.
+_Avoid_: Invented biography, unverified title, clickable staff directory
+
 **Programs Menu**:
 A dropdown-only navigation control that exposes the five established program categories; it does not represent a separate public Programs overview page.
 _Avoid_: Course filter, Resources menu
