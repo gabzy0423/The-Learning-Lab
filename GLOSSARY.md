@@ -144,6 +144,10 @@ _Avoid_: Verified staff directory, invented biography, hiring page
 A contained About-area banner using a generic diverse team collaboration scene, a controlled charcoal overlay, centered proposed copy, and responsive cover composition without identifying real staff.
 _Avoid_: Staff portrait directory, verified team claim, embedded image text
 
+**Foundation Section**:
+The first Meet The Team content section after the banner, introducing four proposed principles through a numbered Accordion before the Our people placeholders.
+_Avoid_: Approved company values, employee handbook, culture claims presented as verified
+
 **Programs Menu**:
 A dropdown-only navigation control that exposes the five established program categories; it does not represent a separate public Programs overview page.
 _Avoid_: Course filter, Resources menu
