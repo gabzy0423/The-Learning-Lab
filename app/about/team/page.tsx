@@ -116,9 +116,6 @@ export default function MeetTheTeamPage() {
                     <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Jonnifer C. Mandigma</h3>
                     <p className="mt-2 text-sm font-semibold text-brand-cyan-blue">MSIT · Metro Manila</p>
                     <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-charcoal/75">Information Technology Professional &amp; Academic Instructor</p>
-                    <p className="mt-3 text-sm leading-relaxed text-brand-charcoal/70">
-                      An Information Technology professional and academic instructor with a Master of Science in Information Technology and expertise in web development, programming, networking, cybersecurity, and project management. With a decade of experience in infrastructure and website administration, Jonnifer brings practical systems knowledge to IT education, student assessment, and project execution.
-                    </p>
                   </>
                 ) : (
                   <p className="text-base font-semibold text-brand-charcoal/60">Profile pending</p>
