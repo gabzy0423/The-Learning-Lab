@@ -93,19 +93,27 @@ export default function MeetTheTeamPage() {
         </h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {Array.from({ length: 9 }, (_, index) => (
-            <div key={index} className="relative flex aspect-square items-center justify-center overflow-hidden rounded-2xl border border-dashed border-brand-charcoal/20 bg-brand-charcoal/[0.03] p-6 text-center">
-              {index === 0 ? (
-                <Image
-                  src="/assets/team/image.png"
-                  alt="Team member profile portrait"
-                  fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover object-top"
-                />
-              ) : (
-                <span className="text-sm font-semibold text-brand-charcoal/45">Team image {String(index + 1).padStart(2, "0")} pending</span>
-              )}
-            </div>
+            <article key={index} className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal shadow-[0_8px_24px_rgba(41,41,41,0.05)] transition-[border-color,transform,box-shadow] duration-500 ease-out hover:-translate-y-0.5 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none">
+              <p className="text-sm font-extrabold text-brand-mint-green">{String(index + 1).padStart(2, "0")}</p>
+              <div className="relative mt-4 aspect-square overflow-hidden rounded-md bg-brand-charcoal/5">
+                {index === 0 ? (
+                  <Image
+                    src="/assets/team/image.png"
+                    alt="Team member profile portrait"
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
+                  />
+                ) : (
+                  <div className="flex size-full items-center justify-center p-6 text-center">
+                    <span className="text-sm font-semibold text-brand-charcoal/45">Team image pending</span>
+                  </div>
+                )}
+              </div>
+              <div className="mt-4 border-t border-brand-charcoal/10 pt-4">
+                <p className="text-base font-semibold text-brand-charcoal/60">Profile pending</p>
+              </div>
+            </article>
           ))}
         </div>
       </section>
