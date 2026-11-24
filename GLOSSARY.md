@@ -140,6 +140,10 @@ _Avoid_: Standalone About page replacement, Programs menu
 A standalone About-area page reserved for the organization’s team introduction; until approved people data is available, its structure and copy remain clearly marked as proposed.
 _Avoid_: Verified staff directory, invented biography, hiring page
 
+**Meet The Team Banner**:
+A contained About-area banner using a generic diverse team collaboration scene, a controlled charcoal overlay, centered proposed copy, and responsive cover composition without identifying real staff.
+_Avoid_: Staff portrait directory, verified team claim, embedded image text
+
 **Programs Menu**:
 A dropdown-only navigation control that exposes the five established program categories; it does not represent a separate public Programs overview page.
 _Avoid_: Course filter, Resources menu
