@@ -30,14 +30,14 @@ export default function MeetTheTeamPage() {
       <section className="mt-16 max-w-3xl" aria-labelledby="team-content-heading">
         <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
           <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
-          Proposed team page
+          Our people
         </p>
         <h2 id="team-content-heading" className="mt-4 font-heading text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
-          Team profiles are coming next.
+          Meet the people behind the work.
         </h2>
         <div className="mt-6 rounded-2xl border border-dashed border-brand-charcoal/20 bg-brand-charcoal/[0.03] p-7 sm:p-8">
           <p className="text-base leading-relaxed text-brand-charcoal/70">
-            This page will introduce the people behind The Learning Lab once approved names, roles, photos, and biographies are available.
+            Team profiles will be added once names, roles, photos, and biographies are approved.
           </p>
         </div>
       </section>
