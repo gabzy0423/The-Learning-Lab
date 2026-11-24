@@ -40,6 +40,15 @@ export default function MeetTheTeamPage() {
             Team profiles will be added once names, roles, photos, and biographies are approved.
           </p>
         </div>
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {Array.from({ length: 9 }, (_, index) => (
+            <div key={index} className="overflow-hidden rounded-2xl border border-dashed border-brand-charcoal/20 bg-brand-charcoal/[0.03]">
+              <div className="flex aspect-square items-center justify-center p-6 text-center">
+                <span className="text-sm font-semibold text-brand-charcoal/45">Team image {String(index + 1).padStart(2, "0")} pending</span>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   );
