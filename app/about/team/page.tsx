@@ -27,7 +27,7 @@ export default function MeetTheTeamPage() {
         </div>
       </section>
 
-      <section className="mt-16 max-w-3xl" aria-labelledby="team-content-heading">
+      <section className="mt-16" aria-labelledby="team-content-heading">
         <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
           <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
           Our people
