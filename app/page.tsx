@@ -179,7 +179,7 @@ export default function Home() {
         </div>
         </div>
       </section>
-      <section className="border-b border-brand-charcoal/10 bg-brand-white" aria-labelledby="services-heading">
+      <section className="bg-brand-white" aria-labelledby="services-heading">
         <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
           <div className="grid items-end gap-4 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
             <div>
