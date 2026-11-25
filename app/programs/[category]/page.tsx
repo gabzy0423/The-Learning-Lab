@@ -54,6 +54,7 @@ const managingWorkCards = [
   {
     image: "/assets/pages/programs/managing1.png",
     title: "Complete Staff Work",
+    href: "/assets/pdf/Complete+Staff+Work.pdf",
     description: "Build a structured approach to preparing complete recommendations, coordinating details, and helping teams make informed decisions.",
     accent: "text-brand-mint-green",
   },
