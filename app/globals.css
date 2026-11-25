@@ -126,11 +126,13 @@ html {
   scroll-behavior: smooth;
 }
 
-html:has(.about-page) {
+html:has(.about-page),
+html:has(.home-page) {
   scrollbar-width: none;
 }
 
-html:has(.about-page)::-webkit-scrollbar {
+html:has(.about-page)::-webkit-scrollbar,
+html:has(.home-page)::-webkit-scrollbar {
   display: none;
 }
 
