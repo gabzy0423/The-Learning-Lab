@@ -175,15 +175,15 @@ export default function Home() {
         </div>
         </div>
       </section>
-      <section className="bg-brand-white" aria-labelledby="services-heading">
-        <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+      <section className="bg-brand-charcoal/[0.03]" aria-labelledby="services-heading">
+        <div className="mx-auto max-w-[80rem] px-7 py-20 sm:px-10 sm:py-24 lg:px-0">
           <div className="grid items-end gap-4 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
             <div>
               <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
                 <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
                 Our Services
               </p>
-              <h2 id="services-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+              <h2 id="services-heading" className="mt-4 max-w-3xl text-balance font-heading text-4xl font-extrabold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
                 Solutions that support <span className="text-brand-mint-green">better work.</span>
               </h2>
             </div>
@@ -196,7 +196,7 @@ export default function Home() {
               <Link
                 key={href}
                 href={href}
-                className="group flex min-h-[27rem] flex-col rounded-2xl border border-brand-charcoal/15 bg-brand-white p-7 text-brand-charcoal shadow-[0_8px_24px_rgba(41,41,41,0.05)] transition-[border-color,transform,box-shadow] duration-500 ease-out hover:-translate-y-0.5 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue sm:p-8 motion-reduce:transform-none motion-reduce:transition-none"
+                className="group flex min-h-[27rem] flex-col rounded-2xl border border-brand-charcoal/20 bg-brand-white p-8 text-brand-charcoal shadow-[0_8px_24px_rgba(41,41,41,0.07)] transition-[border-color,transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none"
               >
                 <div className="flex items-start justify-between gap-4">
                   <span className="rounded-md border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-2.5 py-1 text-xs font-extrabold text-brand-charcoal/60">
@@ -228,9 +228,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-brand-charcoal/[0.03]" aria-labelledby="methodology-heading">
-        <div className="mx-auto grid max-w-[80rem] items-center gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-0">
-          <div className="overflow-hidden rounded-lg border border-brand-charcoal/10 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.12)]">
+      <section className="bg-brand-charcoal/[0.05]" aria-labelledby="methodology-heading">
+        <div className="mx-auto grid max-w-[80rem] items-center gap-10 px-7 py-20 sm:px-10 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-0">
+          <div className="overflow-hidden rounded-xl border border-brand-charcoal/15 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.16)]">
             <Image
               src="/assets/hero/learning.png"
               alt="People learning together across in-person and digital settings"
@@ -244,7 +244,7 @@ export default function Home() {
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               A practical path forward
             </p>
-            <h2 id="methodology-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+            <h2 id="methodology-heading" className="mt-4 max-w-3xl text-balance font-heading text-4xl font-extrabold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
               How learning <span className="text-brand-mint-green">moves forward.</span>
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-charcoal/70">
@@ -284,13 +284,13 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-brand-white" aria-labelledby="about-preview-heading">
-        <div className="mx-auto grid max-w-[80rem] items-stretch gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-0">
+        <div className="mx-auto grid max-w-[80rem] items-stretch gap-10 px-7 py-20 sm:px-10 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:px-0">
           <div>
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               About The Learning Lab
             </p>
-            <h2 id="about-preview-heading" className="mt-4 max-w-xl text-balance font-heading text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-4xl lg:text-5xl">
+            <h2 id="about-preview-heading" className="mt-4 max-w-xl text-balance font-heading text-4xl font-extrabold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
               Learning with a <span className="text-brand-mint-green">human point of view.</span>
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-brand-charcoal/70">
@@ -326,7 +326,7 @@ export default function Home() {
           <div className="relative isolate h-full">
             <span aria-hidden="true" className="pointer-events-none absolute -right-5 -top-6 z-0 size-28 rotate-12 rounded-[42%_58%_55%_45%] bg-brand-mint-green/85 blur-[1px] sm:size-36" />
             <span aria-hidden="true" className="pointer-events-none absolute -bottom-6 -left-6 z-0 size-24 -rotate-12 rounded-[58%_42%_45%_55%] bg-brand-cyan-blue/55 blur-[1px] sm:size-32" />
-            <div className="relative z-10 h-full overflow-hidden rounded-lg border border-brand-charcoal/10 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.12)]">
+            <div className="relative z-10 h-full overflow-hidden rounded-xl border border-brand-charcoal/15 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.16)]">
               <video
                 className="h-auto aspect-[3/2] w-full object-contain lg:h-full lg:aspect-auto"
                 controls
@@ -340,14 +340,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-brand-charcoal/[0.03]" aria-labelledby="faq-heading">
-        <div className="mx-auto grid max-w-[80rem] items-start gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16 lg:px-0 lg:py-20">
+      <section className="bg-brand-charcoal/[0.05]" aria-labelledby="faq-heading">
+        <div className="mx-auto grid max-w-[80rem] items-start gap-10 px-7 py-20 sm:px-10 sm:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16 lg:px-0">
           <div>
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               Frequently asked questions
             </p>
-            <h2 id="faq-heading" className="mt-4 max-w-xl text-balance font-heading text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-4xl lg:text-5xl">
+            <h2 id="faq-heading" className="mt-4 max-w-xl text-balance font-heading text-4xl font-extrabold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
               A few useful answers before we <span className="text-brand-mint-green">get started.</span>
             </h2>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-brand-charcoal/70">
@@ -355,7 +355,7 @@ export default function Home() {
             </p>
           </div>
           <Accordion className="gap-3 lg:pt-10">
-            <AccordionItem value="programs" className="rounded-xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-4 py-2">
+            <AccordionItem value="programs" className="rounded-xl border border-brand-charcoal/15 bg-brand-white px-4 py-2 shadow-[0_8px_24px_rgba(41,41,41,0.05)]">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
                 <span className="mr-3 text-xs font-extrabold text-brand-mint-green">01</span>
                 What learning programs does The Learning Lab offer?
@@ -364,7 +364,7 @@ export default function Home() {
                 <p>Our program categories cover Personal Development, Managing Work, Managing Relationships, Leadership &amp; Management, and Impacting Strategy.</p>
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="approach" className="rounded-xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-4 py-2">
+            <AccordionItem value="approach" className="rounded-xl border border-brand-charcoal/15 bg-brand-white px-4 py-2 shadow-[0_8px_24px_rgba(41,41,41,0.05)]">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
                 <span className="mr-3 text-xs font-extrabold text-brand-mint-green">02</span>
                 How does your learning approach work?
@@ -373,7 +373,7 @@ export default function Home() {
                 <p>We start with the need, build practical capability, and create space to apply learning through everyday decisions, collaboration, and work.</p>
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="solutions" className="rounded-xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-4 py-2">
+            <AccordionItem value="solutions" className="rounded-xl border border-brand-charcoal/15 bg-brand-white px-4 py-2 shadow-[0_8px_24px_rgba(41,41,41,0.05)]">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
                 <span className="mr-3 text-xs font-extrabold text-brand-mint-green">03</span>
                 What digital solutions are available?
@@ -382,7 +382,7 @@ export default function Home() {
                 <p>Our proposed Digital Solutions include a custom HRIS, Competency Platform, and Learning Management Platform. Detailed capabilities will be added as each offering is finalized.</p>
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="conversation" className="rounded-xl border border-brand-charcoal/10 bg-brand-charcoal/[0.03] px-4 py-2">
+            <AccordionItem value="conversation" className="rounded-xl border border-brand-charcoal/15 bg-brand-white px-4 py-2 shadow-[0_8px_24px_rgba(41,41,41,0.05)]">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
                 <span className="mr-3 text-xs font-extrabold text-brand-mint-green">04</span>
                 How can we talk about our learning needs?
@@ -395,14 +395,14 @@ export default function Home() {
         </div>
       </section>
       <section className="border-b border-brand-charcoal/10 bg-brand-white text-brand-charcoal" aria-labelledby="contact-cta-heading">
-        <div className="mx-auto max-w-[80rem] px-7 py-12 sm:px-10 lg:px-0 lg:py-14">
-          <div className="relative isolate grid overflow-hidden rounded-2xl bg-brand-charcoal p-6 text-brand-white sm:p-8 lg:grid-cols-[1.2fr_0.8fr] lg:p-10">
+        <div className="mx-auto max-w-[80rem] px-7 py-14 sm:px-10 sm:py-16 lg:px-0">
+          <div className="relative isolate grid overflow-hidden rounded-3xl bg-brand-charcoal p-8 text-brand-white shadow-[0_16px_40px_rgba(41,41,41,0.16)] sm:p-10 lg:grid-cols-[1.2fr_0.8fr] lg:p-12">
             <div className="relative z-10 max-w-2xl">
               <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
                 <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
                 Start a conversation
               </p>
-              <h2 id="contact-cta-heading" className="mt-4 max-w-3xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+              <h2 id="contact-cta-heading" className="mt-4 max-w-3xl text-balance font-heading text-4xl font-extrabold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
                 Ready to <span className="text-brand-mint-green">explore a learning need?</span>
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-brand-white/70">
