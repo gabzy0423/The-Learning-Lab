@@ -8,7 +8,15 @@ The card becomes clickable across its image, title, and content area, with keybo
 
 `/assets/pdf/Communicate+with+Impact.pdf`
 
-The card CTA is labeled **Open course PDF**. Other Personal Development cards remain non-clickable until their course routes and content are confirmed.
+The card CTA is labeled **Open course PDF**. The same direct-PDF behavior applies to the remaining Personal Development cards in this approved order:
+
+2. `Developing+Digital+Savvy.pdf`
+3. `Effective+Presentation+Skills.pdf`
+4. `High+Performance+Habits.pdf`
+5. `Stress+&+Time+Management.pdf`
+6. `Managing+your+Mental+Health.pdf`
+
+Each card remains clickable across its full content area, opens its PDF in a new browser tab, and uses the `Open course PDF` CTA. The existing course-detail route remains available for direct links where it already exists.
 
 The detail page uses an informative editorial structure:
 
