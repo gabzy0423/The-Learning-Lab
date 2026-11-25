@@ -99,6 +99,7 @@ const managingRelationshipsCards = [
   {
     image: "/assets/pages/programs/rs2.png",
     title: "Managing Conflict",
+    href: "/assets/pdf/Managing+Conflict.pdf",
     description: "Develop practical approaches to understand differences, navigate difficult conversations, and move toward constructive outcomes.",
     accent: "text-brand-cyan-blue",
   },
