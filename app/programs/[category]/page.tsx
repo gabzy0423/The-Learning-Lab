@@ -165,6 +165,7 @@ const leadershipManagementCards = [
   {
     image: "/assets/pages/programs/leader6.png",
     title: "Management Essentials",
+    href: "/assets/pdf/Management+Essentials.pdf",
     description: "Strengthen the everyday management skills needed to set expectations, support performance, and lead with consistency.",
     accent: "text-brand-turquoise",
   },
