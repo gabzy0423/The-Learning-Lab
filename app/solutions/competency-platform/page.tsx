@@ -11,7 +11,7 @@ export default function CompetencyPlatformPage() {
         </h1>
         <div className="mt-8 max-w-3xl rounded-2xl border border-dashed border-brand-charcoal/20 bg-brand-charcoal/[0.03] p-7 sm:p-8">
           <p className="text-base leading-relaxed text-brand-charcoal/70">
-            This solution page is reserved for approved information about The Learning Lab&apos;s competency platform.
+            Coming soon.
           </p>
         </div>
       </section>
