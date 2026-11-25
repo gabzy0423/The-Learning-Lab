@@ -78,10 +78,10 @@ export default function Home() {
               Book a Consultation
             </Link>
           </div>
-          <ul className="mt-7 flex w-full flex-wrap items-center justify-start gap-x-4 gap-y-2 text-xs font-semibold leading-5 text-brand-charcoal sm:gap-x-6 sm:text-sm lg:gap-x-8">
-            <li className="flex items-center gap-2 sm:pr-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Practical programs</li>
-            <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:px-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Teams &amp; leaders</li>
-            <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:pl-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Real-world impact</li>
+          <ul className="mt-7 flex w-full flex-wrap items-center justify-start gap-x-5 gap-y-2 text-xs font-semibold leading-5 text-brand-charcoal sm:flex-nowrap sm:gap-x-6 sm:text-sm">
+            <li className="flex items-center gap-2"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Practical programs</li>
+            <li className="flex items-center gap-2"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Teams &amp; leaders</li>
+            <li className="flex items-center gap-2"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Real-world impact</li>
           </ul>
         </div>
         <div className="relative isolate order-2 flex w-full justify-center lg:order-none lg:justify-end lg:[&>span:not([aria-hidden])]:text-base lg:[&>span:not([aria-hidden])]:px-6">
