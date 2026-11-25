@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, Outfit } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import "./globals.css";
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${dmSans.variable} ${outfit.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <SmoothScroll />
         <Header />
         {children}
         <Footer />
