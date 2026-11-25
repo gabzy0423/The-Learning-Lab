@@ -82,6 +82,7 @@ const managingWorkCards = [
   {
     image: "/assets/pages/programs/managing5.png",
     title: "Managing Meetings",
+    href: "/assets/pdf/Managing+Meetings.pdf",
     description: "Plan and facilitate focused meetings that encourage participation, clarify decisions, and end with clear next steps.",
     accent: "text-brand-cyan-blue",
   },
