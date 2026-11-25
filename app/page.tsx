@@ -42,7 +42,7 @@ export default function Home() {
       {/* Desktop navbar occupies 4rem plus its 1px bottom border. */}
       <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:min-h-[calc(100dvh-4rem-1px)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:px-0">
         <div className="max-w-2xl">
-          <h1 id="hero-heading" className="max-w-2xl text-balance text-3xl font-extrabold leading-[1.06] tracking-[-0.035em] sm:text-4xl lg:text-[clamp(3rem,4.2vw,3.75rem)]">
+          <h1 id="hero-heading" className="max-w-2xl text-balance text-3xl font-extrabold leading-[1.02] tracking-[-0.045em] sm:text-4xl lg:text-[clamp(3.5rem,5.2vw,5rem)]">
             <span className="sm:block">Learning that </span>
             <span className="text-brand-mint-green sm:block">moves people </span>
             <span className="sm:block">forward.</span>
@@ -94,7 +94,7 @@ export default function Home() {
             height={1024}
             priority
             sizes="(min-width: 1280px) 60vw, (min-width: 1024px) 55vw, 100vw"
-            className="relative z-10 block h-auto w-full lg:w-[108%] lg:max-w-none lg:shrink-0 lg:translate-x-[4%]"
+            className="relative z-10 block h-auto w-full lg:w-[114%] lg:max-w-none lg:shrink-0 lg:translate-x-[7%]"
           />
           <span className="pointer-events-none absolute left-3 top-3 z-20 inline-flex max-w-[calc(100%-1.5rem)] items-center gap-2 rounded-full bg-white px-3 py-2 text-[11px] font-bold leading-4 text-brand-charcoal shadow-[0_8px_24px_rgba(0,0,0,0.16)] sm:left-[6%] sm:top-[11%] sm:max-w-none sm:gap-3 sm:px-5 sm:py-4 sm:text-sm sm:leading-normal">
             <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 shrink-0 text-brand-turquoise sm:size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z" /><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6" /></svg>
