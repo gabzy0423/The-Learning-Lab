@@ -50,6 +50,10 @@ _Avoid_: Invented course, full catalogue
 The authoritative material used to confirm a course's title, category, description, and other publishable details.
 _Avoid_: Scraped copy, assumed content
 
+**Course PDF Link**:
+An approved static course document opened directly from a validated course card, without replacing the course's existing detail route.
+_Avoid_: Download-only action, unverified document
+
 **Learning Approach**:
 The organization's stated philosophy and methodology for how learning is designed and experienced.
 _Avoid_: Teaching method, LMS feature
