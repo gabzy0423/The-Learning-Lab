@@ -61,6 +61,7 @@ const managingWorkCards = [
   {
     image: "/assets/pages/programs/managing2.png",
     title: "Practical Project Management",
+    href: "/assets/pdf/Practical+Project+Management.pdf",
     description: "Strengthen the planning, coordination, and delivery habits needed to move projects forward with clarity and confidence.",
     accent: "text-brand-cyan-blue",
   },
