@@ -137,6 +137,7 @@ const leadershipManagementCards = [
   {
     image: "/assets/pages/programs/leader2.png",
     title: "Leadership 2.0",
+    href: "/assets/pdf/Leadership+2.0.pdf",
     description: "Strengthen modern leadership skills for guiding people, navigating change, and creating meaningful progress at work.",
     accent: "text-brand-cyan-blue",
   },
