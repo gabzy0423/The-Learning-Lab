@@ -158,6 +158,7 @@ const leadershipManagementCards = [
   {
     image: "/assets/pages/programs/leader5.png",
     title: "Managing Millennials",
+    href: "/assets/pdf/Managing+Millennials.pdf",
     description: "Build a more inclusive approach to understanding, engaging, and developing a multigenerational workforce.",
     accent: "text-brand-cyan-blue",
   },
