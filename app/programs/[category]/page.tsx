@@ -68,6 +68,7 @@ const managingWorkCards = [
   {
     image: "/assets/pages/programs/managing3.png",
     title: "Innovation & Design Thinking",
+    href: "/assets/pdf/Innovation+&+Design+Thinking.pdf",
     description: "Explore practical ways to understand challenges, generate ideas, and shape solutions around real needs.",
     accent: "text-brand-turquoise",
   },
