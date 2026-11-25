@@ -110,15 +110,15 @@ export default function Home() {
       </div>
       </section>
       <LogoMarquee />
-      <section className="bg-brand-charcoal/[0.03]" aria-labelledby="programs-heading">
-        <div className="mx-auto max-w-[80rem] px-7 pb-16 pt-16 sm:px-10 sm:pb-20 lg:px-0">
+      <section className="bg-brand-charcoal/[0.05]" aria-labelledby="programs-heading">
+        <div className="mx-auto max-w-[80rem] px-7 pb-20 pt-20 sm:px-10 sm:pb-24 sm:pt-24 lg:px-0">
         <div className="grid items-start gap-4 lg:grid-cols-[1.4fr_0.6fr] lg:gap-12">
           <div>
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               Signature learning portfolio
             </p>
-            <h2 id="programs-heading" className="mt-4 max-w-4xl text-balance font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+            <h2 id="programs-heading" className="mt-4 max-w-4xl text-balance font-heading text-4xl font-extrabold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
               Programs built around <span className="text-brand-mint-green">what matters</span> at work.
             </h2>
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
             <Link
               key={program.slug}
               href={`/programs/${program.slug}`}
-              className="group relative flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] duration-300 ease-out hover:-translate-y-0.5 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2"
+              className="group relative flex min-h-[30rem] flex-col overflow-hidden rounded-xl border border-brand-charcoal/20 bg-white p-7 text-brand-charcoal transition-[border-color,transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2"
             >
               <span className="inline-flex text-brand-cyan-blue">
                 {index === 0 && <AcademicCapIcon className="size-9" aria-hidden="true" />}
@@ -144,7 +144,7 @@ export default function Home() {
                 <h3 className="font-heading text-xl font-bold leading-snug">{program.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-brand-charcoal/70">{programDescriptions[index]}</p>
               </div>
-              <div className="relative mt-6 h-40 overflow-hidden rounded-md bg-brand-charcoal/5 after:absolute after:inset-0 after:bg-brand-charcoal/15 sm:h-44">
+              <div className="relative mt-6 h-44 overflow-hidden rounded-lg bg-brand-charcoal/5 after:absolute after:inset-0 after:bg-brand-charcoal/15 sm:h-48">
                 <Image src={programImages[index]} alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center transition-[opacity,transform] duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none" />
                 <Image src={programAlternateImages[index]} alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover object-center opacity-0 transition-[opacity,transform] duration-500 ease-out group-hover:scale-105 group-hover:opacity-100 group-focus-visible:scale-105 group-focus-visible:opacity-100 motion-reduce:transform-none motion-reduce:transition-none" />
               </div>
@@ -156,7 +156,7 @@ export default function Home() {
           ))}
           <Link
             href="/contact?interest=consultation"
-            className="group hidden min-h-[29rem] flex-col justify-between rounded-lg border border-brand-mint-green/30 bg-gradient-to-br from-brand-mint-green via-brand-white to-brand-cyan-blue/30 p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] duration-300 ease-out hover:-translate-y-0.5 hover:border-brand-turquoise hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 lg:flex"
+            className="group hidden min-h-[30rem] flex-col justify-between rounded-xl border border-brand-mint-green/30 bg-gradient-to-br from-brand-mint-green via-brand-white to-brand-cyan-blue/30 p-7 text-brand-charcoal transition-[border-color,transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transform-none motion-reduce:transition-none lg:col-span-2 lg:flex"
           >
             <div>
               <p className="text-sm font-bold text-brand-charcoal/65">Tailored learning</p>
