@@ -106,6 +106,7 @@ const managingRelationshipsCards = [
   {
     image: "/assets/pages/programs/rs3.png",
     title: "Essential Selling Skills",
+    href: "/assets/pdf/Essential+Selling+Skills.pdf",
     description: "Strengthen the communication and relationship skills needed to understand customer needs and present value with confidence.",
     accent: "text-brand-turquoise",
   },
