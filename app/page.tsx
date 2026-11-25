@@ -42,12 +42,12 @@ export default function Home() {
       {/* Desktop navbar occupies 4rem plus its 1px bottom border. */}
       <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:min-h-[calc(100dvh-4rem-1px)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:px-0">
         <div className="max-w-2xl">
-          <h1 id="hero-heading" className="max-w-2xl text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-[clamp(3rem,4.7vw,4rem)]">
+          <h1 id="hero-heading" className="max-w-2xl text-balance text-3xl font-extrabold leading-[1.06] tracking-[-0.035em] sm:text-4xl lg:text-[clamp(3rem,4.2vw,3.75rem)]">
             <span className="sm:block">Learning that </span>
             <span className="text-brand-mint-green sm:block">moves people </span>
             <span className="sm:block">forward.</span>
           </h1>
-          <p className="mt-5 max-w-lg text-base leading-7 text-brand-charcoal/80 sm:text-lg sm:leading-8 lg:text-xl">
+          <p className="mt-5 max-w-[34rem] text-base leading-7 text-brand-charcoal/80 sm:text-lg sm:leading-8 lg:text-lg">
             Meaningful development experiences for teams, leaders, and
             organizations. Discover practical programs designed to turn new
             knowledge into real-world impact.
@@ -78,7 +78,7 @@ export default function Home() {
               Book a Consultation
             </Link>
           </div>
-          <ul className="mt-7 flex w-full flex-wrap items-center justify-start gap-x-4 gap-y-2 text-[10px] font-semibold text-brand-charcoal sm:gap-x-6 sm:text-xs lg:gap-x-8 lg:text-sm">
+          <ul className="mt-7 flex w-full flex-wrap items-center justify-start gap-x-4 gap-y-2 text-xs font-semibold leading-5 text-brand-charcoal sm:gap-x-6 sm:text-sm lg:gap-x-8">
             <li className="flex items-center gap-2 sm:pr-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Practical programs</li>
             <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:px-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Teams &amp; leaders</li>
             <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:pl-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Real-world impact</li>
