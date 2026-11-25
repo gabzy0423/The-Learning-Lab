@@ -75,6 +75,7 @@ const managingWorkCards = [
   {
     image: "/assets/pages/programs/managing4.png",
     title: "The Problem-Solving Toolkit",
+    href: "/assets/pdf/The+Problem+Solving+Toolkit.pdf",
     description: "Use practical tools to break down complex challenges, evaluate options, and move toward workable solutions.",
     accent: "text-brand-mint-green",
   },
