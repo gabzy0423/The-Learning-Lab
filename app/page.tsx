@@ -40,7 +40,7 @@ export default function Home() {
     <main className="home-page relative flex-1 overflow-hidden bg-brand-white text-brand-charcoal">
       <section className="overflow-hidden bg-brand-white" aria-labelledby="hero-heading">
       {/* Desktop navbar occupies 4rem plus its 1px bottom border. */}
-      <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:min-h-[calc(100dvh-4rem-1px)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:px-0">
+      <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-10 px-7 py-10 sm:px-10 sm:py-12 lg:min-h-[calc(100dvh-4rem-1px)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-16 lg:px-0">
         <div className="max-w-2xl">
           <h1 id="hero-heading" className="max-w-2xl text-balance text-3xl font-extrabold leading-[1.02] tracking-[-0.045em] sm:text-4xl lg:text-[clamp(3.5rem,5.2vw,5rem)]">
             <span className="sm:block">Learning that </span>
@@ -112,7 +112,7 @@ export default function Home() {
       <LogoMarquee />
       <section className="bg-brand-charcoal/[0.05]" aria-labelledby="programs-heading">
         <div className="mx-auto max-w-[80rem] px-7 pb-20 pt-20 sm:px-10 sm:pb-24 sm:pt-24 lg:px-0">
-        <div className="grid items-start gap-4 lg:grid-cols-[1.4fr_0.6fr] lg:gap-12">
+        <div className="grid items-start gap-6 lg:grid-cols-[1.4fr_0.6fr] lg:gap-16">
           <div>
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
@@ -177,7 +177,7 @@ export default function Home() {
       </section>
       <section className="bg-brand-charcoal/[0.03]" aria-labelledby="services-heading">
         <div className="mx-auto max-w-[80rem] px-7 py-20 sm:px-10 sm:py-24 lg:px-0">
-          <div className="grid items-end gap-4 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
+          <div className="grid items-start gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
             <div>
               <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
                 <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
@@ -191,7 +191,7 @@ export default function Home() {
               Start with learning programs to build people capability. Explore Digital Solutions when your organization is ready to support that progress with practical systems.
             </p>
           </div>
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 lg:grid-cols-3">
             {serviceCards.map(({ title, description, href, Icon, checks }, index) => (
               <Link
                 key={href}
@@ -229,7 +229,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-brand-charcoal/[0.05]" aria-labelledby="methodology-heading">
-        <div className="mx-auto grid max-w-[80rem] items-center gap-10 px-7 py-20 sm:px-10 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-0">
+        <div className="mx-auto grid max-w-[80rem] items-center gap-12 px-7 py-20 sm:px-10 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20 lg:px-0">
           <div className="overflow-hidden rounded-xl border border-brand-charcoal/15 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.16)]">
             <Image
               src="/assets/hero/learning.png"
@@ -284,7 +284,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-brand-white" aria-labelledby="about-preview-heading">
-        <div className="mx-auto grid max-w-[80rem] items-stretch gap-10 px-7 py-20 sm:px-10 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:px-0">
+        <div className="mx-auto grid max-w-[80rem] items-stretch gap-12 px-7 py-20 sm:px-10 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20 lg:px-0">
           <div>
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
@@ -341,7 +341,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-brand-charcoal/[0.05]" aria-labelledby="faq-heading">
-        <div className="mx-auto grid max-w-[80rem] items-start gap-10 px-7 py-20 sm:px-10 sm:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16 lg:px-0">
+        <div className="mx-auto grid max-w-[80rem] items-start gap-12 px-7 py-20 sm:px-10 sm:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-0">
           <div>
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
@@ -354,7 +354,7 @@ export default function Home() {
               Explore a few starting points about our learning programs, solutions, and approach.
             </p>
           </div>
-          <Accordion className="gap-3 lg:pt-10">
+          <Accordion className="gap-3">
             <AccordionItem value="programs" className="rounded-xl border border-brand-charcoal/15 bg-brand-white px-4 py-2 shadow-[0_8px_24px_rgba(41,41,41,0.05)]">
               <AccordionTrigger className="font-heading text-base font-bold text-brand-charcoal hover:no-underline sm:text-lg">
                 <span className="mr-3 text-xs font-extrabold text-brand-mint-green">01</span>
@@ -396,7 +396,7 @@ export default function Home() {
       </section>
       <section className="border-b border-brand-charcoal/10 bg-brand-white text-brand-charcoal" aria-labelledby="contact-cta-heading">
         <div className="mx-auto max-w-[80rem] px-7 py-14 sm:px-10 sm:py-16 lg:px-0">
-          <div className="relative isolate grid overflow-hidden rounded-3xl bg-brand-charcoal p-8 text-brand-white shadow-[0_16px_40px_rgba(41,41,41,0.16)] sm:p-10 lg:grid-cols-[1.2fr_0.8fr] lg:p-12">
+          <div className="relative isolate grid min-h-[25rem] overflow-hidden rounded-3xl bg-brand-charcoal p-8 text-brand-white shadow-[0_16px_40px_rgba(41,41,41,0.16)] sm:p-10 lg:grid-cols-[1.2fr_0.8fr] lg:p-12">
             <div className="relative z-10 max-w-2xl">
               <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
                 <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
