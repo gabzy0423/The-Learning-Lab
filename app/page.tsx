@@ -192,7 +192,7 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-2xl text-base leading-relaxed text-brand-charcoal/70 lg:pb-1">
-              Explore proposed digital solutions that can support the way people, capability, and work come together.
+              Start with learning programs to build people capability. Explore Digital Solutions when your organization is ready to support that progress with practical systems.
             </p>
           </div>
           <div className="mt-10 grid gap-5 lg:grid-cols-3">
@@ -210,7 +210,10 @@ export default function Home() {
                     <Icon className="size-6" aria-hidden="true" />
                   </span>
                 </div>
-                <h3 className="mt-8 max-w-xl font-heading text-2xl font-extrabold leading-tight tracking-tight">{title}</h3>
+                <span className="mt-6 inline-flex w-fit rounded-full border border-brand-mint-green/30 bg-brand-mint-green/10 px-3 py-1 text-xs font-bold text-brand-cyan-blue">
+                  Coming soon
+                </span>
+                <h3 className="mt-4 max-w-xl font-heading text-2xl font-extrabold leading-tight tracking-tight">{title}</h3>
                 <p className="mt-4 max-w-xl text-base leading-relaxed text-brand-charcoal/70">{description}</p>
                 <ul className="mt-6 space-y-3">
                   {checks.map((check) => (
@@ -221,7 +224,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <span className="mt-auto inline-flex items-center gap-2 border-t border-brand-charcoal/10 pt-5 text-sm font-bold text-brand-charcoal transition-colors group-hover:text-brand-cyan-blue">
-                  Learn more
+                  View overview
                   <span aria-hidden="true" className="text-base leading-none">→</span>
                 </span>
               </Link>
