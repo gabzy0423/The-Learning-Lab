@@ -144,6 +144,7 @@ const leadershipManagementCards = [
   {
     image: "/assets/pages/programs/leader3.png",
     title: "Leading with Emotional Intelligence",
+    href: "/assets/pdf/Leading+with+EI.pdf",
     description: "Develop the self-awareness, empathy, and communication skills needed to lead people with clarity and trust.",
     accent: "text-brand-turquoise",
   },
