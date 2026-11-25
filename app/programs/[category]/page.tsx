@@ -182,6 +182,7 @@ const impactingStrategyCards = [
   {
     image: "/assets/pages/programs/impact2.png",
     title: "Strategic Planning with the Balanced Scorecard",
+    href: "/assets/pdf/Strategic+Planning+with+the+BSC.pdf",
     description: "Translate strategy into clear priorities, measures, and coordinated action using the Balanced Scorecard approach.",
     accent: "text-brand-cyan-blue",
   },
