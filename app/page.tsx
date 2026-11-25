@@ -38,15 +38,11 @@ const serviceCards: { title: string; description: string; href: string; Icon: ty
 export default function Home() {
   return (
     <main className="home-page relative flex-1 overflow-hidden bg-brand-white text-brand-charcoal">
-      <section className="overflow-hidden bg-brand-white" aria-label="Hero">
+      <section className="overflow-hidden bg-brand-white" aria-labelledby="hero-heading">
       {/* Desktop navbar occupies 4rem plus its 1px bottom border. */}
       <div className="mx-auto grid min-h-0 w-full max-w-[80rem] grid-cols-1 items-start gap-8 px-7 py-10 sm:px-10 sm:py-12 lg:min-h-[calc(100dvh-4rem-1px)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:px-0">
         <div className="max-w-2xl">
-          <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
-            <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
-            The Learning Lab
-          </p>
-          <h1 className="mt-4 max-w-2xl text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-[clamp(3rem,4.7vw,4rem)]">
+          <h1 id="hero-heading" className="max-w-2xl text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-[clamp(3rem,4.7vw,4rem)]">
             <span className="sm:block">Learning that </span>
             <span className="text-brand-mint-green sm:block">moves people </span>
             <span className="sm:block">forward.</span>
@@ -77,12 +73,12 @@ export default function Home() {
             </Link>
             <Link
               href="/contact?interest=consultation"
-              className="inline-flex min-h-11 shrink-0 items-center justify-center whitespace-nowrap rounded-xl border border-brand-charcoal bg-white px-5 text-sm font-extrabold text-brand-charcoal shadow-[0_10px_24px_rgba(0,0,0,0.12)] transition-[transform,box-shadow,background-color] duration-200 hover:-translate-y-0.5 hover:bg-brand-white hover:shadow-[0_14px_30px_rgba(0,0,0,0.2)] active:translate-y-0 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transition-none"
+              className="inline-flex min-h-11 shrink-0 items-center justify-center whitespace-nowrap rounded-xl border border-brand-charcoal/25 bg-white px-5 text-sm font-extrabold text-brand-charcoal transition-[transform,border-color,background-color] duration-200 hover:-translate-y-0.5 hover:border-brand-charcoal hover:bg-brand-white active:translate-y-0 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue motion-reduce:transition-none"
             >
               Book a Consultation
             </Link>
           </div>
-          <ul className="mt-7 flex w-full flex-wrap items-center justify-between gap-x-2 gap-y-2 text-[10px] font-semibold text-brand-charcoal sm:text-xs lg:text-sm">
+          <ul className="mt-7 flex w-full flex-wrap items-center justify-start gap-x-4 gap-y-2 text-[10px] font-semibold text-brand-charcoal sm:gap-x-6 sm:text-xs lg:gap-x-8 lg:text-sm">
             <li className="flex items-center gap-2 sm:pr-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Practical programs</li>
             <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:px-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Teams &amp; leaders</li>
             <li className="flex items-center gap-2 sm:border-l sm:border-brand-charcoal/15 sm:pl-5"><span aria-hidden="true" className="size-2 rounded-full bg-brand-mint-green" />Real-world impact</li>
