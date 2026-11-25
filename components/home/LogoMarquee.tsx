@@ -12,7 +12,7 @@ export function LogoMarquee() {
     <section className="bg-brand-white py-3" aria-label="Organization logos">
       <style>{`
         @keyframes logo-marquee { to { transform: translateX(-50%); } }
-        .logo-marquee-track { animation: logo-marquee 60s linear infinite; }
+        .logo-marquee-track { animation: logo-marquee 90s linear infinite; }
         .logo-marquee-viewport { mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); }
         .logo-marquee-viewport:hover .logo-marquee-track { animation-play-state: paused; }
         @media (prefers-reduced-motion: reduce) {
