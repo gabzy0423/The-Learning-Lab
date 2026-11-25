@@ -120,6 +120,7 @@ const managingRelationshipsCards = [
   {
     image: "/assets/pages/programs/rs5.png",
     title: "World Class Service",
+    href: "/assets/pdf/World-Class+Service.pdf",
     description: "Strengthen service habits that help teams understand needs, respond thoughtfully, and create consistent customer experiences.",
     accent: "text-brand-cyan-blue",
   },
