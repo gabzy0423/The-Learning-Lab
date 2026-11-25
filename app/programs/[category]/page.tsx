@@ -113,6 +113,7 @@ const managingRelationshipsCards = [
   {
     image: "/assets/pages/programs/rs4.png",
     title: "Managing Up",
+    href: "/assets/pdf/Managing+Up.pdf",
     description: "Build practical skills for communicating with managers, aligning expectations, and working effectively across priorities.",
     accent: "text-brand-mint-green",
   },
