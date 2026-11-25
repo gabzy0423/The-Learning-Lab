@@ -151,6 +151,7 @@ const leadershipManagementCards = [
   {
     image: "/assets/pages/programs/leader4.png",
     title: "Leading Change",
+    href: "/assets/pdf/Leading+Change.pdf",
     description: "Help people move through change with clearer direction, constructive communication, and practical leadership support.",
     accent: "text-brand-mint-green",
   },
