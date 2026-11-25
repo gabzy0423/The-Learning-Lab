@@ -229,7 +229,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="border-b border-brand-charcoal/10 bg-brand-white" aria-labelledby="methodology-heading">
+      <section className="border-b border-brand-charcoal/10 bg-brand-charcoal/[0.03]" aria-labelledby="methodology-heading">
         <div className="mx-auto grid max-w-[80rem] items-center gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-0">
           <div className="overflow-hidden rounded-lg border border-brand-charcoal/10 bg-brand-charcoal shadow-[0_16px_40px_rgba(41,41,41,0.12)]">
             <Image
@@ -341,7 +341,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-brand-white" aria-labelledby="faq-heading">
+      <section className="bg-brand-charcoal/[0.03]" aria-labelledby="faq-heading">
         <div className="mx-auto grid max-w-[80rem] items-start gap-10 px-7 py-16 sm:px-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16 lg:px-0 lg:py-20">
           <div>
             <p className="flex items-center gap-3 text-sm font-bold text-brand-charcoal">
