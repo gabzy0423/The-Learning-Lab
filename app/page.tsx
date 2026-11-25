@@ -96,12 +96,12 @@ export default function Home() {
             sizes="(min-width: 1280px) 60vw, (min-width: 1024px) 55vw, 100vw"
             className="relative z-10 block h-auto w-full lg:w-[108%] lg:max-w-none lg:shrink-0 lg:translate-x-[4%]"
           />
-          <span className="pointer-events-none absolute left-[6%] top-[11%] z-20 inline-flex items-center gap-2 rounded-full bg-white px-4 py-3 text-xs font-bold text-brand-charcoal shadow-[0_8px_24px_rgba(0,0,0,0.16)] sm:gap-3 sm:px-5 sm:py-4 sm:text-sm">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5 shrink-0 text-brand-turquoise sm:size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z" /><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6" /></svg>
+          <span className="pointer-events-none absolute left-3 top-3 z-20 inline-flex max-w-[calc(100%-1.5rem)] items-center gap-2 rounded-full bg-white px-3 py-2 text-[11px] font-bold leading-4 text-brand-charcoal shadow-[0_8px_24px_rgba(0,0,0,0.16)] sm:left-[6%] sm:top-[11%] sm:max-w-none sm:gap-3 sm:px-5 sm:py-4 sm:text-sm sm:leading-normal">
+            <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 shrink-0 text-brand-turquoise sm:size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z" /><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6" /></svg>
             Learn with purpose
           </span>
-          <span className="pointer-events-none absolute bottom-[10%] left-[12%] z-20 inline-flex items-center gap-2 rounded-full bg-white px-4 py-3 text-xs font-bold text-brand-charcoal shadow-[0_8px_24px_rgba(0,0,0,0.16)] sm:left-[23%] sm:gap-3 sm:px-5 sm:py-4 sm:text-sm">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5 shrink-0 text-brand-turquoise sm:size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 20v-6h4v6M10 20V9h4v11M16 20V4h4v16" /></svg>
+          <span className="pointer-events-none absolute bottom-3 left-4 z-20 inline-flex max-w-[calc(100%-2rem)] items-center gap-2 rounded-full bg-white px-3 py-2 text-[11px] font-bold leading-4 text-brand-charcoal shadow-[0_8px_24px_rgba(0,0,0,0.16)] sm:bottom-[10%] sm:left-[23%] sm:max-w-none sm:gap-3 sm:px-5 sm:py-4 sm:text-sm sm:leading-normal">
+            <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 shrink-0 text-brand-turquoise sm:size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 20v-6h4v6M10 20V9h4v11M16 20V4h4v16" /></svg>
             Develop with confidence
           </span>
           <span aria-hidden="true" className="hero-dot-grid pointer-events-none absolute right-1 top-2 z-20 size-20 opacity-45 lg:size-24" />
