@@ -152,7 +152,7 @@ export default function MeetTheTeamPage() {
               </div>
               <div className="min-w-0 text-sm leading-7 text-brand-charcoal/70">
                 {index === 0 ? (
-                  <p>Leads The Learning Lab&apos;s direction while helping organizations turn learning and development priorities into practical workplace progress.</p>
+                  <p>With over 20 years in learning and organizational development, Al designs practical, engaging experiences that help people apply learning at work.</p>
                 ) : index === 3 ? (
                   <p>Brings practical experience in technology, infrastructure, and project management to IT education and the development of future technology professionals.</p>
                 ) : null}
