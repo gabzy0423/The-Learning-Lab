@@ -120,9 +120,9 @@ export default function MeetTheTeamPage() {
                   </>
                 ) : index === 3 ? (
                   <>
-                    <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Jonnifer C. Mandigma</h3>
-                    <p className="mt-2 text-sm font-semibold text-brand-cyan-blue">MSIT · Metro Manila</p>
-                    <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-charcoal/75">Information Technology Professional &amp; Academic Instructor</p>
+                    <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Jonnifer C. Mandigma, MSIT</h3>
+                    <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-cyan-blue">Information Technology Professional | Academic Instructor | IT Specialist</p>
+                    <p className="mt-2 text-sm leading-relaxed text-brand-charcoal/70">Brings practical experience in technology, infrastructure, and project management to IT education and the development of future technology professionals.</p>
                   </>
                 ) : (
                   <p className="text-base font-semibold text-brand-charcoal/60">Profile pending</p>
