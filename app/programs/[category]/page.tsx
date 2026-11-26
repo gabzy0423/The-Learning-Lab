@@ -276,14 +276,14 @@ export default async function CategoryPage({
         </section>
 
         <section aria-labelledby="personal-development-cta-heading">
-          <div className="mx-auto max-w-[80rem] px-7 pb-20 sm:px-10 sm:pb-24 lg:px-0">
-            <div className="relative isolate grid min-h-[25rem] overflow-hidden rounded-3xl bg-brand-charcoal p-8 text-brand-white shadow-[0_16px_40px_rgba(41,41,41,0.16)] sm:p-10 lg:grid-cols-[1.2fr_0.8fr] lg:p-12">
+          <div className="mx-auto max-w-[80rem] px-7 pb-16 sm:px-10 lg:px-0 lg:pb-20">
+            <div className="relative isolate grid overflow-hidden rounded-2xl bg-brand-charcoal p-7 text-brand-white sm:p-10 lg:grid-cols-[1.2fr_0.8fr] lg:p-10">
               <div className="relative z-10 max-w-2xl">
                 <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
                   <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
                   Start a conversation
                 </p>
-                <h2 id="personal-development-cta-heading" className="mt-4 max-w-3xl text-balance font-heading text-4xl font-extrabold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
+                <h2 id="personal-development-cta-heading" className="mt-4 font-heading text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
                   Not sure <span className="text-brand-mint-green">where to start?</span>
                 </h2>
                 <p className="mt-3 max-w-xl text-base leading-relaxed text-brand-white/70">
