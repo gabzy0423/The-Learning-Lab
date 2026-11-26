@@ -93,8 +93,7 @@ export default function MeetTheTeamPage() {
         </h2>
         <div className="mt-10 divide-y divide-brand-charcoal/15 border-y border-brand-charcoal/15">
           {Array.from({ length: 9 }, (_, index) => (
-            <article key={index} className="grid min-w-0 gap-5 py-8 text-brand-charcoal sm:py-10 lg:grid-cols-[5.5rem_6rem_minmax(0,1fr)_minmax(0,1.4fr)_7rem] lg:items-start lg:gap-6">
-              <p className="w-fit rounded-full border border-brand-charcoal/15 px-2 py-1 text-xs font-semibold text-brand-charcoal/70">Member / {String(index + 1).padStart(2, "0")}</p>
+            <article key={index} className="grid min-w-0 gap-5 py-8 text-brand-charcoal sm:py-10 lg:grid-cols-[6rem_minmax(0,1fr)_minmax(0,1.4fr)_7rem] lg:items-start lg:gap-6">
               <div className="relative size-24 overflow-hidden bg-brand-charcoal/5">
                 {index === 3 ? (
                   <Image
