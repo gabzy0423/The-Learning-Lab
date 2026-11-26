@@ -91,43 +91,49 @@ export default function MeetTheTeamPage() {
         <h2 id="team-content-heading" className="mt-4 font-heading text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
           Meet the people behind the work.
         </h2>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 divide-y divide-brand-charcoal/15 border-y border-brand-charcoal/15">
           {Array.from({ length: 9 }, (_, index) => (
-            <article key={index} className="group flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal shadow-[0_8px_24px_rgba(41,41,41,0.05)] transition-[border-color,transform,box-shadow] duration-500 ease-out hover:-translate-y-0.5 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none">
-              <p className="text-sm font-extrabold text-brand-mint-green">{String(index + 1).padStart(2, "0")}</p>
-              <div className="relative mt-4 aspect-square overflow-hidden rounded-md bg-brand-charcoal/5">
+            <article key={index} className="grid min-w-0 gap-5 py-8 text-brand-charcoal sm:py-10 lg:grid-cols-[5.5rem_6rem_minmax(0,1fr)_minmax(0,1.4fr)_7rem] lg:items-start lg:gap-6">
+              <p className="w-fit rounded-full border border-brand-charcoal/15 px-2 py-1 text-xs font-semibold text-brand-charcoal/70">Member / {String(index + 1).padStart(2, "0")}</p>
+              <div className="relative size-24 overflow-hidden bg-brand-charcoal/5">
                 {index === 3 ? (
                   <Image
                     src="/assets/team/image.png"
                     alt="Jonnifer C. Mandigma profile portrait"
                     fill
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
+                    sizes="96px"
+                    className="object-cover object-top"
                   />
                 ) : (
-                  <div className="flex size-full items-center justify-center p-6 text-center">
-                    <span className="text-sm font-semibold text-brand-charcoal/45">Team image pending</span>
+                  <div className="flex size-full items-center justify-center p-2 text-center">
+                    <span className="text-xs font-semibold text-brand-charcoal/70">Team image pending</span>
                   </div>
                 )}
               </div>
-              <div className="mt-4 border-t border-brand-charcoal/10 pt-4">
+              <div className="min-w-0 break-words">
                 {index === 0 ? (
                   <>
                     <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Al Bengco</h3>
                     <p className="mt-2 text-sm font-semibold text-brand-cyan-blue">Founder &amp; Managing Director</p>
                     <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-charcoal/75">Learning &amp; Organizational Development Consultant</p>
-                    <p className="mt-2 text-sm leading-relaxed text-brand-charcoal/70">Leads The Learning Lab&apos;s direction while helping organizations turn learning and development priorities into practical workplace progress.</p>
                   </>
                 ) : index === 3 ? (
                   <>
                     <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Jonnifer C. Mandigma, MSIT</h3>
                     <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-cyan-blue">Information Technology Professional | Academic Instructor | IT Specialist</p>
-                    <p className="mt-2 text-sm leading-relaxed text-brand-charcoal/70">Brings practical experience in technology, infrastructure, and project management to IT education and the development of future technology professionals.</p>
                   </>
                 ) : (
                   <p className="text-base font-semibold text-brand-charcoal/60">Profile pending</p>
                 )}
               </div>
+              <div className="min-w-0 text-sm leading-7 text-brand-charcoal/70">
+                {index === 0 ? (
+                  <p>Leads The Learning Lab&apos;s direction while helping organizations turn learning and development priorities into practical workplace progress.</p>
+                ) : index === 3 ? (
+                  <p>Brings practical experience in technology, infrastructure, and project management to IT education and the development of future technology professionals.</p>
+                ) : null}
+              </div>
+              <span className="text-xs font-semibold text-brand-charcoal/60 lg:text-right">Profile pending</span>
             </article>
           ))}
         </div>
