@@ -111,7 +111,14 @@ export default function MeetTheTeamPage() {
                 )}
               </div>
               <div className="mt-4 border-t border-brand-charcoal/10 pt-4">
-                {index === 3 ? (
+                {index === 0 ? (
+                  <>
+                    <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Al Bengco</h3>
+                    <p className="mt-2 text-sm font-semibold text-brand-cyan-blue">Founder &amp; Managing Director</p>
+                    <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-charcoal/75">Learning &amp; Organizational Development Consultant</p>
+                    <p className="mt-2 text-sm leading-relaxed text-brand-charcoal/70">Leads The Learning Lab&apos;s direction while helping organizations turn learning and development priorities into practical workplace progress.</p>
+                  </>
+                ) : index === 3 ? (
                   <>
                     <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Jonnifer C. Mandigma</h3>
                     <p className="mt-2 text-sm font-semibold text-brand-cyan-blue">MSIT · Metro Manila</p>
