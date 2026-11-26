@@ -121,6 +121,11 @@ export default function MeetTheTeamPage() {
                     <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Donna Mae G. Arididon</h3>
                     <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-cyan-blue">Strategic HR &amp; Capability Building Consultant | Corporate Trainer | Workshop Facilitator</p>
                   </>
+                ) : index === 2 ? (
+                  <>
+                    <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Jackie Lynne Briones</h3>
+                    <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-cyan-blue">Senior Project Manager | Learning Consultant | Marketing Lead</p>
+                  </>
                 ) : index === 3 ? (
                   <>
                     <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Jonnifer C. Mandigma, MSIT</h3>
