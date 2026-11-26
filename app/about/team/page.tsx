@@ -159,6 +159,8 @@ export default function MeetTheTeamPage() {
                   <p>With 10+ years in client service, business development, and project management, Jackie connects client needs with coordinated learning solutions as a Learning Consultant and Marketing Lead.</p>
                 ) : index === 3 ? (
                   <p>An MSIT-qualified IT professional and educator, Jonnifer brings experience in infrastructure, web development, networking, and cybersecurity to technology education.</p>
+                ) : index === 4 ? (
+                  <p>With 15+ years in learning, organizational development, HR, and performance management, Sheryll brings a structured, data-informed approach to building organizational capability.</p>
                 ) : null}
               </div>
               <span className="text-xs font-semibold text-brand-charcoal/60 lg:text-right">Profile pending</span>
