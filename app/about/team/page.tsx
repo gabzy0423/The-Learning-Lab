@@ -163,6 +163,8 @@ export default function MeetTheTeamPage() {
                   <p>With 15+ years in learning, organizational development, HR, and performance management, Sheryll brings a structured, data-informed approach to building organizational capability.</p>
                 ) : index === 5 ? (
                   <p>Drawing on experience in corporate training, client relations, and education, Vicky coordinates learning solutions and creates thoughtful experiences for clients and learners.</p>
+                ) : index === 6 ? (
+                  <p>With 20+ years in learning and development, Alu leads global programs that connect learning strategy with organizational capability and business outcomes.</p>
                 ) : null}
               </div>
               <span className="text-xs font-semibold text-brand-charcoal/60 lg:text-right">Profile pending</span>
