@@ -155,6 +155,8 @@ export default function MeetTheTeamPage() {
                   <p>With over 20 years in learning and organizational development, Al designs practical, engaging experiences that help people apply learning at work.</p>
                 ) : index === 1 ? (
                   <p>With 15+ years across HR, training, and people development, Donna creates practical learning experiences that help leaders grow, teams collaborate, and employees build workplace capabilities.</p>
+                ) : index === 2 ? (
+                  <p>With 10+ years in client service, business development, and project management, Jackie connects client needs with coordinated learning solutions as a Learning Consultant and Marketing Lead.</p>
                 ) : index === 3 ? (
                   <p>Brings practical experience in technology, infrastructure, and project management to IT education and the development of future technology professionals.</p>
                 ) : null}
