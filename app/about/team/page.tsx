@@ -3,7 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function MeetTheTeamPage() {
   return (
-    <main className="about-page mx-auto min-h-[70vh] w-full max-w-7xl px-7 py-20 sm:px-10 lg:px-0">
+    <main className="about-page mx-auto min-h-[70vh] w-full max-w-7xl px-7 py-20 sm:px-10 2xl:px-0">
       <section className="relative isolate overflow-hidden rounded-2xl bg-brand-charcoal px-7 py-16 text-brand-white sm:px-10 sm:py-20 lg:px-0 lg:py-24" aria-labelledby="meet-the-team-heading">
         <Image
           src="/assets/pages/about/meet-the-team-banner.png"
@@ -35,7 +35,7 @@ export default function MeetTheTeamPage() {
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               Foundation
             </p>
-            <h2 id="foundation-heading" className="mt-4 max-w-2xl font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+            <h2 id="foundation-heading" className="mt-4 max-w-2xl font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl">
               What grounds <span className="text-brand-mint-green">our work.</span>
             </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-brand-charcoal/70">
