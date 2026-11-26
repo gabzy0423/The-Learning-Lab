@@ -129,7 +129,7 @@ export default function MeetTheTeamPage() {
                 ) : index === 3 ? (
                   <>
                     <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Jonnifer C. Mandigma, MSIT</h3>
-                    <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-cyan-blue">Information Technology Professional | Academic Instructor | IT Specialist</p>
+                    <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-cyan-blue">Information Technology Professional | Academic Instructor</p>
                   </>
                 ) : index === 4 ? (
                   <>
@@ -158,7 +158,7 @@ export default function MeetTheTeamPage() {
                 ) : index === 2 ? (
                   <p>With 10+ years in client service, business development, and project management, Jackie connects client needs with coordinated learning solutions as a Learning Consultant and Marketing Lead.</p>
                 ) : index === 3 ? (
-                  <p>An MSIT-qualified IT professional and educator, Jonnifer brings experience in infrastructure, web development, networking, and cybersecurity to technology education.</p>
+                  <p>An MSIT-qualified IT professional, academic instructor, and IT specialist, Jonnifer brings experience in infrastructure, web development, networking, and cybersecurity to technology education.</p>
                 ) : index === 4 ? (
                   <p>With 15+ years in learning, organizational development, HR, and performance management, Sheryll brings a structured, data-informed approach to building organizational capability.</p>
                 ) : index === 5 ? (
