@@ -420,49 +420,49 @@ export default async function CategoryPage({
             className="pointer-events-none absolute inset-0 -z-20 size-full object-cover opacity-40"
           />
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-brand-charcoal/85 sm:bg-brand-charcoal/80 lg:bg-brand-charcoal/70" />
-          <div className="relative z-10 mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
+          <div className="relative z-10 mx-auto max-w-[80rem] px-7 py-20 sm:px-10 sm:py-24 lg:px-0 lg:py-28">
             <p className="flex items-center gap-3 text-sm font-bold text-brand-white">
               <span aria-hidden="true" className="h-1 w-8 rounded-full bg-brand-mint-green" />
               Program category
             </p>
-            <h1 className="mt-4 max-w-3xl font-heading text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 className="mt-4 max-w-3xl font-heading text-4xl font-extrabold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
               Managing <span className="text-brand-mint-green">Relationships</span>
             </h1>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-brand-white/85">
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-brand-white/85">
               Strengthen connection, communication, and trust. Navigate collaboration and relationships with greater awareness.
             </p>
           </div>
         </section>
 
         <section aria-labelledby="managing-relationships-programs-heading">
-          <div className="mx-auto max-w-[80rem] px-7 py-16 sm:px-10 lg:px-0 lg:py-20">
-            <div className="grid items-start gap-4 lg:grid-cols-[1.4fr_0.6fr] lg:gap-12">
-              <h2 id="managing-relationships-programs-heading" className="max-w-3xl text-balance font-heading text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+          <div className="mx-auto max-w-[80rem] px-7 py-20 sm:px-10 sm:py-24 lg:px-0">
+            <div className="grid items-start gap-6 lg:grid-cols-[1.4fr_0.6fr] lg:gap-16">
+              <h2 id="managing-relationships-programs-heading" className="max-w-3xl text-balance font-heading text-4xl font-extrabold leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
                 Explore our <span className="text-brand-mint-green">Managing Relationships programs</span>
               </h2>
-              <p className="max-w-2xl text-base leading-relaxed text-brand-charcoal/70 lg:pt-2">
+              <p className="max-w-2xl text-base leading-relaxed text-brand-charcoal/70 lg:pt-3">
                 Explore practical learning experiences designed to strengthen communication, collaboration, and trust at work.
               </p>
             </div>
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {managingRelationshipsCards.map((card, index) => (
                 <article
                   key={card.title}
-                  className={`group relative flex min-h-[29rem] flex-col overflow-hidden rounded-lg border border-brand-charcoal/15 bg-white p-6 text-brand-charcoal transition-[border-color,transform,box-shadow] duration-500 ease-out hover:-translate-y-0.5 hover:border-brand-turquoise hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none ${card.href ? "cursor-pointer" : ""}`}
+                  className={`group relative flex min-h-[29rem] flex-col overflow-hidden rounded-xl border border-brand-charcoal/20 bg-white p-7 text-brand-charcoal transition-[border-color,transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:border-brand-turquoise hover:shadow-xl motion-reduce:transform-none motion-reduce:transition-none ${card.href ? "cursor-pointer" : ""}`}
                 >
-                  {card.href && <Link href={card.href} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue" aria-label={`Open ${card.title} PDF in a new tab`} />}
+                  {card.href && <Link href={card.href} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10 rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan-blue" aria-label={`Open ${card.title} PDF in a new tab`} />}
                   <p className={`text-sm font-extrabold ${card.accent}`}>{String(index + 1).padStart(2, "0")}</p>
-                  <div className="relative mt-4 aspect-square overflow-hidden rounded-md border border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
+                  <div className="relative mt-4 aspect-square overflow-hidden rounded-lg border border-brand-charcoal/10 bg-brand-charcoal/[0.03]">
                     <Image
                       src={card.image}
                       alt={`${card.title} course visual`}
                       fill
                       sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                      className="object-contain object-center transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
+                      className="object-contain object-center transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
                     />
                   </div>
                   <h3 className="mt-5 font-heading text-xl font-extrabold leading-tight tracking-tight">{card.title}</h3>
-                  <div className="mt-4 border-t border-brand-charcoal/10 pt-4">
+                  <div className="mt-4 border-t border-brand-charcoal/15 pt-4">
                     <p className="text-base leading-relaxed text-brand-charcoal/70">{card.description}</p>
                   </div>
                   <span className={`mt-auto inline-flex items-center gap-2 pt-5 text-sm font-bold ${card.accent}`}>
