@@ -129,7 +129,7 @@ export default function MeetTheTeamPage() {
                 ) : index === 3 ? (
                   <>
                     <h3 className="font-heading text-xl font-extrabold leading-tight tracking-tight">Jonnifer C. Mandigma, MSIT</h3>
-                    <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-cyan-blue">Information Technology Professional | Academic Instructor | IT Specialist</p>
+                    <p className="mt-2 text-sm font-semibold leading-relaxed text-brand-cyan-blue">Information Technology Professional | Academic Instructor</p>
                   </>
                 ) : index === 4 ? (
                   <>
